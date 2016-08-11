@@ -1,0 +1,6 @@
+framework module Pods_Chalmers_Card {
+  umbrella header "Pods-Chalmers Card-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24E51A7D1D5CAEC900498915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A7C1D5CAEC900498915 /* AppDelegate.swift */; };
+		24E51A821D5CAEC900498915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E51A801D5CAEC900498915 /* Main.storyboard */; };
+		24E51A841D5CAEC900498915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E51A831D5CAEC900498915 /* Assets.xcassets */; };
+		24E51A871D5CAEC900498915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E51A851D5CAEC900498915 /* LaunchScreen.storyboard */; };
+		24E51A9A1D5CB1B900498915 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A971D5CB1B900498915 /* AboutController.swift */; };
+		24E51A9B1D5CB1B900498915 /* BalanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A981D5CB1B900498915 /* BalanceController.swift */; };
+		24E51A9C1D5CB1B900498915 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A991D5CB1B900498915 /* SettingsController.swift */; };
+		24E51A9E1D5CB21700498915 /* ChargeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A9D1D5CB21700498915 /* ChargeController.swift */; };
+		730BBE3F0DA87D76084111B3 /* Pods_Chalmers_Card.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24E51A791D5CAEC900498915 /* Chalmers Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chalmers Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E51A7C1D5CAEC900498915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24E51A811D5CAEC900498915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24E51A831D5CAEC900498915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24E51A861D5CAEC900498915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24E51A881D5CAEC900498915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24E51A971D5CB1B900498915 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		24E51A981D5CB1B900498915 /* BalanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceController.swift; sourceTree = "<group>"; };
+		24E51A991D5CB1B900498915 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		24E51A9D1D5CB21700498915 /* ChargeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeController.swift; sourceTree = "<group>"; };
+		850A8F8E8BC67FE874408A6D /* Pods-Chalmers Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalmers Card.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.release.xcconfig"; sourceTree = "<group>"; };
+		C1F6B2BF2A9AC4B68AEAD2FD /* Pods-Chalmers Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalmers Card.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.debug.xcconfig"; sourceTree = "<group>"; };
+		D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24E51A761D5CAEC900498915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730BBE3F0DA87D76084111B3 /* Pods_Chalmers_Card.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037446DA3C468E8979C9FDA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24E51A701D5CAEC900498915 = {
+			isa = PBXGroup;
+			children = (
+				24E51A7B1D5CAEC900498915 /* Chalmers Card */,
+				24E51A7A1D5CAEC900498915 /* Products */,
+				307DEBB136ABCDA431EC3B6E /* Pods */,
+				037446DA3C468E8979C9FDA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24E51A7A1D5CAEC900498915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24E51A791D5CAEC900498915 /* Chalmers Card.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24E51A7B1D5CAEC900498915 /* Chalmers Card */ = {
+			isa = PBXGroup;
+			children = (
+				24E51A911D5CAFF100498915 /* Store */,
+				24E51A8F1D5CAF5200498915 /* Models */,
+				24E51A8E1D5CAF4A00498915 /* Controllers */,
+				24E51A7C1D5CAEC900498915 /* AppDelegate.swift */,
+				24E51A801D5CAEC900498915 /* Main.storyboard */,
+				24E51A831D5CAEC900498915 /* Assets.xcassets */,
+				24E51A851D5CAEC900498915 /* LaunchScreen.storyboard */,
+				24E51A881D5CAEC900498915 /* Info.plist */,
+			);
+			path = "Chalmers Card";
+			sourceTree = "<group>";
+		};
+		24E51A8E1D5CAF4A00498915 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24E51A971D5CB1B900498915 /* AboutController.swift */,
+				24E51A981D5CB1B900498915 /* BalanceController.swift */,
+				24E51A991D5CB1B900498915 /* SettingsController.swift */,
+				24E51A9D1D5CB21700498915 /* ChargeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		24E51A8F1D5CAF5200498915 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24E51A911D5CAFF100498915 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		307DEBB136ABCDA431EC3B6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1F6B2BF2A9AC4B68AEAD2FD /* Pods-Chalmers Card.debug.xcconfig */,
+				850A8F8E8BC67FE874408A6D /* Pods-Chalmers Card.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24E51A781D5CAEC900498915 /* Chalmers Card */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E51A8B1D5CAEC900498915 /* Build configuration list for PBXNativeTarget "Chalmers Card" */;
+			buildPhases = (
+				E4E129D53C4D2C74E8AD8412 /* 📦 Check Pods Manifest.lock */,
+				24E51A751D5CAEC900498915 /* Sources */,
+				24E51A761D5CAEC900498915 /* Frameworks */,
+				24E51A771D5CAEC900498915 /* Resources */,
+				B41C8285246012AFD9F277A0 /* 📦 Embed Pods Frameworks */,
+				E10293F6CE899C12DB7019B6 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chalmers Card";
+			productName = "Chalmers Card";
+			productReference = 24E51A791D5CAEC900498915 /* Chalmers Card.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24E51A711D5CAEC900498915 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SHARPMIND;
+				TargetAttributes = {
+					24E51A781D5CAEC900498915 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 24E51A741D5CAEC900498915 /* Build configuration list for PBXProject "Chalmers Card" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24E51A701D5CAEC900498915;
+			productRefGroup = 24E51A7A1D5CAEC900498915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24E51A781D5CAEC900498915 /* Chalmers Card */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24E51A771D5CAEC900498915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E51A871D5CAEC900498915 /* LaunchScreen.storyboard in Resources */,
+				24E51A841D5CAEC900498915 /* Assets.xcassets in Resources */,
+				24E51A821D5CAEC900498915 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B41C8285246012AFD9F277A0 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E10293F6CE899C12DB7019B6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4E129D53C4D2C74E8AD8412 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24E51A751D5CAEC900498915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E51A9E1D5CB21700498915 /* ChargeController.swift in Sources */,
+				24E51A9C1D5CB1B900498915 /* SettingsController.swift in Sources */,
+				24E51A7D1D5CAEC900498915 /* AppDelegate.swift in Sources */,
+				24E51A9A1D5CB1B900498915 /* AboutController.swift in Sources */,
+				24E51A9B1D5CB1B900498915 /* BalanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24E51A801D5CAEC900498915 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24E51A811D5CAEC900498915 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24E51A851D5CAEC900498915 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24E51A861D5CAEC900498915 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24E51A891D5CAEC900498915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24E51A8A1D5CAEC900498915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24E51A8C1D5CAEC900498915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1F6B2BF2A9AC4B68AEAD2FD /* Pods-Chalmers Card.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Chalmers Card/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.sharpmind.Chalmers-Card";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24E51A8D1D5CAEC900498915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850A8F8E8BC67FE874408A6D /* Pods-Chalmers Card.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Chalmers Card/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.sharpmind.Chalmers-Card";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24E51A741D5CAEC900498915 /* Build configuration list for PBXProject "Chalmers Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E51A891D5CAEC900498915 /* Debug */,
+				24E51A8A1D5CAEC900498915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24E51A8B1D5CAEC900498915 /* Build configuration list for PBXNativeTarget "Chalmers Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E51A8C1D5CAEC900498915 /* Debug */,
+				24E51A8D1D5CAEC900498915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24E51A711D5CAEC900498915 /* Project object */;
+}
