@@ -14,7 +14,6 @@
 		24E51A9A1D5CB1B900498915 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A971D5CB1B900498915 /* AboutController.swift */; };
 		24E51A9B1D5CB1B900498915 /* BalanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A981D5CB1B900498915 /* BalanceController.swift */; };
 		24E51A9C1D5CB1B900498915 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A991D5CB1B900498915 /* SettingsController.swift */; };
-		24E51A9E1D5CB21700498915 /* ChargeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A9D1D5CB21700498915 /* ChargeController.swift */; };
 		24E51AA01D5CB57300498915 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A9F1D5CB57300498915 /* Config.swift */; };
 		730BBE3F0DA87D76084111B3 /* Pods_Chalmers_Card.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		24E51A971D5CB1B900498915 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		24E51A981D5CB1B900498915 /* BalanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceController.swift; sourceTree = "<group>"; };
 		24E51A991D5CB1B900498915 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		24E51A9D1D5CB21700498915 /* ChargeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeController.swift; sourceTree = "<group>"; };
 		24E51A9F1D5CB57300498915 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		850A8F8E8BC67FE874408A6D /* Pods-Chalmers Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalmers Card.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.release.xcconfig"; sourceTree = "<group>"; };
 		C1F6B2BF2A9AC4B68AEAD2FD /* Pods-Chalmers Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalmers Card.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				24E51A971D5CB1B900498915 /* AboutController.swift */,
 				24E51A981D5CB1B900498915 /* BalanceController.swift */,
 				24E51A991D5CB1B900498915 /* SettingsController.swift */,
-				24E51A9D1D5CB21700498915 /* ChargeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E51A9E1D5CB21700498915 /* ChargeController.swift in Sources */,
 				24E51A9C1D5CB1B900498915 /* SettingsController.swift in Sources */,
 				24E51A7D1D5CAEC900498915 /* AppDelegate.swift in Sources */,
 				24E51A9A1D5CB1B900498915 /* AboutController.swift in Sources */,

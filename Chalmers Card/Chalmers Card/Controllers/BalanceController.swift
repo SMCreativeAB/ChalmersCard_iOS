@@ -1,4 +1,5 @@
 import UIKit
+import SafariServices
 
 class BalanceController : UIViewController {
     
@@ -16,6 +17,11 @@ class BalanceController : UIViewController {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
+    }
+    
+    @IBAction func onChargeCardButtonTap(sender: AnyObject) {
+        let svc = SFSafariViewController(URL: NSURL(string: Config.chargeCardUrl)!, entersReaderIfAvailable: true)
+        self.presentViewController(svc, animated: true, completion: nil)
     }
 }
 

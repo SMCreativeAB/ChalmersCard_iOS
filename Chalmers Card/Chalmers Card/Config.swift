@@ -6,4 +6,6 @@ class Config {
     static let colorHigh = UIColor.colorWithHex(0x60C94E)
     
     static let tintColor = colorHigh
+    
+    static let chargeCardUrl = "http://google.com"
 }

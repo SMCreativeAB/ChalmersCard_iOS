@@ -38,6 +38,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 minuter sedan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBo-Sq-czU">
+                                <rect key="frame" x="-4" y="345" width="383" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 kr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb7-Zl-h24">
+                                <rect key="frame" x="-4" y="251" width="383" height="86"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="72"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfV-hL-Auo">
+                                <rect key="frame" x="-4" y="586" width="383" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Ladda kårkort">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onChargeCardButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLg-Rb-N7W"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVb-jA-jul">
                                 <rect key="frame" x="327" y="35" width="32" height="32"/>
                                 <state key="normal" image="SettingsIcon"/>
@@ -55,19 +77,33 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Mb7-Zl-h24" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="2oZ-bc-3HG"/>
                             <constraint firstItem="uh2-sf-4AS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="3Q2-HL-mhg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LBo-Sq-czU" secondAttribute="trailing" constant="-20" id="4zz-nV-Llr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RfV-hL-Auo" secondAttribute="trailing" constant="-20" id="EAM-lm-995"/>
+                            <constraint firstItem="Mb7-Zl-h24" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IvO-iu-6E6"/>
+                            <constraint firstItem="Mb7-Zl-h24" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KjJ-1B-Jwf"/>
+                            <constraint firstItem="Mb7-Zl-h24" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="MFC-j3-pXj"/>
                             <constraint firstItem="zVb-jA-jul" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Plp-Bw-zbi"/>
+                            <constraint firstItem="RfV-hL-Auo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="S6S-0I-aYF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mb7-Zl-h24" secondAttribute="trailing" constant="-20" id="V8z-dP-Ltv"/>
                             <constraint firstAttribute="leadingMargin" secondItem="uh2-sf-4AS" secondAttribute="leading" id="VNv-H7-iX4"/>
+                            <constraint firstItem="LBo-Sq-czU" firstAttribute="top" secondItem="Mb7-Zl-h24" secondAttribute="bottom" constant="8" id="Ydd-JB-DF1"/>
+                            <constraint firstItem="LBo-Sq-czU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="e1O-HN-VDA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zVb-jA-jul" secondAttribute="trailing" id="mfP-sO-ywh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RfV-hL-Auo" secondAttribute="bottom" constant="40" id="oJK-Yj-gyt"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IvO-iu-6E6"/>
+                                <exclude reference="KjJ-1B-Jwf"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="DtU-dO-uh0"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="VNE-Wr-vsn" kind="presentation" id="xyT-e6-Lx1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,25 +146,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLb-gU-i83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="424.5" y="698.5"/>
-        </scene>
-        <!--Charge Controller-->
-        <scene sceneID="Ywk-8o-obM">
-            <objects>
-                <viewController id="VNE-Wr-vsn" customClass="ChargeController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eOQ-zX-1uY"/>
-                        <viewControllerLayoutGuide type="bottom" id="zQA-T8-fu7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vzm-oT-qgm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qZ8-5X-7IW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="940.5" y="1479.5"/>
         </scene>
     </scenes>
     <resources>
