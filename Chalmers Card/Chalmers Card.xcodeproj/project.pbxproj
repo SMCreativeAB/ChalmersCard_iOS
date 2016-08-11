@@ -15,6 +15,8 @@
 		24E51A9B1D5CB1B900498915 /* BalanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A981D5CB1B900498915 /* BalanceController.swift */; };
 		24E51A9C1D5CB1B900498915 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A991D5CB1B900498915 /* SettingsController.swift */; };
 		24E51AA01D5CB57300498915 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A9F1D5CB57300498915 /* Config.swift */; };
+		24E51AA21D5D047E00498915 /* RefillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51AA11D5D047E00498915 /* RefillController.swift */; };
+		24E51AA51D5D0C5F00498915 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51AA41D5D0C5F00498915 /* Delay.swift */; };
 		730BBE3F0DA87D76084111B3 /* Pods_Chalmers_Card.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		24E51A981D5CB1B900498915 /* BalanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceController.swift; sourceTree = "<group>"; };
 		24E51A991D5CB1B900498915 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		24E51A9F1D5CB57300498915 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		24E51AA11D5D047E00498915 /* RefillController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefillController.swift; sourceTree = "<group>"; };
+		24E51AA41D5D0C5F00498915 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		850A8F8E8BC67FE874408A6D /* Pods-Chalmers Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalmers Card.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.release.xcconfig"; sourceTree = "<group>"; };
 		C1F6B2BF2A9AC4B68AEAD2FD /* Pods-Chalmers Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalmers Card.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +79,7 @@
 		24E51A7B1D5CAEC900498915 /* Chalmers Card */ = {
 			isa = PBXGroup;
 			children = (
+				24E51AA31D5D0C4800498915 /* Helpers */,
 				24E51A911D5CAFF100498915 /* Store */,
 				24E51A8F1D5CAF5200498915 /* Models */,
 				24E51A8E1D5CAF4A00498915 /* Controllers */,
@@ -94,6 +99,7 @@
 				24E51A971D5CB1B900498915 /* AboutController.swift */,
 				24E51A981D5CB1B900498915 /* BalanceController.swift */,
 				24E51A991D5CB1B900498915 /* SettingsController.swift */,
+				24E51AA11D5D047E00498915 /* RefillController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -110,6 +116,14 @@
 			children = (
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		24E51AA31D5D0C4800498915 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				24E51AA41D5D0C5F00498915 /* Delay.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		307DEBB136ABCDA431EC3B6E /* Pods */ = {
@@ -244,8 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E51A9C1D5CB1B900498915 /* SettingsController.swift in Sources */,
+				24E51AA21D5D047E00498915 /* RefillController.swift in Sources */,
 				24E51A7D1D5CAEC900498915 /* AppDelegate.swift in Sources */,
 				24E51A9A1D5CB1B900498915 /* AboutController.swift in Sources */,
+				24E51AA51D5D0C5F00498915 /* Delay.swift in Sources */,
 				24E51A9B1D5CB1B900498915 /* BalanceController.swift in Sources */,
 				24E51AA01D5CB57300498915 /* Config.swift in Sources */,
 			);

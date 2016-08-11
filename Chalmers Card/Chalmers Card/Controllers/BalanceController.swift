@@ -19,8 +19,8 @@ class BalanceController : UIViewController {
         return .LightContent
     }
     
-    @IBAction func onChargeCardButtonTap(sender: AnyObject) {
-        let svc = SFSafariViewController(URL: NSURL(string: Config.chargeCardUrl)!, entersReaderIfAvailable: true)
+    @IBAction func onRefillCardButtonTap(sender: AnyObject) {
+        let svc = RefillController(URL: NSURL(string: Config.chargeCardUrl)!)
         self.presentViewController(svc, animated: true, completion: nil)
     }
 }

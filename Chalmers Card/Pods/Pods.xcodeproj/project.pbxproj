@@ -7,69 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0417787A7554C9C2629820DAADD13674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		1386376EACDD6799F5D429CECB39FFA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		19BE206FEA8F34B26BF77F634696F620 /* Pods-Chalmers Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2144DB52E77B04F938AAADEBA1268890 /* Pods-Chalmers Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */; };
-		8D9721288DE74BE3FC964E36B07C8D1E /* UIColor-Hex-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 562F46162EBC9DAE59D47481187CC9F9 /* UIColor-Hex-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E122E23B54548D9B66C7F942DB856A /* UIColor-Hex-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E14F068803F6E77029B419C731AF4 /* UIColor-Hex-Swift-dummy.m */; };
-		F9BF99F6D5DBD4B8BFB9BDF8531E88AC /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FC1C48BA450D10A81DBE688E19EABA /* UIColor_Hex.swift */; };
+		04D4953434E3BA5AAE7383B4DEA51CF2 /* CWStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 22157AEDDD9176067E41B01E06BD444B /* CWStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EA5553EE01756ABA238D619A743A544 /* CWStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1999D7896A74ADC0239E572F9140DF90 /* CWStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53702D0D486B0B1DC0C827B133792901 /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772DEBAB51A2BE39301743D32087E271 /* UIColor_Hex.swift */; };
+		5933149F5255C95634CCE2652E045927 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5BA8C4907D10D86AF6E1C74391D19613 /* UIColor-Hex-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A747DBAA1A848445858A9DB6D4B4691A /* UIColor-Hex-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72985CE160CDB53D8EC400C45E206DAC /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F88F08E358DB816457962D998310FA /* CWStatusBarNotification.m */; };
+		88C32A4D355CEDBB8D4D1EC1B61823B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		8B41C0A66F478354BCD2C75100041F62 /* CWStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D810ACB9F3D91F0EB337786C92CFAAE /* CWStatusBarNotification-dummy.m */; };
+		8D551B4244E9C122D791FA4316B340D1 /* UIColor-Hex-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE320F2E4FEF31126F1ADFD6DC087DA3 /* UIColor-Hex-Swift-dummy.m */; };
+		BE985038A04E7DEE4DC3BF9B7A218283 /* Pods-Chalmers Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAC238E0ED10EAE8732E487E195D2982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FF3EC6183F8B3AB6580ED4661D89EB74 /* Pods-Chalmers Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8FB047B790D99D6CD4420BEDB06E3870 /* PBXContainerItemProxy */ = {
+		4F4CA2E37BACF54D769D26B3F25E1F9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B55A240C8DB4D6B5095FB2FAFD3C3801;
+			remoteGlobalIDString = 2A06CA575D566AD15268F271E38B6007;
 			remoteInfo = "UIColor-Hex-Swift";
+		};
+		6762C321D0B64D590042578E26815F4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 233B529E4F6EE6E3DF4E23BAFD26903D;
+			remoteInfo = CWStatusBarNotification;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000B8FAB1B064F31D411AFBF7FC1DA88 /* CWStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CWStatusBarNotification.modulemap; sourceTree = "<group>"; };
+		016D1C08A312FC8868F1CDC8D1AF1A1D /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1999D7896A74ADC0239E572F9140DF90 /* CWStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
+		22157AEDDD9176067E41B01E06BD444B /* CWStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CWStatusBarNotification.h; path = CWStatusBarNotification/CWStatusBarNotification.h; sourceTree = "<group>"; };
 		223A990D458FF1DAF85B29A22753522D /* Pods-Chalmers Card-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chalmers Card-frameworks.sh"; sourceTree = "<group>"; };
 		39ED9A190C4F260063A5B160FE5BC51B /* Pods-Chalmers Card-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chalmers Card-acknowledgements.plist"; sourceTree = "<group>"; };
 		3F7AC4E218E4D7EAEDDFA59DA2A196F0 /* Pods-Chalmers Card-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chalmers Card-resources.sh"; sourceTree = "<group>"; };
-		4266F16F680BABD62927A5DB4F1AAF4A /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2952626BCE572502D4F28B3D89E4A5 /* Pods-Chalmers Card-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chalmers Card-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chalmers Card-dummy.m"; sourceTree = "<group>"; };
-		562F46162EBC9DAE59D47481187CC9F9 /* UIColor-Hex-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-umbrella.h"; sourceTree = "<group>"; };
-		62FC1C48BA450D10A81DBE688E19EABA /* UIColor_Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor_Hex.swift; path = Pod/Classes/UIColor_Hex.swift; sourceTree = "<group>"; };
+		6315DE68AAD3EFDE208120D382AE63FA /* UIColor-Hex-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-prefix.pch"; sourceTree = "<group>"; };
 		67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chalmers Card.release.xcconfig"; sourceTree = "<group>"; };
-		713295C3A58B83B1D2973EDC77A9EFE6 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		772DEBAB51A2BE39301743D32087E271 /* UIColor_Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor_Hex.swift; path = Pod/Classes/UIColor_Hex.swift; sourceTree = "<group>"; };
 		7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chalmers Card-umbrella.h"; sourceTree = "<group>"; };
-		83011DD8F2C59131B880ABC2B2FD9F44 /* UIColor-Hex-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor-Hex-Swift.modulemap"; sourceTree = "<group>"; };
-		8A4E14F068803F6E77029B419C731AF4 /* UIColor-Hex-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-Swift-dummy.m"; sourceTree = "<group>"; };
+		7DBAA0CC5DF4E4E336AF4F2B893541E6 /* CWStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B1F125A69C7779AF8A28F697DA6667E /* Pods-Chalmers Card.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chalmers Card.modulemap"; sourceTree = "<group>"; };
+		9D810ACB9F3D91F0EB337786C92CFAAE /* CWStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CWStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
 		A250DDD611E125FFA464B6F34A1C437B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B28817F0DBF5BB645131D3BE8EE789BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A747DBAA1A848445858A9DB6D4B4691A /* UIColor-Hex-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-umbrella.h"; sourceTree = "<group>"; };
+		AD73F7A76E4E61C64B8822D49540C2E3 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7267E00A90558F252257B787225FE79 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F88F08E358DB816457962D998310FA /* CWStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CWStatusBarNotification.m; path = CWStatusBarNotification/CWStatusBarNotification.m; sourceTree = "<group>"; };
+		C1DAAA75C334094C303978698957ACFA /* UIColor-Hex-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor-Hex-Swift.modulemap"; sourceTree = "<group>"; };
+		CBA521E6692C089AF0D26EAB1A99A592 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D03E355071995EA9738F5B721CBFE16F /* Pods-Chalmers Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chalmers Card.debug.xcconfig"; sourceTree = "<group>"; };
-		DC305354ADDD96A2AF551A28DC4A6B05 /* UIColor-Hex-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex-Swift.xcconfig"; sourceTree = "<group>"; };
-		DE8043B87219ECED535DEE3C1B0220B4 /* UIColor-Hex-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-prefix.pch"; sourceTree = "<group>"; };
+		DDFAD97DBDBC2EED978F9A76607E5A03 /* CWStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CWStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE320F2E4FEF31126F1ADFD6DC087DA3 /* UIColor-Hex-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-Swift-dummy.m"; sourceTree = "<group>"; };
+		F277531DC7221CF4602FD2436DCF03B8 /* UIColor-Hex-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex-Swift.xcconfig"; sourceTree = "<group>"; };
+		F3874D4FBF1702B977B2140214663F6E /* CWStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CWStatusBarNotification.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8761DA99B0FC8E51C47CAF88033D7133 /* Frameworks */ = {
+		24DA86D258E13E8E6E2EC91DC0F84310 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0417787A7554C9C2629820DAADD13674 /* Foundation.framework in Frameworks */,
+				CAC238E0ED10EAE8732E487E195D2982 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC6338A62030D738DD029DB86B6F3F35 /* Frameworks */ = {
+		382294F15DA112567F76E981DC7AAC0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1386376EACDD6799F5D429CECB39FFA2 /* Foundation.framework in Frameworks */,
+				5933149F5255C95634CCE2652E045927 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA899B97CDCEA5EAF62CBBE55A29A693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C32A4D355CEDBB8D4D1EC1B61823B0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004CD404A38646FD778A1B94D3FB2D6A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000B8FAB1B064F31D411AFBF7FC1DA88 /* CWStatusBarNotification.modulemap */,
+				F3874D4FBF1702B977B2140214663F6E /* CWStatusBarNotification.xcconfig */,
+				9D810ACB9F3D91F0EB337786C92CFAAE /* CWStatusBarNotification-dummy.m */,
+				7DBAA0CC5DF4E4E336AF4F2B893541E6 /* CWStatusBarNotification-prefix.pch */,
+				1999D7896A74ADC0239E572F9140DF90 /* CWStatusBarNotification-umbrella.h */,
+				CBA521E6692C089AF0D26EAB1A99A592 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CWStatusBarNotification";
+			sourceTree = "<group>";
+		};
+		33A616927179F8584D34821252B5BEAD /* CWStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				22157AEDDD9176067E41B01E06BD444B /* CWStatusBarNotification.h */,
+				B7F88F08E358DB816457962D998310FA /* CWStatusBarNotification.m */,
+				004CD404A38646FD778A1B94D3FB2D6A /* Support Files */,
+			);
+			path = CWStatusBarNotification;
+			sourceTree = "<group>";
+		};
 		3420B65516728216961FFF84ADA9AD4D /* Pods-Chalmers Card */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,12 +141,31 @@
 			path = "Target Support Files/Pods-Chalmers Card";
 			sourceTree = "<group>";
 		};
+		37BB32A8767FE3AD7B20EA3B6B6ADAA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDFAD97DBDBC2EED978F9A76607E5A03 /* CWStatusBarNotification.framework */,
+				016D1C08A312FC8868F1CDC8D1AF1A1D /* Pods_Chalmers_Card.framework */,
+				AD73F7A76E4E61C64B8822D49540C2E3 /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		7239C5624D94C786DA559D62C45D25A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33A616927179F8584D34821252B5BEAD /* CWStatusBarNotification */,
+				8463756FED6C0C796B60D668DDE70D27 /* UIColor-Hex-Swift */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		742575E47E184BAF9E864F63E22B101D /* Targets Support Files */ = {
@@ -104,35 +176,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		788E482D698F9E4B9090C963D19C101E /* UIColor-Hex-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				62FC1C48BA450D10A81DBE688E19EABA /* UIColor_Hex.swift */,
-				BA4496275172A945C7F2E136E083EA78 /* Support Files */,
-			);
-			path = "UIColor-Hex-Swift";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				E50CB9C01E75069CB623FD004B4EAF2A /* Pods */,
-				FE94061E0B0923AAC227BB5503472EB9 /* Products */,
+				7239C5624D94C786DA559D62C45D25A2 /* Pods */,
+				37BB32A8767FE3AD7B20EA3B6B6ADAA5 /* Products */,
 				742575E47E184BAF9E864F63E22B101D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BA4496275172A945C7F2E136E083EA78 /* Support Files */ = {
+		8463756FED6C0C796B60D668DDE70D27 /* UIColor-Hex-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				B28817F0DBF5BB645131D3BE8EE789BC /* Info.plist */,
-				83011DD8F2C59131B880ABC2B2FD9F44 /* UIColor-Hex-Swift.modulemap */,
-				DC305354ADDD96A2AF551A28DC4A6B05 /* UIColor-Hex-Swift.xcconfig */,
-				8A4E14F068803F6E77029B419C731AF4 /* UIColor-Hex-Swift-dummy.m */,
-				DE8043B87219ECED535DEE3C1B0220B4 /* UIColor-Hex-Swift-prefix.pch */,
-				562F46162EBC9DAE59D47481187CC9F9 /* UIColor-Hex-Swift-umbrella.h */,
+				772DEBAB51A2BE39301743D32087E271 /* UIColor_Hex.swift */,
+				9B57D2C4DC1D0DD3871BA1BEB563944B /* Support Files */,
+			);
+			path = "UIColor-Hex-Swift";
+			sourceTree = "<group>";
+		};
+		9B57D2C4DC1D0DD3871BA1BEB563944B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7267E00A90558F252257B787225FE79 /* Info.plist */,
+				C1DAAA75C334094C303978698957ACFA /* UIColor-Hex-Swift.modulemap */,
+				F277531DC7221CF4602FD2436DCF03B8 /* UIColor-Hex-Swift.xcconfig */,
+				DE320F2E4FEF31126F1ADFD6DC087DA3 /* UIColor-Hex-Swift-dummy.m */,
+				6315DE68AAD3EFDE208120D382AE63FA /* UIColor-Hex-Swift-prefix.pch */,
+				A747DBAA1A848445858A9DB6D4B4691A /* UIColor-Hex-Swift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UIColor-Hex-Swift";
@@ -146,70 +218,80 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E50CB9C01E75069CB623FD004B4EAF2A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				788E482D698F9E4B9090C963D19C101E /* UIColor-Hex-Swift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FE94061E0B0923AAC227BB5503472EB9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				713295C3A58B83B1D2973EDC77A9EFE6 /* Pods_Chalmers_Card.framework */,
-				4266F16F680BABD62927A5DB4F1AAF4A /* UIColor_Hex_Swift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5DCCFE6E2EE517AD49AE88B92176352C /* Headers */ = {
+		389616F3F5699E94F0C96C019F930130 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D9721288DE74BE3FC964E36B07C8D1E /* UIColor-Hex-Swift-umbrella.h in Headers */,
+				BE985038A04E7DEE4DC3BF9B7A218283 /* Pods-Chalmers Card-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		898FA4FB14A430C34294BBFCD4F99E41 /* Headers */ = {
+		97E221A92F248B05615308A2CBAE5574 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BE206FEA8F34B26BF77F634696F620 /* Pods-Chalmers Card-umbrella.h in Headers */,
+				3EA5553EE01756ABA238D619A743A544 /* CWStatusBarNotification-umbrella.h in Headers */,
+				04D4953434E3BA5AAE7383B4DEA51CF2 /* CWStatusBarNotification.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAB054B511C87B4F058AE04BF783C2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA8C4907D10D86AF6E1C74391D19613 /* UIColor-Hex-Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		624B60CB66B7F153328E3C44FBFA9E77 /* Pods-Chalmers Card */ = {
+		166C0DB6DBB70C8F8A3CD1C2625732ED /* Pods-Chalmers Card */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AB6A1782B7E30BD006C58C31891BE7A /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */;
+			buildConfigurationList = D319302E32E79CFE6CD55FBEF03A1D46 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */;
 			buildPhases = (
-				56C8BA13C8417D7EDF611B71A204225D /* Sources */,
-				8761DA99B0FC8E51C47CAF88033D7133 /* Frameworks */,
-				898FA4FB14A430C34294BBFCD4F99E41 /* Headers */,
+				078A97ED25A074D31C0812F3BA1B711A /* Sources */,
+				24DA86D258E13E8E6E2EC91DC0F84310 /* Frameworks */,
+				389616F3F5699E94F0C96C019F930130 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				81425F02A7264F5EDC4A9528EF32DBB3 /* PBXTargetDependency */,
+				52A37D340921B1E148B4E3FDE8898CE3 /* PBXTargetDependency */,
+				19195706516100803F237A582570EB7B /* PBXTargetDependency */,
 			);
 			name = "Pods-Chalmers Card";
 			productName = "Pods-Chalmers Card";
-			productReference = 713295C3A58B83B1D2973EDC77A9EFE6 /* Pods_Chalmers_Card.framework */;
+			productReference = 016D1C08A312FC8868F1CDC8D1AF1A1D /* Pods_Chalmers_Card.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B55A240C8DB4D6B5095FB2FAFD3C3801 /* UIColor-Hex-Swift */ = {
+		233B529E4F6EE6E3DF4E23BAFD26903D /* CWStatusBarNotification */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52B206EF14D8B371F89167200B9B9E32 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */;
+			buildConfigurationList = C6AAE516987E8D30B7E83A8A521CF762 /* Build configuration list for PBXNativeTarget "CWStatusBarNotification" */;
 			buildPhases = (
-				524B9DE05FCE297A8A5FA94F5D67DF33 /* Sources */,
-				DC6338A62030D738DD029DB86B6F3F35 /* Frameworks */,
-				5DCCFE6E2EE517AD49AE88B92176352C /* Headers */,
+				3CAEC8FE85121863DFFAE1F1B602E47A /* Sources */,
+				382294F15DA112567F76E981DC7AAC0B /* Frameworks */,
+				97E221A92F248B05615308A2CBAE5574 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CWStatusBarNotification;
+			productName = CWStatusBarNotification;
+			productReference = DDFAD97DBDBC2EED978F9A76607E5A03 /* CWStatusBarNotification.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2A06CA575D566AD15268F271E38B6007 /* UIColor-Hex-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B34FBEC7A385169E35EB3AF8004D27F1 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */;
+			buildPhases = (
+				723BEDEF8B84C612C2085B714EB464DD /* Sources */,
+				DA899B97CDCEA5EAF62CBBE55A29A693 /* Frameworks */,
+				FBAB054B511C87B4F058AE04BF783C2C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -217,7 +299,7 @@
 			);
 			name = "UIColor-Hex-Swift";
 			productName = "UIColor-Hex-Swift";
-			productReference = 4266F16F680BABD62927A5DB4F1AAF4A /* UIColor_Hex_Swift.framework */;
+			productReference = AD73F7A76E4E61C64B8822D49540C2E3 /* UIColor_Hex_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -237,80 +319,92 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FE94061E0B0923AAC227BB5503472EB9 /* Products */;
+			productRefGroup = 37BB32A8767FE3AD7B20EA3B6B6ADAA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				624B60CB66B7F153328E3C44FBFA9E77 /* Pods-Chalmers Card */,
-				B55A240C8DB4D6B5095FB2FAFD3C3801 /* UIColor-Hex-Swift */,
+				233B529E4F6EE6E3DF4E23BAFD26903D /* CWStatusBarNotification */,
+				166C0DB6DBB70C8F8A3CD1C2625732ED /* Pods-Chalmers Card */,
+				2A06CA575D566AD15268F271E38B6007 /* UIColor-Hex-Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		524B9DE05FCE297A8A5FA94F5D67DF33 /* Sources */ = {
+		078A97ED25A074D31C0812F3BA1B711A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E122E23B54548D9B66C7F942DB856A /* UIColor-Hex-Swift-dummy.m in Sources */,
-				F9BF99F6D5DBD4B8BFB9BDF8531E88AC /* UIColor_Hex.swift in Sources */,
+				FF3EC6183F8B3AB6580ED4661D89EB74 /* Pods-Chalmers Card-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56C8BA13C8417D7EDF611B71A204225D /* Sources */ = {
+		3CAEC8FE85121863DFFAE1F1B602E47A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2144DB52E77B04F938AAADEBA1268890 /* Pods-Chalmers Card-dummy.m in Sources */,
+				8B41C0A66F478354BCD2C75100041F62 /* CWStatusBarNotification-dummy.m in Sources */,
+				72985CE160CDB53D8EC400C45E206DAC /* CWStatusBarNotification.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723BEDEF8B84C612C2085B714EB464DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D551B4244E9C122D791FA4316B340D1 /* UIColor-Hex-Swift-dummy.m in Sources */,
+				53702D0D486B0B1DC0C827B133792901 /* UIColor_Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		81425F02A7264F5EDC4A9528EF32DBB3 /* PBXTargetDependency */ = {
+		19195706516100803F237A582570EB7B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "UIColor-Hex-Swift";
-			target = B55A240C8DB4D6B5095FB2FAFD3C3801 /* UIColor-Hex-Swift */;
-			targetProxy = 8FB047B790D99D6CD4420BEDB06E3870 /* PBXContainerItemProxy */;
+			target = 2A06CA575D566AD15268F271E38B6007 /* UIColor-Hex-Swift */;
+			targetProxy = 4F4CA2E37BACF54D769D26B3F25E1F9E /* PBXContainerItemProxy */;
+		};
+		52A37D340921B1E148B4E3FDE8898CE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CWStatusBarNotification;
+			target = 233B529E4F6EE6E3DF4E23BAFD26903D /* CWStatusBarNotification */;
+			targetProxy = 6762C321D0B64D590042578E26815F4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3AED14191D66315C433158D2DD5F5960 /* Release */ = {
+		01ABCA8756554B2CE69BA5535F545F3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */;
+			baseConfigurationReference = F3874D4FBF1702B977B2140214663F6E /* CWStatusBarNotification.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Chalmers Card/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CWStatusBarNotification/CWStatusBarNotification-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CWStatusBarNotification/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Chalmers_Card;
+				MODULEMAP_FILE = "Target Support Files/CWStatusBarNotification/CWStatusBarNotification.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CWStatusBarNotification;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,46 +439,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		4A34B9A788C63847BB5DDC89B87099AF /* Debug */ = {
+		26494AE5FA6BE3F8D52F04319AD5425B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC305354ADDD96A2AF551A28DC4A6B05 /* UIColor-Hex-Swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UIColor_Hex_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		69A7A9D1C0E34FE32D64197DFCAFB3A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC305354ADDD96A2AF551A28DC4A6B05 /* UIColor-Hex-Swift.xcconfig */;
+			baseConfigurationReference = F277531DC7221CF4602FD2436DCF03B8 /* UIColor-Hex-Swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -411,7 +475,69 @@
 			};
 			name = Release;
 		};
-		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+		415A8A6B735BCCD613A0BD6C665F5170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Chalmers Card/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Chalmers_Card;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A8F59B7E6EF38040EB398476461B468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3874D4FBF1702B977B2140214663F6E /* CWStatusBarNotification.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CWStatusBarNotification/CWStatusBarNotification-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CWStatusBarNotification/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CWStatusBarNotification/CWStatusBarNotification.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CWStatusBarNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -442,14 +568,44 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		DFDFA2104E9C4EBC1575782DE20A07BD /* Debug */ = {
+		E4E152DA4F7BC1A3F39315D06CB908F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F277531DC7221CF4602FD2436DCF03B8 /* UIColor-Hex-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E565432F20527FDF2E8F0B739C146C0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D03E355071995EA9738F5B721CBFE16F /* Pods-Chalmers Card.debug.xcconfig */;
 			buildSettings = {
@@ -464,7 +620,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Chalmers Card/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.modulemap";
@@ -489,26 +645,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47BEF9D903506B003EA5C2B249729489 /* Debug */,
-				AAF678CED40D3499169D10F63CA0719E /* Release */,
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AB6A1782B7E30BD006C58C31891BE7A /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */ = {
+		B34FBEC7A385169E35EB3AF8004D27F1 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFDFA2104E9C4EBC1575782DE20A07BD /* Debug */,
-				3AED14191D66315C433158D2DD5F5960 /* Release */,
+				E4E152DA4F7BC1A3F39315D06CB908F4 /* Debug */,
+				26494AE5FA6BE3F8D52F04319AD5425B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52B206EF14D8B371F89167200B9B9E32 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */ = {
+		C6AAE516987E8D30B7E83A8A521CF762 /* Build configuration list for PBXNativeTarget "CWStatusBarNotification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A34B9A788C63847BB5DDC89B87099AF /* Debug */,
-				69A7A9D1C0E34FE32D64197DFCAFB3A4 /* Release */,
+				01ABCA8756554B2CE69BA5535F545F3D /* Debug */,
+				7A8F59B7E6EF38040EB398476461B468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D319302E32E79CFE6CD55FBEF03A1D46 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E565432F20527FDF2E8F0B739C146C0C /* Debug */,
+				415A8A6B735BCCD613A0BD6C665F5170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -4,4 +4,5 @@ target 'Chalmers Card' do
   use_frameworks!
 
   pod 'UIColor-Hex-Swift'
+  pod 'CWStatusBarNotification', '~> 2.3.4'
 end

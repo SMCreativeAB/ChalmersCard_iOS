@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 kr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb7-Zl-h24">
-                                <rect key="frame" x="-4" y="251" width="383" height="86"/>
+                                <rect key="frame" x="-4" y="250.5" width="383" height="86"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="72"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onChargeCardButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLg-Rb-N7W"/>
+                                    <action selector="onRefillCardButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z7I-3k-hm3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVb-jA-jul">
