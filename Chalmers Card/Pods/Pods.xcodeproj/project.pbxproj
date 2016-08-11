@@ -7,33 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05AA3B20A8ED42BF69E071FEED17003F /* Pods-Chalmers Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7285A2531B218B751C2AEA205BDC6F14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		83EC9F7524E03CE61A254026F6EBE1CF /* Pods-Chalmers Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */; };
+		0417787A7554C9C2629820DAADD13674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		1386376EACDD6799F5D429CECB39FFA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		19BE206FEA8F34B26BF77F634696F620 /* Pods-Chalmers Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2144DB52E77B04F938AAADEBA1268890 /* Pods-Chalmers Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */; };
+		8D9721288DE74BE3FC964E36B07C8D1E /* UIColor-Hex-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 562F46162EBC9DAE59D47481187CC9F9 /* UIColor-Hex-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2E122E23B54548D9B66C7F942DB856A /* UIColor-Hex-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E14F068803F6E77029B419C731AF4 /* UIColor-Hex-Swift-dummy.m */; };
+		F9BF99F6D5DBD4B8BFB9BDF8531E88AC /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FC1C48BA450D10A81DBE688E19EABA /* UIColor_Hex.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8FB047B790D99D6CD4420BEDB06E3870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B55A240C8DB4D6B5095FB2FAFD3C3801;
+			remoteInfo = "UIColor-Hex-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0F04CA38241AC72FEDF4868DD57F0DF8 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223A990D458FF1DAF85B29A22753522D /* Pods-Chalmers Card-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chalmers Card-frameworks.sh"; sourceTree = "<group>"; };
 		39ED9A190C4F260063A5B160FE5BC51B /* Pods-Chalmers Card-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chalmers Card-acknowledgements.plist"; sourceTree = "<group>"; };
 		3F7AC4E218E4D7EAEDDFA59DA2A196F0 /* Pods-Chalmers Card-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chalmers Card-resources.sh"; sourceTree = "<group>"; };
+		4266F16F680BABD62927A5DB4F1AAF4A /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2952626BCE572502D4F28B3D89E4A5 /* Pods-Chalmers Card-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chalmers Card-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chalmers Card-dummy.m"; sourceTree = "<group>"; };
+		562F46162EBC9DAE59D47481187CC9F9 /* UIColor-Hex-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-umbrella.h"; sourceTree = "<group>"; };
+		62FC1C48BA450D10A81DBE688E19EABA /* UIColor_Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor_Hex.swift; path = Pod/Classes/UIColor_Hex.swift; sourceTree = "<group>"; };
 		67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chalmers Card.release.xcconfig"; sourceTree = "<group>"; };
+		713295C3A58B83B1D2973EDC77A9EFE6 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chalmers Card-umbrella.h"; sourceTree = "<group>"; };
+		83011DD8F2C59131B880ABC2B2FD9F44 /* UIColor-Hex-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor-Hex-Swift.modulemap"; sourceTree = "<group>"; };
+		8A4E14F068803F6E77029B419C731AF4 /* UIColor-Hex-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-Swift-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B1F125A69C7779AF8A28F697DA6667E /* Pods-Chalmers Card.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chalmers Card.modulemap"; sourceTree = "<group>"; };
 		A250DDD611E125FFA464B6F34A1C437B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28817F0DBF5BB645131D3BE8EE789BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D03E355071995EA9738F5B721CBFE16F /* Pods-Chalmers Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chalmers Card.debug.xcconfig"; sourceTree = "<group>"; };
+		DC305354ADDD96A2AF551A28DC4A6B05 /* UIColor-Hex-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex-Swift.xcconfig"; sourceTree = "<group>"; };
+		DE8043B87219ECED535DEE3C1B0220B4 /* UIColor-Hex-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D1D5EF29A5B5A58A40100483D4A12AD /* Frameworks */ = {
+		8761DA99B0FC8E51C47CAF88033D7133 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7285A2531B218B751C2AEA205BDC6F14 /* Foundation.framework in Frameworks */,
+				0417787A7554C9C2629820DAADD13674 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC6338A62030D738DD029DB86B6F3F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1386376EACDD6799F5D429CECB39FFA2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,14 +96,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5952EE20339318BC546035EE14B3176B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0F04CA38241AC72FEDF4868DD57F0DF8 /* Pods_Chalmers_Card.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		742575E47E184BAF9E864F63E22B101D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,14 +104,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		788E482D698F9E4B9090C963D19C101E /* UIColor-Hex-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				62FC1C48BA450D10A81DBE688E19EABA /* UIColor_Hex.swift */,
+				BA4496275172A945C7F2E136E083EA78 /* Support Files */,
+			);
+			path = "UIColor-Hex-Swift";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				5952EE20339318BC546035EE14B3176B /* Products */,
+				E50CB9C01E75069CB623FD004B4EAF2A /* Pods */,
+				FE94061E0B0923AAC227BB5503472EB9 /* Products */,
 				742575E47E184BAF9E864F63E22B101D /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		BA4496275172A945C7F2E136E083EA78 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B28817F0DBF5BB645131D3BE8EE789BC /* Info.plist */,
+				83011DD8F2C59131B880ABC2B2FD9F44 /* UIColor-Hex-Swift.modulemap */,
+				DC305354ADDD96A2AF551A28DC4A6B05 /* UIColor-Hex-Swift.xcconfig */,
+				8A4E14F068803F6E77029B419C731AF4 /* UIColor-Hex-Swift-dummy.m */,
+				DE8043B87219ECED535DEE3C1B0220B4 /* UIColor-Hex-Swift-prefix.pch */,
+				562F46162EBC9DAE59D47481187CC9F9 /* UIColor-Hex-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor-Hex-Swift";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -100,35 +146,78 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E50CB9C01E75069CB623FD004B4EAF2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				788E482D698F9E4B9090C963D19C101E /* UIColor-Hex-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE94061E0B0923AAC227BB5503472EB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				713295C3A58B83B1D2973EDC77A9EFE6 /* Pods_Chalmers_Card.framework */,
+				4266F16F680BABD62927A5DB4F1AAF4A /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AA63ED0A91686B267FE1C46E452ABFC8 /* Headers */ = {
+		5DCCFE6E2EE517AD49AE88B92176352C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05AA3B20A8ED42BF69E071FEED17003F /* Pods-Chalmers Card-umbrella.h in Headers */,
+				8D9721288DE74BE3FC964E36B07C8D1E /* UIColor-Hex-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898FA4FB14A430C34294BBFCD4F99E41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19BE206FEA8F34B26BF77F634696F620 /* Pods-Chalmers Card-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4E3A206F2FA455392D04A6075ACDE86B /* Pods-Chalmers Card */ = {
+		624B60CB66B7F153328E3C44FBFA9E77 /* Pods-Chalmers Card */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B66558CE6DA8B7C90D9C4D774FB24E9 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */;
+			buildConfigurationList = 3AB6A1782B7E30BD006C58C31891BE7A /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */;
 			buildPhases = (
-				ECADB7CAB7245FD7DC8AA989EAAF73EE /* Sources */,
-				8D1D5EF29A5B5A58A40100483D4A12AD /* Frameworks */,
-				AA63ED0A91686B267FE1C46E452ABFC8 /* Headers */,
+				56C8BA13C8417D7EDF611B71A204225D /* Sources */,
+				8761DA99B0FC8E51C47CAF88033D7133 /* Frameworks */,
+				898FA4FB14A430C34294BBFCD4F99E41 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81425F02A7264F5EDC4A9528EF32DBB3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Chalmers Card";
+			productName = "Pods-Chalmers Card";
+			productReference = 713295C3A58B83B1D2973EDC77A9EFE6 /* Pods_Chalmers_Card.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B55A240C8DB4D6B5095FB2FAFD3C3801 /* UIColor-Hex-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B206EF14D8B371F89167200B9B9E32 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */;
+			buildPhases = (
+				524B9DE05FCE297A8A5FA94F5D67DF33 /* Sources */,
+				DC6338A62030D738DD029DB86B6F3F35 /* Frameworks */,
+				5DCCFE6E2EE517AD49AE88B92176352C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Chalmers Card";
-			productName = "Pods-Chalmers Card";
-			productReference = 0F04CA38241AC72FEDF4868DD57F0DF8 /* Pods_Chalmers_Card.framework */;
+			name = "UIColor-Hex-Swift";
+			productName = "UIColor-Hex-Swift";
+			productReference = 4266F16F680BABD62927A5DB4F1AAF4A /* UIColor_Hex_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,27 +237,79 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5952EE20339318BC546035EE14B3176B /* Products */;
+			productRefGroup = FE94061E0B0923AAC227BB5503472EB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E3A206F2FA455392D04A6075ACDE86B /* Pods-Chalmers Card */,
+				624B60CB66B7F153328E3C44FBFA9E77 /* Pods-Chalmers Card */,
+				B55A240C8DB4D6B5095FB2FAFD3C3801 /* UIColor-Hex-Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ECADB7CAB7245FD7DC8AA989EAAF73EE /* Sources */ = {
+		524B9DE05FCE297A8A5FA94F5D67DF33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EC9F7524E03CE61A254026F6EBE1CF /* Pods-Chalmers Card-dummy.m in Sources */,
+				C2E122E23B54548D9B66C7F942DB856A /* UIColor-Hex-Swift-dummy.m in Sources */,
+				F9BF99F6D5DBD4B8BFB9BDF8531E88AC /* UIColor_Hex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C8BA13C8417D7EDF611B71A204225D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2144DB52E77B04F938AAADEBA1268890 /* Pods-Chalmers Card-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		81425F02A7264F5EDC4A9528EF32DBB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor-Hex-Swift";
+			target = B55A240C8DB4D6B5095FB2FAFD3C3801 /* UIColor-Hex-Swift */;
+			targetProxy = 8FB047B790D99D6CD4420BEDB06E3870 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		3AED14191D66315C433158D2DD5F5960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Chalmers Card/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Chalmers_Card;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -211,9 +352,39 @@
 			};
 			name = Debug;
 		};
-		81E187A8B25FF2A2216876E70FFF95FB /* Release */ = {
+		4A34B9A788C63847BB5DDC89B87099AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */;
+			baseConfigurationReference = DC305354ADDD96A2AF551A28DC4A6B05 /* UIColor-Hex-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		69A7A9D1C0E34FE32D64197DFCAFB3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC305354ADDD96A2AF551A28DC4A6B05 /* UIColor-Hex-Swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -224,18 +395,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Chalmers Card/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.modulemap";
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Chalmers_Card;
+				PRODUCT_NAME = UIColor_Hex_Swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -282,7 +449,7 @@
 			};
 			name = Release;
 		};
-		CC4B26B477587325A5B63269C1F0353B /* Debug */ = {
+		DFDFA2104E9C4EBC1575782DE20A07BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D03E355071995EA9738F5B721CBFE16F /* Pods-Chalmers Card.debug.xcconfig */;
 			buildSettings = {
@@ -309,6 +476,7 @@
 				PRODUCT_NAME = Pods_Chalmers_Card;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -318,20 +486,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B66558CE6DA8B7C90D9C4D774FB24E9 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC4B26B477587325A5B63269C1F0353B /* Debug */,
-				81E187A8B25FF2A2216876E70FFF95FB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47BEF9D903506B003EA5C2B249729489 /* Debug */,
 				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB6A1782B7E30BD006C58C31891BE7A /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFDFA2104E9C4EBC1575782DE20A07BD /* Debug */,
+				3AED14191D66315C433158D2DD5F5960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52B206EF14D8B371F89167200B9B9E32 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A34B9A788C63847BB5DDC89B87099AF /* Debug */,
+				69A7A9D1C0E34FE32D64197DFCAFB3A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
