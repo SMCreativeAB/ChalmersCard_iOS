@@ -5,10 +5,30 @@ class BalanceController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set starting point
+        setBackgroundColor(Config.colorDefault, animated: false)
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        // Animate to new balance
+        setBackgroundColor(Config.colorHigh, animated: true)
+    }
+    
+    private func setBackgroundColor(color: UIColor, animated: Bool) {
+        let setTargetColor = {
+            self.view.backgroundColor = color
+        }
+        
+        if (animated) {
+            UIView.animateWithDuration(2, animations: setTargetColor)
+        } else {
+            setTargetColor()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -20,8 +40,8 @@ class BalanceController : UIViewController {
     }
     
     @IBAction func onRefillCardButtonTap(sender: AnyObject) {
-        let svc = RefillController(URL: NSURL(string: Config.chargeCardUrl)!)
-        self.presentViewController(svc, animated: true, completion: nil)
+        let safari = RefillController(URL: Config.chargeCardUrl!)
+        self.presentViewController(safari, animated: true, completion: nil)
     }
 }
 

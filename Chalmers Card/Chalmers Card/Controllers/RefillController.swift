@@ -6,6 +6,8 @@ class RefillController : SFSafariViewController {
     private let notification = CWStatusBarNotification()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         notification.notificationStyle = .NavigationBarNotification
         notification.notificationAnimationOutStyle = .Top
         notification.notificationAnimationInStyle = .Top
