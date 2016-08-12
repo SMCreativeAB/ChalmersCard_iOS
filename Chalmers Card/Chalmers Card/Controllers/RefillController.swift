@@ -4,6 +4,7 @@ import CWStatusBarNotification
 
 class RefillController : SFSafariViewController {
     private let notification = CWStatusBarNotification()
+    private var isVisible = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,17 @@ class RefillController : SFSafariViewController {
         pasteboard.persistent = true
         pasteboard.string = "hej"
         
+        isVisible = true
+        
         delay(0.7) {
-            self.notification.displayNotificationWithMessage("Ditt kortnummer har kopierats och kan klistras in nedan", forDuration: 1.5)
+            if self.isVisible {
+                self.notification.displayNotificationWithMessage("Ditt kortnummer har kopierats och kan klistras in nedan", forDuration: 1.5)
+            }
         }
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        isVisible = false
     }
 }

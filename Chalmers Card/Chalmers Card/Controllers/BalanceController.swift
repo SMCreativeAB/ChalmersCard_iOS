@@ -1,11 +1,19 @@
 import UIKit
 import SafariServices
+import UICountingLabel
 
 class BalanceController : UIViewController {
+    @IBOutlet weak var balanceLabel: UICountingLabel!
+    @IBOutlet weak var timeSinceUpdateLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set label format
+        balanceLabel.format = "%d kr"
+        balanceLabel.method = .EaseOut
+        balanceLabel.text = "0 kr" // todo: use old value
+
         // Set starting point
         setBackgroundColor(Config.colorDefault, animated: false)
     }
@@ -17,6 +25,16 @@ class BalanceController : UIViewController {
     override func viewDidAppear(animated: Bool) {
         // Animate to new balance
         setBackgroundColor(Config.colorHigh, animated: true)
+        balanceLabel.countFromCurrentValueTo(500)
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
+    @IBAction func onRefillCardButtonTap(sender: AnyObject) {
+        let safari = RefillController(URL: Config.chargeCardUrl!)
+        self.presentViewController(safari, animated: true, completion: nil)
     }
     
     private func setBackgroundColor(color: UIColor, animated: Bool) {
@@ -29,19 +47,6 @@ class BalanceController : UIViewController {
         } else {
             setTargetColor()
         }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
-    }
-    
-    @IBAction func onRefillCardButtonTap(sender: AnyObject) {
-        let safari = RefillController(URL: Config.chargeCardUrl!)
-        self.presentViewController(safari, animated: true, completion: nil)
     }
 }
 
