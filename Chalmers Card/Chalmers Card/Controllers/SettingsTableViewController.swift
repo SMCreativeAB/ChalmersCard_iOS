@@ -18,6 +18,16 @@ class SettingsTableViewController : FormViewController, UITextFieldDelegate {
         }
     }
     
+    func getCardNumber() -> Int {
+        let text = cardTextField?.text?.stringByReplacingOccurrencesOfString(" ", withString: "")
+        
+        if let num = Int(text!) {
+            return num
+        }
+        
+        return 0
+    }
+    
     private func filterTextFieldInput(textField: UITextField) {
         if var text = textField.text {
             if text.characters.count > 16 {
@@ -46,10 +56,6 @@ class SettingsTableViewController : FormViewController, UITextFieldDelegate {
         
         let currentText = textField.text ?? ""
         let prospectiveText = (currentText as NSString).stringByReplacingCharactersInRange(range, withString: string)
-        
-        /*if prospectiveText.containsString(" ") {
-            return true
-        }*/
         
         return prospectiveText.isNumeric() && prospectiveText.characters.count <= 16
     }

@@ -384,7 +384,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LQ-BB-6eD">
                                 <rect key="frame" x="0.0" y="260" width="375" height="407"/>
                                 <connections>
-                                    <segue destination="EEG-Pb-zl5" kind="embed" id="69w-TE-OoE"/>
+                                    <segue destination="EEG-Pb-zl5" kind="embed" identifier="embedForm" id="69w-TE-OoE"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -400,10 +400,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chalmers Kårkort" id="BIS-hX-NTb">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="zYd-hn-RzL"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="zYd-hn-RzL">
+                            <connections>
+                                <action selector="onSave:" destination="W6o-fY-YG9" id="4KR-RN-8B0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="container" destination="3LQ-BB-6eD" id="Mua-5j-OKI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLW-cn-zhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,7 +1,9 @@
 import UIKit
 
 class SettingsController : UIViewController {
-
+    @IBOutlet weak var container: UIView!
+    private var formController: SettingsTableViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,5 +22,17 @@ class SettingsController : UIViewController {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
+    }
+    
+    @IBAction func onSave(sender: AnyObject) {
+        if let form = formController {
+            print(form.getCardNumber())
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "embedForm") {
+            self.formController = segue.destinationViewController as? SettingsTableViewController
+        }
     }
 }
