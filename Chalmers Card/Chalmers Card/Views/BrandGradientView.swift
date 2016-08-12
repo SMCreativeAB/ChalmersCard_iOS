@@ -1,6 +1,6 @@
 import UIKit
 
-class GradientHeaderView : UIView {
+class BrandGradientView : UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
