@@ -38,6 +38,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>CreditCardIcon</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Ladda kårkort</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>se.sharpmind.Chalmers-Card.refill</string>
+		</dict>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

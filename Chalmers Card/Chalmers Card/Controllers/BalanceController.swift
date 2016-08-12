@@ -5,6 +5,7 @@ import UICountingLabel
 class BalanceController : UIViewController {
     @IBOutlet weak var balanceLabel: UICountingLabel!
     @IBOutlet weak var timeSinceUpdateLabel: UILabel!
+    var shouldShowRefill = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,14 @@ class BalanceController : UIViewController {
         // Animate to new balance
         setBackgroundColor(Config.colorHigh, animated: true)
         balanceLabel.countFromCurrentValueTo(500)
+        
+        if shouldShowRefill {
+            onRefillCardButtonTap(self)
+        }
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        shouldShowRefill = false
     }
     
     @IBAction func onRefillCardButtonTap(sender: AnyObject) {

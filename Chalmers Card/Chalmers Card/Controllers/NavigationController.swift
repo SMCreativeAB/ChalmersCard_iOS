@@ -17,6 +17,9 @@ class NavigationController : UINavigationController {
             target.navigationItem.setHidesBackButton(true, animated: false)
             
             target.isCreate = true
+        } else if segue.identifier == "refillSegue" {
+            let target = segue.destinationViewController as! BalanceController
+            target.shouldShowRefill = true
         }
     }
 }

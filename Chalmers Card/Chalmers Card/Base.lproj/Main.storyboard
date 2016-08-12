@@ -449,6 +449,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z6d-UN-83h"/>
                         <segue destination="W6o-fY-YG9" kind="show" identifier="addCardSegue" animates="NO" id="M74-2u-783"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="refillSegue" id="f6f-xC-DdD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLb-gU-i83" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -463,7 +464,7 @@
         <image name="SharpmindLogo" width="1399" height="900"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="raO-i3-6KX"/>
+        <segue reference="f6f-xC-DdD"/>
         <segue reference="nSy-PM-Sf3"/>
     </inferredMetricsTieBreakers>
 </document>
