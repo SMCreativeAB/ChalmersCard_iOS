@@ -85,12 +85,14 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CWStatusBarNotification/CWStatusBarNotification.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Eureka/Eureka.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UIColor-Hex-Swift/UIColor_Hex_Swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UICountingLabel/UICountingLabel.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UINavigationBar+Addition/UINavigationBar_Addition.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CWStatusBarNotification/CWStatusBarNotification.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Eureka/Eureka.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UIColor-Hex-Swift/UIColor_Hex_Swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UICountingLabel/UICountingLabel.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UINavigationBar+Addition/UINavigationBar_Addition.framework"

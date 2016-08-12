@@ -7,118 +7,246 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04D4953434E3BA5AAE7383B4DEA51CF2 /* CWStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F6E6D311F2979E8C799BB66968D0F2 /* CWStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16252E59E2CA14668BE2D4B16F7029F1 /* Pods-Chalmers Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B9460F1DC66E5A639007FA0CA4B15CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		2377BF61F1230221038971D5109B6CBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		2D2D5C76B0C5F7E6FCE0B51EF8F7D578 /* UINavigationBar+Addition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A28327FD722BF0A435E57C6789E5232C /* UINavigationBar+Addition-dummy.m */; };
-		31ED1388F2770E259F8EE27722007BE6 /* UIColor-Hex-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E538971745E700B023E9A1CADDA55643 /* UIColor-Hex-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		376455F79556565FD7F5D9E90D084F25 /* UIColor-Hex-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA66AA5364A79593BCB41676E19D64B /* UIColor-Hex-Swift-dummy.m */; };
-		3EA5553EE01756ABA238D619A743A544 /* CWStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D0FD2B800492C42DE6FB744695DEBC /* CWStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42ABFB7FF6C08FD1114451621D0C2F1F /* Pods-Chalmers Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */; };
-		4545F0B940F2421EABF60B48DF3CB4D4 /* UINavigationBar+Addition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B54372B068314AFF2A10886301B26421 /* UINavigationBar+Addition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		590599309CDEFA3E66F1191DA26996A4 /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A9E604290E961EE097E845C65976 /* UIColor_Hex.swift */; };
-		5933149F5255C95634CCE2652E045927 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		72985CE160CDB53D8EC400C45E206DAC /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C7FBCDAAAA2B49A14B46F496A1339 /* CWStatusBarNotification.m */; };
-		8B41C0A66F478354BCD2C75100041F62 /* CWStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5404351157F89FFC4EA33C2D661EB3F5 /* CWStatusBarNotification-dummy.m */; };
-		964FBB0DB0A202A09139727266F3616D /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D164BEBABFAD004556A03A26CB46ACD /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9CAD3D76E779A96E4B5C67364A7EB075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		BC0A91524376DB474753F12B8FDF505E /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4390D279A59A599816A92D2BB0186500 /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C504C6D80430BD90AECFC4839B47B0A1 /* UINavigationBar+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 56025BA9D743A91748D163870184980C /* UINavigationBar+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC14A8B99908B9DB0BB7FE99F7DE3D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		D502805048F0B003E6115EACCECB9130 /* UINavigationBar+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2904530DAC0D95294ED1A60227E8AA /* UINavigationBar+Addition.m */; };
-		EE133CC368A8DDD0662FA5BAED51CAA6 /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B2F9D85355510193040C4EEC5D759 /* UICountingLabel-dummy.m */; };
-		FE177F87BA42B8F2E155770C36E6744B /* UICountingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D328CEEDB37D76D1B7F0B00DAD63AE4A /* UICountingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04D4953434E3BA5AAE7383B4DEA51CF2 /* CWStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D212FDEFC09715492A940B326E32DAE /* CWStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A50C03F56AD58898CA2A7C6113C4EF4 /* LabelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A406098FAD6C593DC4C21645E40F5A0 /* LabelRow.swift */; };
+		0AA48424DE5670B8C032BA88393BA9FA /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B6DACDCBAA81768F25CD71FBAF2ECF /* CellType.swift */; };
+		0B0BBCCBA3CA4D96E1761DA74ADEBD44 /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCE6B752879F49C3B63B1BA9AC636BF /* UICountingLabel-dummy.m */; };
+		0B54D47F4061120A46717916BCAD2393 /* SelectableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A61718225E82784C6723719DE9D7C1 /* SelectableSection.swift */; };
+		0E4FBDBCB07782C2AE7B6D7AF92F51D8 /* DatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A270C531568280D72B8EAD985B8CAC /* DatePickerRow.swift */; };
+		103473BC0EFC477EB654B475B6AC8458 /* Eureka-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB861583DC81C74091ECF11655F02C9 /* Eureka-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13CB51A5F85CF122676966CB347260BC /* PopoverSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795ADC6B5765E7CB271E6D29B9008C5E /* PopoverSelectorRow.swift */; };
+		1662FE9A42490639B7E2A1F401D5D4DD /* DecimalFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D4C16645F04A150038F42CABD5889 /* DecimalFormatter.swift */; };
+		1D8A48631192F6D377B97D5EF0AFE16C /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EEC10506F98D5F219818EA6A0027D /* Core.swift */; };
+		1FE5D469BDAAFF0030F0AE5780975A4A /* FieldsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AE33C3D0D5BFBF0E4B8E06CE43D45 /* FieldsRow.swift */; };
+		21F799472851BCE6A130A97729507B4C /* ButtonRowWithPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD1FBFA0992619FC25266871086810 /* ButtonRowWithPresent.swift */; };
+		22D80D75A3155009821CBE44E7A29298 /* RowProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754018C10B9ADB66546F66F3FEB29E83 /* RowProtocols.swift */; };
+		2956D2538D326F528DF52EF888FFDBE9 /* NavigationAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767AED3153EBFDF6604788DE67D70A37 /* NavigationAccessoryView.swift */; };
+		2B7186AE8B80A62112C769454EDF350F /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87979A675166969906CDF45DB7844F56 /* RowType.swift */; };
+		3256698B182CE03454CDC45A2771B89A /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2C7A2B4BDAEE10214A72D89651C55 /* Operators.swift */; };
+		34D053EE46DEC5C7CA0F7F5EDBAE1F93 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D59AB46538E2936C47257DD1E246A2 /* ImagePickerController.swift */; };
+		3607E6F07FF8C4B04B6507C7077F637C /* PickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32DF985FB302447F47BB5344947BC1 /* PickerRow.swift */; };
+		3695144974EC7EB912EF8583DD8E2CDB /* BaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE182A9638FF9726141E66CD7F7868C /* BaseRow.swift */; };
+		3E656AE0B15BCA426C714CC40539F60C /* RowControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D8FD290B48850B918E232E1CB144EA /* RowControllerType.swift */; };
+		3EA5553EE01756ABA238D619A743A544 /* CWStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B99AA0241B77944D37D27417C1E920CD /* CWStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F405A5D424E02AC96335881B763CB1E /* Pods-Chalmers Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ABA2B008C328478C3D3304F0A83178E /* UINavigationBar+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9D34CA089DCFF4E54ED989D827FC57 /* UINavigationBar+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E34E7BB952EDEEF27B5727A49B09974 /* OptionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2257DBCAD51DA0662A5AAD063425C /* OptionsRow.swift */; };
+		56C2F2048BEF8C95E42F9594EE246448 /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594219E684DF9F06EC8E7215208F410 /* UIColor_Hex.swift */; };
+		58E2E4E04C8A365ABB02A4E62D566772 /* PickerInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FBBF61FAC874279091B9507764E9A /* PickerInlineRow.swift */; };
+		5933149F5255C95634CCE2652E045927 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		5A74A0CAB51128C71D0519EA90F6DD0F /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D4039BBE9AF77C2021F81D98542E0C /* Cell.swift */; };
+		600D6836E73F7FBCAA1F493AFDFC4EBA /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A572EFFA8F13F3A59264048A6AFFBE9 /* Form.swift */; };
+		6152633CCB6B0254E42C00D98BC28A13 /* HeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A80C85B7700F2056650D978B12E192 /* HeaderFooterView.swift */; };
+		6177A846D6D08D8E45B59714B4DEAF01 /* UINavigationBar+Addition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 850E027664C3318F5EABD1484AD17289 /* UINavigationBar+Addition-dummy.m */; };
+		61FF740A2A37371EFA9F3C8ABEEDAFF3 /* TextAreaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A84CF8A9FCD420F15AEBE30452836B /* TextAreaRow.swift */; };
+		660E29286B4C961F1181530F3E7A046E /* Eureka-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12F359CD9271D5EC669D6EDC82DBE9 /* Eureka-dummy.m */; };
+		6775B0346C810AB8CF4380B44BEE1750 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEC0AFA76DE0EEACB41EE31B00959E /* Helpers.swift */; };
+		72985CE160CDB53D8EC400C45E206DAC /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A52414FF7A1CA642514ED19270CA4C /* CWStatusBarNotification.m */; };
+		72F0F49C15C14D0EB94206F776713672 /* InlineRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F73F6A9334FAB3C91C5458614279E /* InlineRowType.swift */; };
+		7D91ACD6586867700438C1CC2557BEF7 /* CheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5562FE427569E468614747B4F82FF0 /* CheckRow.swift */; };
+		7DF0D078388923B8816F7D57910CFD42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		804B6D74785196303EB645CCD1C79EE5 /* ActionSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EADF5520544E3551EF8E2CFF1870E /* ActionSheetRow.swift */; };
+		84278D1CC6080C8CAD63C13691F5F107 /* UIColor-Hex-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A085DC3D60DEAB1580556A4CE94907CC /* UIColor-Hex-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86B4E86B605F0A0A5C689E8E5F6294E5 /* ButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C24D19EAA7824460C79E40461D5362 /* ButtonRow.swift */; };
+		8B41C0A66F478354BCD2C75100041F62 /* CWStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49743ACB6A0EB8E22177419ACB68302E /* CWStatusBarNotification-dummy.m */; };
+		8D8B33F5C3E48D535F8189C52650B20F /* Eureka.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4C632F0F0B2FCA857EB4F48DE7F788D /* Eureka.bundle */; };
+		93748EA49FCD9EF155AFCFFD9CEA8136 /* SliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C01E64D0A7274BE00DE4DC3762637 /* SliderRow.swift */; };
+		94216BFB2AF1B7F1CD43B0401A623F70 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8ADFC300C936C6654C2593218128 /* SelectorViewController.swift */; };
+		942583935EB712BC81E5F01919E1EFD7 /* SelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26FA7DA7493EF3975943FD8CA890D0E /* SelectorRow.swift */; };
+		9530B28AFF019AC003E5A01ADAA19A7D /* AlertRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D062329E2B300420D2A76F09F8C0F /* AlertRow.swift */; };
+		969E0DB9B80ADF2681C84C68C174BB38 /* SelectableRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B623D5AF11F1DE60047EF32FCBF89F95 /* SelectableRowType.swift */; };
+		99D59202AEA1C718002553724D937A87 /* UINavigationBar+Addition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F92520829115886CEC74A31056EB982 /* UINavigationBar+Addition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D5FC3D9A325DF4E70F157D12B8EC665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		A139110B451BC866C4D19E805577391D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51C76380EDFE90D13BE4044326B8CD /* Protocols.swift */; };
+		A31A287529CB6FB1E3AD604BA7808EE2 /* ListCheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BAADC98F8C35BDE145944F767F30B0 /* ListCheckRow.swift */; };
+		A31A3E644C08304B82EA33D5CC49F642 /* MultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E54E2AAC2A7B148A515C8953C50AF /* MultipleSelectorRow.swift */; };
+		A55CB66362ADAA231E7C88280AD680CD /* UICountingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B0C6F9805165792FF4C3673F9F9257 /* UICountingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A66727DA126D27E2F197D8B7C32A064C /* UINavigationBar+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD02E19BDADA2E57EF38CF8D1C5C109 /* UINavigationBar+Addition.m */; };
+		A6792D1386AD67459293295DD80323B3 /* MultipleSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D84FFCA8765C7C5B7AE4007223DE569 /* MultipleSelectorViewController.swift */; };
+		A6F16B6CC1ED4C25031775A12FD730BB /* PushRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1D1C73EBA58B4B2F32CB611B5CAF0 /* PushRow.swift */; };
+		AD99F59EB2B8E28053902E3F09AAA844 /* UIColor-Hex-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAA58D179BFC4EA1B0D241B34FB96C5 /* UIColor-Hex-Swift-dummy.m */; };
+		B01D4D0408E01DE7CC0EC5402D8D9F00 /* StepperRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F056E87F2A8AB9DBC70CB6485493D360 /* StepperRow.swift */; };
+		B4C681E1639A0FCD1E5770370FA5027E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		B4EE81AA11EF6D9A7954F18CF0AA3649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		B7DB4B868834CC37618900C0FEDF3F1C /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5687602ED84BC3392EAF51EC5940F1 /* SwitchRow.swift */; };
+		B83857EEEEF1CD7E1D5C9D2C00996E6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		C268417EA18229532BA3A2DE88C0C119 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 86AB76FB49A52998D8EB0C504750D54E /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3D9FD39975FFCE3B1EA1968F6453426 /* PostalAddressRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6C9F244ED7D13E8B5B4728135D9032 /* PostalAddressRow.swift */; };
+		CC70C7CF7A63CD3F4256B64D58C551B4 /* DateFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A15A254042B71199A4C51C0A34F0B /* DateFieldRow.swift */; };
+		D2EC301A80E6CFB2F650FF088412F8A7 /* DateInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E77193F0F1F053A097C90E46D3958B /* DateInlineRow.swift */; };
+		D511F885870A7B7E7CB3199D645EB0E9 /* SelectorAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683DFE1926B2FB59EBA1250F7C3116E2 /* SelectorAlertController.swift */; };
+		D56BF6220AF97240B6D148B8E5C5AA9D /* Pods-Chalmers Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */; };
+		D9C4B34950478B1AD2F3ED1E39086298 /* DateInlineFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8E4AC051C88A7189CA6C82E08A6B51 /* DateInlineFieldRow.swift */; };
+		DA214160CEBD15E6BA1C4A2DFC1FE102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		DBC4386DDD9D7096D8ABBB355B5E4DD0 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173CEC58413FA50F68CACCD7F64ECE45 /* Section.swift */; };
+		DCAEB773C1E1C0CF94EE92A9AA99C329 /* FieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67736DD16A4240252B4DB44B70BFA257 /* FieldRow.swift */; };
+		DE644832B971D2031EF0246712692779 /* SegmentedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95FC50450040ECE04581AED9082BA0 /* SegmentedRow.swift */; };
+		DED42A76FB271D13E8EC142A48859B3D /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AF51511B317CEEDD05DB678F9C0A47 /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E35126F5E99598B42315A9C9F5C41DEA /* DateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AB3077916D8C0CD25657DD0ED9960 /* DateRow.swift */; };
+		E7744BDE6B307E60F1840FB7DF8416B1 /* GenericMultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9822F08B0173CB6E69BDED476E2B4 /* GenericMultipleSelectorRow.swift */; };
+		E774FD99645675D8738D90037FD68F28 /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FBB9656537C1562FBC86A066AAE86 /* ImageRow.swift */; };
+		E994C7B3AD81F25A03886A4E6AA327C0 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409EF0E8C6E319BBF0735CAA708D372 /* Row.swift */; };
+		F6489B5AA612A6B9DDA466AED1657023 /* PresenterRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122F26BCE4AA6EB9CF1D987E05365D9 /* PresenterRowType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		92E7A0E6CD880100CE62310AF745C699 /* PBXContainerItemProxy */ = {
+		6CEAD52B5E0FABDA459CF1A603CF17DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8E1840634D4F9002E65840E3A413C1FE;
-			remoteInfo = UICountingLabel;
-		};
-		9DE6A261B15680E1B1874905F8D255F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2AFE16F370CF20630DC4B45848A031C4;
-			remoteInfo = "UIColor-Hex-Swift";
-		};
-		9F92B727DD668F5C6A1F01C88B22E5D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A31527DA468C2AA7D29460A0B4D8963B;
+			remoteGlobalIDString = 4E0E63B71F37BB0315D38113B8C6FB7D;
 			remoteInfo = "UINavigationBar+Addition";
 		};
-		BDA740B47912FCF464187DDE9E3CCB73 /* PBXContainerItemProxy */ = {
+		B5A2355BFA76694F85543AD1235B8A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 801B1594CE844A27C95541E2D9455D81;
+			remoteInfo = "UIColor-Hex-Swift";
+		};
+		B6167F9A53438F82DD43257686C754DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4332352E97A37C729DC7D9B3B8A4BB15;
+			remoteInfo = Eureka;
+		};
+		B64A1CDE08091FF22F63573610B17E77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 233B529E4F6EE6E3DF4E23BAFD26903D;
 			remoteInfo = CWStatusBarNotification;
 		};
+		CEA2F289AC1B37A5020159E8B8A0899A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47E400FDEC4A47204F07FFF236D03E5A;
+			remoteInfo = UICountingLabel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01F6E6D311F2979E8C799BB66968D0F2 /* CWStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CWStatusBarNotification.h; path = CWStatusBarNotification/CWStatusBarNotification.h; sourceTree = "<group>"; };
-		0DA5A9E604290E961EE097E845C65976 /* UIColor_Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor_Hex.swift; path = Pod/Classes/UIColor_Hex.swift; sourceTree = "<group>"; };
-		14B3D061AB3458E50E47B3A6EF10F7C1 /* UINavigationBar+Addition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Addition-prefix.pch"; sourceTree = "<group>"; };
-		19F7ADC7B93CA5125FB2BF31998C8FE6 /* UIColor-Hex-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor-Hex-Swift.modulemap"; sourceTree = "<group>"; };
+		0A406098FAD6C593DC4C21645E40F5A0 /* LabelRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelRow.swift; path = Source/Rows/LabelRow.swift; sourceTree = "<group>"; };
+		0BCE6B752879F49C3B63B1BA9AC636BF /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
+		0C280A38AB8E789C55FF9A827F625E3D /* Eureka-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-prefix.pch"; sourceTree = "<group>"; };
+		0C7E8ADFC300C936C6654C2593218128 /* SelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorViewController.swift; path = Source/Rows/Controllers/SelectorViewController.swift; sourceTree = "<group>"; };
+		147367AEC9D5A2C24C8AAA17F228D76F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1594219E684DF9F06EC8E7215208F410 /* UIColor_Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor_Hex.swift; path = Pod/Classes/UIColor_Hex.swift; sourceTree = "<group>"; };
+		173CEC58413FA50F68CACCD7F64ECE45 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Core/Section.swift; sourceTree = "<group>"; };
+		17A80C85B7700F2056650D978B12E192 /* HeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderFooterView.swift; path = Source/Core/HeaderFooterView.swift; sourceTree = "<group>"; };
+		1F95FC50450040ECE04581AED9082BA0 /* SegmentedRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedRow.swift; path = Source/Rows/SegmentedRow.swift; sourceTree = "<group>"; };
+		214974E42C829EB917CD4DB26EDBE910 /* UICountingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UICountingLabel.modulemap; sourceTree = "<group>"; };
 		223A990D458FF1DAF85B29A22753522D /* Pods-Chalmers Card-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chalmers Card-frameworks.sh"; sourceTree = "<group>"; };
-		23420E96EFFA3FE145D9D0A158994EE2 /* UINavigationBar+Addition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UINavigationBar+Addition.xcconfig"; sourceTree = "<group>"; };
-		3798B29A19C15A0D8C63BE93A97A1B56 /* CWStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
+		2A6FBB9656537C1562FBC86A066AAE86 /* ImageRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRow.swift; path = Source/Rows/ImageRow.swift; sourceTree = "<group>"; };
+		2C4BDD2C5B1A83DE9ED45006242D8FEF /* UIColor-Hex-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex-Swift.xcconfig"; sourceTree = "<group>"; };
+		2D212FDEFC09715492A940B326E32DAE /* CWStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CWStatusBarNotification.h; path = CWStatusBarNotification/CWStatusBarNotification.h; sourceTree = "<group>"; };
+		31A52414FF7A1CA642514ED19270CA4C /* CWStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CWStatusBarNotification.m; path = CWStatusBarNotification/CWStatusBarNotification.m; sourceTree = "<group>"; };
+		31B2257DBCAD51DA0662A5AAD063425C /* OptionsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionsRow.swift; path = Source/Rows/Common/OptionsRow.swift; sourceTree = "<group>"; };
+		3359F37AD568D229A3E1D32CAA1235B1 /* UINavigationBar+Addition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UINavigationBar+Addition.xcconfig"; sourceTree = "<group>"; };
+		36E77193F0F1F053A097C90E46D3958B /* DateInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineRow.swift; path = Source/Rows/DateInlineRow.swift; sourceTree = "<group>"; };
+		39B0C6F9805165792FF4C3673F9F9257 /* UICountingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-umbrella.h"; sourceTree = "<group>"; };
 		39ED9A190C4F260063A5B160FE5BC51B /* Pods-Chalmers Card-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chalmers Card-acknowledgements.plist"; sourceTree = "<group>"; };
+		3A572EFFA8F13F3A59264048A6AFFBE9 /* Form.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Form.swift; path = Source/Core/Form.swift; sourceTree = "<group>"; };
 		3F7AC4E218E4D7EAEDDFA59DA2A196F0 /* Pods-Chalmers Card-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chalmers Card-resources.sh"; sourceTree = "<group>"; };
-		407B2F9D85355510193040C4EEC5D759 /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
-		4390D279A59A599816A92D2BB0186500 /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
-		4BDC8A1001C0562728B0534A3EF5BEEC /* UIColor-Hex-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-prefix.pch"; sourceTree = "<group>"; };
+		42B6E2530D6AAA701000EEFB02A40957 /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C24D19EAA7824460C79E40461D5362 /* ButtonRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRow.swift; path = Source/Rows/ButtonRow.swift; sourceTree = "<group>"; };
+		45B45FF7EE1EF86A8A2CEA41C7CCFC8C /* UINavigationBar+Addition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UINavigationBar+Addition.modulemap"; sourceTree = "<group>"; };
+		46A84CF8A9FCD420F15AEBE30452836B /* TextAreaRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAreaRow.swift; path = Source/Rows/TextAreaRow.swift; sourceTree = "<group>"; };
+		49743ACB6A0EB8E22177419ACB68302E /* CWStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CWStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
+		49A61718225E82784C6723719DE9D7C1 /* SelectableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableSection.swift; path = Source/Core/SelectableSection.swift; sourceTree = "<group>"; };
+		4A082C0DA52387084760BB79ECEC6872 /* UIColor-Hex-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor-Hex-Swift.modulemap"; sourceTree = "<group>"; };
+		4A7AB3077916D8C0CD25657DD0ED9960 /* DateRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateRow.swift; path = Source/Rows/DateRow.swift; sourceTree = "<group>"; };
+		4AAA58D179BFC4EA1B0D241B34FB96C5 /* UIColor-Hex-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-Swift-dummy.m"; sourceTree = "<group>"; };
 		4E2952626BCE572502D4F28B3D89E4A5 /* Pods-Chalmers Card-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chalmers Card-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chalmers Card-dummy.m"; sourceTree = "<group>"; };
-		5404351157F89FFC4EA33C2D661EB3F5 /* CWStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CWStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
-		56025BA9D743A91748D163870184980C /* UINavigationBar+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Addition.h"; path = "Library/UINavigationBar+Addition.h"; sourceTree = "<group>"; };
-		575C7FBCDAAAA2B49A14B46F496A1339 /* CWStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CWStatusBarNotification.m; path = CWStatusBarNotification/CWStatusBarNotification.m; sourceTree = "<group>"; };
-		5ACC751F2D39DCD7FBC90BECEEA6F11F /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E696DAD6C3C68E84FE523BA367992FD /* UINavigationBar_Addition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UINavigationBar_Addition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6550864295BEE44C9E129FC4EF651414 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66E0CAB7B20F049DC29C96FA5F031689 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500AE33C3D0D5BFBF0E4B8E06CE43D45 /* FieldsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldsRow.swift; path = Source/Rows/FieldsRow.swift; sourceTree = "<group>"; };
+		51C9822F08B0173CB6E69BDED476E2B4 /* GenericMultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericMultipleSelectorRow.swift; path = Source/Rows/Common/GenericMultipleSelectorRow.swift; sourceTree = "<group>"; };
+		5E8E4AC051C88A7189CA6C82E08A6B51 /* DateInlineFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineFieldRow.swift; path = Source/Rows/Common/DateInlineFieldRow.swift; sourceTree = "<group>"; };
+		5F6EADF5520544E3551EF8E2CFF1870E /* ActionSheetRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetRow.swift; path = Source/Rows/ActionSheetRow.swift; sourceTree = "<group>"; };
+		5F92520829115886CEC74A31056EB982 /* UINavigationBar+Addition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Addition-umbrella.h"; sourceTree = "<group>"; };
+		613309A5702332E3C6E07F89E56A8898 /* CWStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
+		6564822D89375FA895E1952477C171B7 /* UINavigationBar_Addition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UINavigationBar_Addition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67736DD16A4240252B4DB44B70BFA257 /* FieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldRow.swift; path = Source/Rows/Common/FieldRow.swift; sourceTree = "<group>"; };
 		67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chalmers Card.release.xcconfig"; sourceTree = "<group>"; };
-		6D164BEBABFAD004556A03A26CB46ACD /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		683DFE1926B2FB59EBA1250F7C3116E2 /* SelectorAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorAlertController.swift; path = Source/Rows/Controllers/SelectorAlertController.swift; sourceTree = "<group>"; };
+		6DBD1FBFA0992619FC25266871086810 /* ButtonRowWithPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRowWithPresent.swift; path = Source/Rows/ButtonRowWithPresent.swift; sourceTree = "<group>"; };
+		6DFAAB3F39014DF96B8F4F556475F2B9 /* UIColor-Hex-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-prefix.pch"; sourceTree = "<group>"; };
+		6F51C76380EDFE90D13BE4044326B8CD /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Rows/Common/Protocols.swift; sourceTree = "<group>"; };
+		727811C090D40A21C76870162E492624 /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A270C531568280D72B8EAD985B8CAC /* DatePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerRow.swift; path = Source/Rows/DatePickerRow.swift; sourceTree = "<group>"; };
+		72B6DACDCBAA81768F25CD71FBAF2ECF /* CellType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellType.swift; path = Source/Core/CellType.swift; sourceTree = "<group>"; };
+		754018C10B9ADB66546F66F3FEB29E83 /* RowProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowProtocols.swift; path = Source/Core/RowProtocols.swift; sourceTree = "<group>"; };
+		766E54E2AAC2A7B148A515C8953C50AF /* MultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorRow.swift; path = Source/Rows/MultipleSelectorRow.swift; sourceTree = "<group>"; };
+		767AED3153EBFDF6604788DE67D70A37 /* NavigationAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationAccessoryView.swift; path = Source/Core/NavigationAccessoryView.swift; sourceTree = "<group>"; };
+		78AF51511B317CEEDD05DB678F9C0A47 /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		795ADC6B5765E7CB271E6D29B9008C5E /* PopoverSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopoverSelectorRow.swift; path = Source/Rows/PopoverSelectorRow.swift; sourceTree = "<group>"; };
+		7A12F359CD9271D5EC669D6EDC82DBE9 /* Eureka-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Eureka-dummy.m"; sourceTree = "<group>"; };
+		7B4460FB5553BC5EDE148BDF0294B58D /* UINavigationBar+Addition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Addition-prefix.pch"; sourceTree = "<group>"; };
 		7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chalmers Card-umbrella.h"; sourceTree = "<group>"; };
-		832F2AB89FE3FECE53B7D3F83FB587CE /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
-		84D7D6B4D3096BD0E21B90AB113412CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		880446D37C668C5084C0F5D53636DE6A /* CWStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CWStatusBarNotification.modulemap; sourceTree = "<group>"; };
-		8B2904530DAC0D95294ED1A60227E8AA /* UINavigationBar+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Addition.m"; path = "Library/UINavigationBar+Addition.m"; sourceTree = "<group>"; };
+		8259E08B132BE73F13AE3C8A5BC062F4 /* CWStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CWStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		850E027664C3318F5EABD1484AD17289 /* UINavigationBar+Addition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Addition-dummy.m"; sourceTree = "<group>"; };
+		868C01E64D0A7274BE00DE4DC3762637 /* SliderRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SliderRow.swift; path = Source/Rows/SliderRow.swift; sourceTree = "<group>"; };
+		86AB76FB49A52998D8EB0C504750D54E /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		87979A675166969906CDF45DB7844F56 /* RowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowType.swift; path = Source/Core/RowType.swift; sourceTree = "<group>"; };
+		89BC07ADF1907528A8448DDE426FEADE /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
+		8A9D34CA089DCFF4E54ED989D827FC57 /* UINavigationBar+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Addition.h"; path = "Library/UINavigationBar+Addition.h"; sourceTree = "<group>"; };
+		8FB861583DC81C74091ECF11655F02C9 /* Eureka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94200A990358E026E072E539F04AC060 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1F125A69C7779AF8A28F697DA6667E /* Pods-Chalmers Card.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chalmers Card.modulemap"; sourceTree = "<group>"; };
-		A0CB83995AFBD2B0A74741D2AF10D4BE /* CWStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CWStatusBarNotification.xcconfig; sourceTree = "<group>"; };
+		9D84FFCA8765C7C5B7AE4007223DE569 /* MultipleSelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorViewController.swift; path = Source/Rows/Controllers/MultipleSelectorViewController.swift; sourceTree = "<group>"; };
+		A04FBBF61FAC874279091B9507764E9A /* PickerInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInlineRow.swift; path = Source/Rows/PickerInlineRow.swift; sourceTree = "<group>"; };
+		A085DC3D60DEAB1580556A4CE94907CC /* UIColor-Hex-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-umbrella.h"; sourceTree = "<group>"; };
 		A250DDD611E125FFA464B6F34A1C437B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A28327FD722BF0A435E57C6789E5232C /* UINavigationBar+Addition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Addition-dummy.m"; sourceTree = "<group>"; };
-		A38CE63EE73B8649A589C2794502CE8E /* UICountingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UICountingLabel.modulemap; sourceTree = "<group>"; };
-		A46A5F0E739AB2A00C603795BF1AF228 /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A52C922A8391B7FA9067A6640FEAF731 /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
-		B54372B068314AFF2A10886301B26421 /* UINavigationBar+Addition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Addition-umbrella.h"; sourceTree = "<group>"; };
-		C6B14027620E4252D80E204DDF2B316D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C89AF858E7F9211E9EC21B5F3962E767 /* UIColor-Hex-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex-Swift.xcconfig"; sourceTree = "<group>"; };
-		C8D0FD2B800492C42DE6FB744695DEBC /* CWStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
-		CEA8184F298C1171DDDA4ED78BF6AD83 /* CWStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CWStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A6D8FD290B48850B918E232E1CB144EA /* RowControllerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowControllerType.swift; path = Source/Core/RowControllerType.swift; sourceTree = "<group>"; };
+		AA32DF985FB302447F47BB5344947BC1 /* PickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerRow.swift; path = Source/Rows/PickerRow.swift; sourceTree = "<group>"; };
+		AAAEC0AFA76DE0EEACB41EE31B00959E /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Core/Helpers.swift; sourceTree = "<group>"; };
+		B26FA7DA7493EF3975943FD8CA890D0E /* SelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorRow.swift; path = Source/Rows/Common/SelectorRow.swift; sourceTree = "<group>"; };
+		B40A15A254042B71199A4C51C0A34F0B /* DateFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFieldRow.swift; path = Source/Rows/Common/DateFieldRow.swift; sourceTree = "<group>"; };
+		B623D5AF11F1DE60047EF32FCBF89F95 /* SelectableRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableRowType.swift; path = Source/Core/SelectableRowType.swift; sourceTree = "<group>"; };
+		B7A1D1C73EBA58B4B2F32CB611B5CAF0 /* PushRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushRow.swift; path = Source/Rows/PushRow.swift; sourceTree = "<group>"; };
+		B99AA0241B77944D37D27417C1E920CD /* CWStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
+		BB8EEC10506F98D5F219818EA6A0027D /* Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Core.swift; path = Source/Core/Core.swift; sourceTree = "<group>"; };
+		BC9D70AFD8D3C5E3293EB3D0B998C62D /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB2C7A2B4BDAEE10214A72D89651C55 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Source/Core/Operators.swift; sourceTree = "<group>"; };
+		C0D4039BBE9AF77C2021F81D98542E0C /* Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Source/Core/Cell.swift; sourceTree = "<group>"; };
+		C3DB9AFAB094DA548D2EAC0B72EB930E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48D04AFC947B8F0AA3D87E009DAB3B8 /* Eureka.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Eureka.modulemap; sourceTree = "<group>"; };
+		C5BAADC98F8C35BDE145944F767F30B0 /* ListCheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListCheckRow.swift; path = Source/Rows/SelectableRows/ListCheckRow.swift; sourceTree = "<group>"; };
+		CB5562FE427569E468614747B4F82FF0 /* CheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckRow.swift; path = Source/Rows/CheckRow.swift; sourceTree = "<group>"; };
 		D03E355071995EA9738F5B721CBFE16F /* Pods-Chalmers Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chalmers Card.debug.xcconfig"; sourceTree = "<group>"; };
-		D328CEEDB37D76D1B7F0B00DAD63AE4A /* UICountingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-umbrella.h"; sourceTree = "<group>"; };
-		E538971745E700B023E9A1CADDA55643 /* UIColor-Hex-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-umbrella.h"; sourceTree = "<group>"; };
-		EC9594E8D4F022DAB0032BCAC61F1F0C /* UINavigationBar+Addition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UINavigationBar+Addition.modulemap"; sourceTree = "<group>"; };
-		ECA66AA5364A79593BCB41676E19D64B /* UIColor-Hex-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-Swift-dummy.m"; sourceTree = "<group>"; };
-		F34BA8EADCC5809D24A9978F2AFCC0F5 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05EB2298238971D5DBE9E56D5E078CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44D062329E2B300420D2A76F09F8C0F /* AlertRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertRow.swift; path = Source/Rows/AlertRow.swift; sourceTree = "<group>"; };
+		D4C632F0F0B2FCA857EB4F48DE7F788D /* Eureka.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Eureka.bundle; path = Source/Resources/Eureka.bundle; sourceTree = "<group>"; };
+		D8D59AB46538E2936C47257DD1E246A2 /* ImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePickerController.swift; path = Source/Rows/Controllers/ImagePickerController.swift; sourceTree = "<group>"; };
+		D94F73F6A9334FAB3C91C5458614279E /* InlineRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InlineRowType.swift; path = Source/Core/InlineRowType.swift; sourceTree = "<group>"; };
+		DCE182A9638FF9726141E66CD7F7868C /* BaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRow.swift; path = Source/Core/BaseRow.swift; sourceTree = "<group>"; };
+		E08A9FD901BD0E2C783EDCBE9EF9EC99 /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
+		E122F26BCE4AA6EB9CF1D987E05365D9 /* PresenterRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterRowType.swift; path = Source/Core/PresenterRowType.swift; sourceTree = "<group>"; };
+		E21B864D2DBA45EA963A2FE9F6FB8130 /* CWStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CWStatusBarNotification.xcconfig; sourceTree = "<group>"; };
+		E409EF0E8C6E319BBF0735CAA708D372 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Core/Row.swift; sourceTree = "<group>"; };
+		E62E6AD642FAC7D2B2574F1065199B56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E6FCA9B8C123CC8E6FB88FBA1B2DC4 /* CWStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CWStatusBarNotification.modulemap; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F056E87F2A8AB9DBC70CB6485493D360 /* StepperRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepperRow.swift; path = Source/Rows/StepperRow.swift; sourceTree = "<group>"; };
+		F300B2A82F5AEC52C751D41E80394C24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5687602ED84BC3392EAF51EC5940F1 /* SwitchRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchRow.swift; path = Source/Rows/SwitchRow.swift; sourceTree = "<group>"; };
+		FCAAF69BDF5E7391D45E4369A452DA57 /* Eureka.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Eureka.xcconfig; sourceTree = "<group>"; };
+		FD6C9F244ED7D13E8B5B4728135D9032 /* PostalAddressRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostalAddressRow.swift; path = Source/Rows/PostalAddressRow.swift; sourceTree = "<group>"; };
+		FD7D4C16645F04A150038F42CABD5889 /* DecimalFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalFormatter.swift; path = Source/Rows/Common/DecimalFormatter.swift; sourceTree = "<group>"; };
+		FDD02E19BDADA2E57EF38CF8D1C5C109 /* UINavigationBar+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Addition.m"; path = "Library/UINavigationBar+Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A64B6E68A2608CB6C1866DC9C85D083 /* Frameworks */ = {
+		0883B652EBBDEB233C612202532B66C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CAD3D76E779A96E4B5C67364A7EB075 /* Foundation.framework in Frameworks */,
+				7DF0D078388923B8816F7D57910CFD42 /* Foundation.framework in Frameworks */,
+				B4C681E1639A0FCD1E5770370FA5027E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,56 +258,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B976A2FE9DB92A83C9E58A14C326D7D /* Frameworks */ = {
+		46C560773300502CC5C1CAD6A2D1E81C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC14A8B99908B9DB0BB7FE99F7DE3D68 /* Foundation.framework in Frameworks */,
+				9D5FC3D9A325DF4E70F157D12B8EC665 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A544297CC266BA9F99DA7977FCE1297 /* Frameworks */ = {
+		7AC029714C1606CFBDA2AA346B2DD29F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2377BF61F1230221038971D5109B6CBE /* Foundation.framework in Frameworks */,
+				B4EE81AA11EF6D9A7954F18CF0AA3649 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE59631C976A8CCFDD28E71795D0EC87 /* Frameworks */ = {
+		827A548E5A45C0E24BD9C353DD71F9B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9460F1DC66E5A639007FA0CA4B15CB /* Foundation.framework in Frameworks */,
+				DA214160CEBD15E6BA1C4A2DFC1FE102 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDD2B884DABA00A4B1CC60E9FCB2E96D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B83857EEEEF1CD7E1D5C9D2C00996E6E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E94B3C5ABCF7AB6841BEEFDCC5FDABB /* Support Files */ = {
+		2AED38CC85A87CF40D084DFB8FAE67FB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				84D7D6B4D3096BD0E21B90AB113412CC /* Info.plist */,
-				EC9594E8D4F022DAB0032BCAC61F1F0C /* UINavigationBar+Addition.modulemap */,
-				23420E96EFFA3FE145D9D0A158994EE2 /* UINavigationBar+Addition.xcconfig */,
-				A28327FD722BF0A435E57C6789E5232C /* UINavigationBar+Addition-dummy.m */,
-				14B3D061AB3458E50E47B3A6EF10F7C1 /* UINavigationBar+Addition-prefix.pch */,
-				B54372B068314AFF2A10886301B26421 /* UINavigationBar+Addition-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UINavigationBar+Addition";
-			sourceTree = "<group>";
-		};
-		31A1DADBA7709D169FF7C7561E9EF715 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C6B14027620E4252D80E204DDF2B316D /* Info.plist */,
-				A38CE63EE73B8649A589C2794502CE8E /* UICountingLabel.modulemap */,
-				A52C922A8391B7FA9067A6640FEAF731 /* UICountingLabel.xcconfig */,
-				407B2F9D85355510193040C4EEC5D759 /* UICountingLabel-dummy.m */,
-				832F2AB89FE3FECE53B7D3F83FB587CE /* UICountingLabel-prefix.pch */,
-				D328CEEDB37D76D1B7F0B00DAD63AE4A /* UICountingLabel-umbrella.h */,
+				D05EB2298238971D5DBE9E56D5E078CC /* Info.plist */,
+				214974E42C829EB917CD4DB26EDBE910 /* UICountingLabel.modulemap */,
+				E08A9FD901BD0E2C783EDCBE9EF9EC99 /* UICountingLabel.xcconfig */,
+				0BCE6B752879F49C3B63B1BA9AC636BF /* UICountingLabel-dummy.m */,
+				89BC07ADF1907528A8448DDE426FEADE /* UICountingLabel-prefix.pch */,
+				39B0C6F9805165792FF4C3673F9F9257 /* UICountingLabel-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UICountingLabel";
@@ -203,23 +325,56 @@
 			path = "Target Support Files/Pods-Chalmers Card";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4F2226DB24B82BF6642CB3EC032BF7CB /* Pods */ = {
+		4AA356F2C23084D97D0E10BF9ADA5555 /* UIColor-Hex-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				E4CC5A065B7C0F52CBF7F5C7209A9CB5 /* CWStatusBarNotification */,
-				B69756552B7D8939EC1611242E51DD02 /* UIColor-Hex-Swift */,
-				C4A306EA7B5ED988127482F6BC2090D5 /* UICountingLabel */,
-				E398B51385116CB95F4502B02B3C1463 /* UINavigationBar+Addition */,
+				1594219E684DF9F06EC8E7215208F410 /* UIColor_Hex.swift */,
+				E5773B45842D5B0A9C4EB9355B8EBF89 /* Support Files */,
+			);
+			path = "UIColor-Hex-Swift";
+			sourceTree = "<group>";
+		};
+		5B915ADD5443928F2DD66D35175E5482 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC9A60F37E636BFF02800AF881D24AA3 /* CWStatusBarNotification */,
+				95139277169F73E08DC8C49A8FE4FC3E /* Eureka */,
+				4AA356F2C23084D97D0E10BF9ADA5555 /* UIColor-Hex-Swift */,
+				C51180E7B72372A7EA1B79B66FBAF938 /* UICountingLabel */,
+				67551216E480B6288A36B88E5A99C6F5 /* UINavigationBar+Addition */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F14B435CE620A1AA8E4F16AAD8547C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8259E08B132BE73F13AE3C8A5BC062F4 /* CWStatusBarNotification.framework */,
+				42B6E2530D6AAA701000EEFB02A40957 /* Eureka.framework */,
+				94200A990358E026E072E539F04AC060 /* Pods_Chalmers_Card.framework */,
+				BC9D70AFD8D3C5E3293EB3D0B998C62D /* UIColor_Hex_Swift.framework */,
+				727811C090D40A21C76870162E492624 /* UICountingLabel.framework */,
+				6564822D89375FA895E1952477C171B7 /* UINavigationBar_Addition.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67551216E480B6288A36B88E5A99C6F5 /* UINavigationBar+Addition */ = {
+			isa = PBXGroup;
+			children = (
+				8A9D34CA089DCFF4E54ED989D827FC57 /* UINavigationBar+Addition.h */,
+				FDD02E19BDADA2E57EF38CF8D1C5C109 /* UINavigationBar+Addition.m */,
+				78DD95B34DB64DE6904CB51CD327490E /* Support Files */,
+			);
+			path = "UINavigationBar+Addition";
 			sourceTree = "<group>";
 		};
 		742575E47E184BAF9E864F63E22B101D /* Targets Support Files */ = {
@@ -230,107 +385,199 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		78DD95B34DB64DE6904CB51CD327490E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3DB9AFAB094DA548D2EAC0B72EB930E /* Info.plist */,
+				45B45FF7EE1EF86A8A2CEA41C7CCFC8C /* UINavigationBar+Addition.modulemap */,
+				3359F37AD568D229A3E1D32CAA1235B1 /* UINavigationBar+Addition.xcconfig */,
+				850E027664C3318F5EABD1484AD17289 /* UINavigationBar+Addition-dummy.m */,
+				7B4460FB5553BC5EDE148BDF0294B58D /* UINavigationBar+Addition-prefix.pch */,
+				5F92520829115886CEC74A31056EB982 /* UINavigationBar+Addition-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UINavigationBar+Addition";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4F2226DB24B82BF6642CB3EC032BF7CB /* Pods */,
-				AE5BE4E6D7B4488264E4E7D851E43897 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				5B915ADD5443928F2DD66D35175E5482 /* Pods */,
+				5F14B435CE620A1AA8E4F16AAD8547C2 /* Products */,
 				742575E47E184BAF9E864F63E22B101D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		AE5BE4E6D7B4488264E4E7D851E43897 /* Products */ = {
+		825EBEE4F14A8AD3E879E3325AF30C4E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEA8184F298C1171DDDA4ED78BF6AD83 /* CWStatusBarNotification.framework */,
-				F34BA8EADCC5809D24A9978F2AFCC0F5 /* Pods_Chalmers_Card.framework */,
-				5ACC751F2D39DCD7FBC90BECEEA6F11F /* UIColor_Hex_Swift.framework */,
-				A46A5F0E739AB2A00C603795BF1AF228 /* UICountingLabel.framework */,
-				5E696DAD6C3C68E84FE523BA367992FD /* UINavigationBar_Addition.framework */,
+				C48D04AFC947B8F0AA3D87E009DAB3B8 /* Eureka.modulemap */,
+				FCAAF69BDF5E7391D45E4369A452DA57 /* Eureka.xcconfig */,
+				7A12F359CD9271D5EC669D6EDC82DBE9 /* Eureka-dummy.m */,
+				0C280A38AB8E789C55FF9A827F625E3D /* Eureka-prefix.pch */,
+				8FB861583DC81C74091ECF11655F02C9 /* Eureka-umbrella.h */,
+				147367AEC9D5A2C24C8AAA17F228D76F /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Eureka";
 			sourceTree = "<group>";
 		};
-		B69756552B7D8939EC1611242E51DD02 /* UIColor-Hex-Swift */ = {
+		95139277169F73E08DC8C49A8FE4FC3E /* Eureka */ = {
 			isa = PBXGroup;
 			children = (
-				0DA5A9E604290E961EE097E845C65976 /* UIColor_Hex.swift */,
-				B881FC681DC12F7C75C607C6D5C8C066 /* Support Files */,
+				5F6EADF5520544E3551EF8E2CFF1870E /* ActionSheetRow.swift */,
+				D44D062329E2B300420D2A76F09F8C0F /* AlertRow.swift */,
+				DCE182A9638FF9726141E66CD7F7868C /* BaseRow.swift */,
+				42C24D19EAA7824460C79E40461D5362 /* ButtonRow.swift */,
+				6DBD1FBFA0992619FC25266871086810 /* ButtonRowWithPresent.swift */,
+				C0D4039BBE9AF77C2021F81D98542E0C /* Cell.swift */,
+				72B6DACDCBAA81768F25CD71FBAF2ECF /* CellType.swift */,
+				CB5562FE427569E468614747B4F82FF0 /* CheckRow.swift */,
+				BB8EEC10506F98D5F219818EA6A0027D /* Core.swift */,
+				B40A15A254042B71199A4C51C0A34F0B /* DateFieldRow.swift */,
+				5E8E4AC051C88A7189CA6C82E08A6B51 /* DateInlineFieldRow.swift */,
+				36E77193F0F1F053A097C90E46D3958B /* DateInlineRow.swift */,
+				72A270C531568280D72B8EAD985B8CAC /* DatePickerRow.swift */,
+				4A7AB3077916D8C0CD25657DD0ED9960 /* DateRow.swift */,
+				FD7D4C16645F04A150038F42CABD5889 /* DecimalFormatter.swift */,
+				67736DD16A4240252B4DB44B70BFA257 /* FieldRow.swift */,
+				500AE33C3D0D5BFBF0E4B8E06CE43D45 /* FieldsRow.swift */,
+				3A572EFFA8F13F3A59264048A6AFFBE9 /* Form.swift */,
+				51C9822F08B0173CB6E69BDED476E2B4 /* GenericMultipleSelectorRow.swift */,
+				17A80C85B7700F2056650D978B12E192 /* HeaderFooterView.swift */,
+				AAAEC0AFA76DE0EEACB41EE31B00959E /* Helpers.swift */,
+				D8D59AB46538E2936C47257DD1E246A2 /* ImagePickerController.swift */,
+				2A6FBB9656537C1562FBC86A066AAE86 /* ImageRow.swift */,
+				D94F73F6A9334FAB3C91C5458614279E /* InlineRowType.swift */,
+				0A406098FAD6C593DC4C21645E40F5A0 /* LabelRow.swift */,
+				C5BAADC98F8C35BDE145944F767F30B0 /* ListCheckRow.swift */,
+				766E54E2AAC2A7B148A515C8953C50AF /* MultipleSelectorRow.swift */,
+				9D84FFCA8765C7C5B7AE4007223DE569 /* MultipleSelectorViewController.swift */,
+				767AED3153EBFDF6604788DE67D70A37 /* NavigationAccessoryView.swift */,
+				BFB2C7A2B4BDAEE10214A72D89651C55 /* Operators.swift */,
+				31B2257DBCAD51DA0662A5AAD063425C /* OptionsRow.swift */,
+				A04FBBF61FAC874279091B9507764E9A /* PickerInlineRow.swift */,
+				AA32DF985FB302447F47BB5344947BC1 /* PickerRow.swift */,
+				795ADC6B5765E7CB271E6D29B9008C5E /* PopoverSelectorRow.swift */,
+				FD6C9F244ED7D13E8B5B4728135D9032 /* PostalAddressRow.swift */,
+				E122F26BCE4AA6EB9CF1D987E05365D9 /* PresenterRowType.swift */,
+				6F51C76380EDFE90D13BE4044326B8CD /* Protocols.swift */,
+				B7A1D1C73EBA58B4B2F32CB611B5CAF0 /* PushRow.swift */,
+				E409EF0E8C6E319BBF0735CAA708D372 /* Row.swift */,
+				A6D8FD290B48850B918E232E1CB144EA /* RowControllerType.swift */,
+				754018C10B9ADB66546F66F3FEB29E83 /* RowProtocols.swift */,
+				87979A675166969906CDF45DB7844F56 /* RowType.swift */,
+				173CEC58413FA50F68CACCD7F64ECE45 /* Section.swift */,
+				1F95FC50450040ECE04581AED9082BA0 /* SegmentedRow.swift */,
+				B623D5AF11F1DE60047EF32FCBF89F95 /* SelectableRowType.swift */,
+				49A61718225E82784C6723719DE9D7C1 /* SelectableSection.swift */,
+				683DFE1926B2FB59EBA1250F7C3116E2 /* SelectorAlertController.swift */,
+				B26FA7DA7493EF3975943FD8CA890D0E /* SelectorRow.swift */,
+				0C7E8ADFC300C936C6654C2593218128 /* SelectorViewController.swift */,
+				868C01E64D0A7274BE00DE4DC3762637 /* SliderRow.swift */,
+				F056E87F2A8AB9DBC70CB6485493D360 /* StepperRow.swift */,
+				FC5687602ED84BC3392EAF51EC5940F1 /* SwitchRow.swift */,
+				46A84CF8A9FCD420F15AEBE30452836B /* TextAreaRow.swift */,
+				F00A280A45C71EF1980D00E532B6F89B /* Resources */,
+				825EBEE4F14A8AD3E879E3325AF30C4E /* Support Files */,
 			);
-			path = "UIColor-Hex-Swift";
+			path = Eureka;
 			sourceTree = "<group>";
 		};
-		B881FC681DC12F7C75C607C6D5C8C066 /* Support Files */ = {
+		C51180E7B72372A7EA1B79B66FBAF938 /* UICountingLabel */ = {
 			isa = PBXGroup;
 			children = (
-				66E0CAB7B20F049DC29C96FA5F031689 /* Info.plist */,
-				19F7ADC7B93CA5125FB2BF31998C8FE6 /* UIColor-Hex-Swift.modulemap */,
-				C89AF858E7F9211E9EC21B5F3962E767 /* UIColor-Hex-Swift.xcconfig */,
-				ECA66AA5364A79593BCB41676E19D64B /* UIColor-Hex-Swift-dummy.m */,
-				4BDC8A1001C0562728B0534A3EF5BEEC /* UIColor-Hex-Swift-prefix.pch */,
-				E538971745E700B023E9A1CADDA55643 /* UIColor-Hex-Swift-umbrella.h */,
+				86AB76FB49A52998D8EB0C504750D54E /* UICountingLabel.h */,
+				78AF51511B317CEEDD05DB678F9C0A47 /* UICountingLabel.m */,
+				2AED38CC85A87CF40D084DFB8FAE67FB /* Support Files */,
+			);
+			path = UICountingLabel;
+			sourceTree = "<group>";
+		};
+		E5773B45842D5B0A9C4EB9355B8EBF89 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E62E6AD642FAC7D2B2574F1065199B56 /* Info.plist */,
+				4A082C0DA52387084760BB79ECEC6872 /* UIColor-Hex-Swift.modulemap */,
+				2C4BDD2C5B1A83DE9ED45006242D8FEF /* UIColor-Hex-Swift.xcconfig */,
+				4AAA58D179BFC4EA1B0D241B34FB96C5 /* UIColor-Hex-Swift-dummy.m */,
+				6DFAAB3F39014DF96B8F4F556475F2B9 /* UIColor-Hex-Swift-prefix.pch */,
+				A085DC3D60DEAB1580556A4CE94907CC /* UIColor-Hex-Swift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UIColor-Hex-Swift";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		E86D53555FAB4232264457A0482E2ABD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C4A306EA7B5ED988127482F6BC2090D5 /* UICountingLabel */ = {
-			isa = PBXGroup;
-			children = (
-				4390D279A59A599816A92D2BB0186500 /* UICountingLabel.h */,
-				6D164BEBABFAD004556A03A26CB46ACD /* UICountingLabel.m */,
-				31A1DADBA7709D169FF7C7561E9EF715 /* Support Files */,
-			);
-			path = UICountingLabel;
-			sourceTree = "<group>";
-		};
-		E398B51385116CB95F4502B02B3C1463 /* UINavigationBar+Addition */ = {
-			isa = PBXGroup;
-			children = (
-				56025BA9D743A91748D163870184980C /* UINavigationBar+Addition.h */,
-				8B2904530DAC0D95294ED1A60227E8AA /* UINavigationBar+Addition.m */,
-				1E94B3C5ABCF7AB6841BEEFDCC5FDABB /* Support Files */,
-			);
-			path = "UINavigationBar+Addition";
-			sourceTree = "<group>";
-		};
-		E4CC5A065B7C0F52CBF7F5C7209A9CB5 /* CWStatusBarNotification */ = {
-			isa = PBXGroup;
-			children = (
-				01F6E6D311F2979E8C799BB66968D0F2 /* CWStatusBarNotification.h */,
-				575C7FBCDAAAA2B49A14B46F496A1339 /* CWStatusBarNotification.m */,
-				F675437214658C194A5BCAE58416A7BE /* Support Files */,
-			);
-			path = CWStatusBarNotification;
-			sourceTree = "<group>";
-		};
-		F675437214658C194A5BCAE58416A7BE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				880446D37C668C5084C0F5D53636DE6A /* CWStatusBarNotification.modulemap */,
-				A0CB83995AFBD2B0A74741D2AF10D4BE /* CWStatusBarNotification.xcconfig */,
-				5404351157F89FFC4EA33C2D661EB3F5 /* CWStatusBarNotification-dummy.m */,
-				3798B29A19C15A0D8C63BE93A97A1B56 /* CWStatusBarNotification-prefix.pch */,
-				C8D0FD2B800492C42DE6FB744695DEBC /* CWStatusBarNotification-umbrella.h */,
-				6550864295BEE44C9E129FC4EF651414 /* Info.plist */,
+				E6E6FCA9B8C123CC8E6FB88FBA1B2DC4 /* CWStatusBarNotification.modulemap */,
+				E21B864D2DBA45EA963A2FE9F6FB8130 /* CWStatusBarNotification.xcconfig */,
+				49743ACB6A0EB8E22177419ACB68302E /* CWStatusBarNotification-dummy.m */,
+				613309A5702332E3C6E07F89E56A8898 /* CWStatusBarNotification-prefix.pch */,
+				B99AA0241B77944D37D27417C1E920CD /* CWStatusBarNotification-umbrella.h */,
+				F300B2A82F5AEC52C751D41E80394C24 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CWStatusBarNotification";
 			sourceTree = "<group>";
 		};
+		F00A280A45C71EF1980D00E532B6F89B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4C632F0F0B2FCA857EB4F48DE7F788D /* Eureka.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FC9A60F37E636BFF02800AF881D24AA3 /* CWStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				2D212FDEFC09715492A940B326E32DAE /* CWStatusBarNotification.h */,
+				31A52414FF7A1CA642514ED19270CA4C /* CWStatusBarNotification.m */,
+				E86D53555FAB4232264457A0482E2ABD /* Support Files */,
+			);
+			path = CWStatusBarNotification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3F122F86DDAA71D2F9303F3D9C236068 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F405A5D424E02AC96335881B763CB1E /* Pods-Chalmers Card-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAD57C708A6E6A874333A47A616A64D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84278D1CC6080C8CAD63C13691F5F107 /* UIColor-Hex-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDF7059C8541FFEA52A5075941329EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				103473BC0EFC477EB654B475B6AC8458 /* Eureka-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97E221A92F248B05615308A2CBAE5574 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,37 +587,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DA150289DAF58D04748D4D67CCD69BB /* Headers */ = {
+		DD8F3696FF52C6C37894957EF17437BC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31ED1388F2770E259F8EE27722007BE6 /* UIColor-Hex-Swift-umbrella.h in Headers */,
+				A55CB66362ADAA231E7C88280AD680CD /* UICountingLabel-umbrella.h in Headers */,
+				C268417EA18229532BA3A2DE88C0C119 /* UICountingLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C541D36FF865C67F9433B22BF1C30AB2 /* Headers */ = {
+		F8BBA79A81EE4D38A72CB5C3C09B80E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4545F0B940F2421EABF60B48DF3CB4D4 /* UINavigationBar+Addition-umbrella.h in Headers */,
-				C504C6D80430BD90AECFC4839B47B0A1 /* UINavigationBar+Addition.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA1BDA552FF1785CC2B84D12B76BC3B8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE177F87BA42B8F2E155770C36E6744B /* UICountingLabel-umbrella.h in Headers */,
-				BC0A91524376DB474753F12B8FDF505E /* UICountingLabel.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F62B9BF65FFD121A767293A5D7E74779 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				16252E59E2CA14668BE2D4B16F7029F1 /* Pods-Chalmers Card-umbrella.h in Headers */,
+				99D59202AEA1C718002553724D937A87 /* UINavigationBar+Addition-umbrella.h in Headers */,
+				4ABA2B008C328478C3D3304F0A83178E /* UINavigationBar+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,33 +622,56 @@
 			);
 			name = CWStatusBarNotification;
 			productName = CWStatusBarNotification;
-			productReference = CEA8184F298C1171DDDA4ED78BF6AD83 /* CWStatusBarNotification.framework */;
+			productReference = 8259E08B132BE73F13AE3C8A5BC062F4 /* CWStatusBarNotification.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2AFE16F370CF20630DC4B45848A031C4 /* UIColor-Hex-Swift */ = {
+		4332352E97A37C729DC7D9B3B8A4BB15 /* Eureka */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC73433CB364D113CABB4F0CD401F741 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */;
+			buildConfigurationList = 06CAE4617A9C4BF458755F5C4A516944 /* Build configuration list for PBXNativeTarget "Eureka" */;
 			buildPhases = (
-				6CEBCF33D91E4DA45E7FA4E547B0F901 /* Sources */,
-				9A544297CC266BA9F99DA7977FCE1297 /* Frameworks */,
-				9DA150289DAF58D04748D4D67CCD69BB /* Headers */,
+				8DBCEEFE2C0CBEDE4175E4E52D3B92D8 /* Sources */,
+				0883B652EBBDEB233C612202532B66C6 /* Frameworks */,
+				83BA61C6C975205F257CFAC4425941B1 /* Resources */,
+				7EDF7059C8541FFEA52A5075941329EE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "UIColor-Hex-Swift";
-			productName = "UIColor-Hex-Swift";
-			productReference = 5ACC751F2D39DCD7FBC90BECEEA6F11F /* UIColor_Hex_Swift.framework */;
+			name = Eureka;
+			productName = Eureka;
+			productReference = 42B6E2530D6AAA701000EEFB02A40957 /* Eureka.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8E1840634D4F9002E65840E3A413C1FE /* UICountingLabel */ = {
+		4549DA6B71257495152B59022460736D /* Pods-Chalmers Card */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 529442D285A219A1D35F0E2FA04EB4C3 /* Build configuration list for PBXNativeTarget "UICountingLabel" */;
+			buildConfigurationList = F56766DA89B8B74161B94A57F332A407 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */;
 			buildPhases = (
-				77C2526A4A294BCAD1AA4566B8299F18 /* Sources */,
-				FE59631C976A8CCFDD28E71795D0EC87 /* Frameworks */,
-				CA1BDA552FF1785CC2B84D12B76BC3B8 /* Headers */,
+				84E728DEF46BC832ABB4D4F094ACAA49 /* Sources */,
+				827A548E5A45C0E24BD9C353DD71F9B0 /* Frameworks */,
+				3F122F86DDAA71D2F9303F3D9C236068 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D3557F3AC3414C685F848C7D84F467E /* PBXTargetDependency */,
+				81C7BABBDBB2CF460FD5E2D8597A97EE /* PBXTargetDependency */,
+				6A76E0D7A862EB31632EB78DA64DEF2D /* PBXTargetDependency */,
+				5CC0E629DA8E98B5E8918B3B09F854F9 /* PBXTargetDependency */,
+				5BE487FC3C5DC798DA6D91CE1419CDDC /* PBXTargetDependency */,
+			);
+			name = "Pods-Chalmers Card";
+			productName = "Pods-Chalmers Card";
+			productReference = 94200A990358E026E072E539F04AC060 /* Pods_Chalmers_Card.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47E400FDEC4A47204F07FFF236D03E5A /* UICountingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E992B74BF60F580C16051A5AEAB1E75C /* Build configuration list for PBXNativeTarget "UICountingLabel" */;
+			buildPhases = (
+				49B967B1EF406E09839E72CC98FDC51A /* Sources */,
+				7AC029714C1606CFBDA2AA346B2DD29F /* Frameworks */,
+				DD8F3696FF52C6C37894957EF17437BC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -425,16 +679,16 @@
 			);
 			name = UICountingLabel;
 			productName = UICountingLabel;
-			productReference = A46A5F0E739AB2A00C603795BF1AF228 /* UICountingLabel.framework */;
+			productReference = 727811C090D40A21C76870162E492624 /* UICountingLabel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A31527DA468C2AA7D29460A0B4D8963B /* UINavigationBar+Addition */ = {
+		4E0E63B71F37BB0315D38113B8C6FB7D /* UINavigationBar+Addition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9265A1C28BFE8A8D34EDA10C4DE51307 /* Build configuration list for PBXNativeTarget "UINavigationBar+Addition" */;
+			buildConfigurationList = 1A6B0C8BE0D9E2A8C88C45CD8A35246E /* Build configuration list for PBXNativeTarget "UINavigationBar+Addition" */;
 			buildPhases = (
-				442CACF1760177E877ED2045441981E0 /* Sources */,
-				2A64B6E68A2608CB6C1866DC9C85D083 /* Frameworks */,
-				C541D36FF865C67F9433B22BF1C30AB2 /* Headers */,
+				448682E2E00F4998F9B26C6328F39518 /* Sources */,
+				46C560773300502CC5C1CAD6A2D1E81C /* Frameworks */,
+				F8BBA79A81EE4D38A72CB5C3C09B80E9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -442,28 +696,24 @@
 			);
 			name = "UINavigationBar+Addition";
 			productName = "UINavigationBar+Addition";
-			productReference = 5E696DAD6C3C68E84FE523BA367992FD /* UINavigationBar_Addition.framework */;
+			productReference = 6564822D89375FA895E1952477C171B7 /* UINavigationBar_Addition.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FCFCC9B0C7BE07B9A4AAD2BB6F72D8DE /* Pods-Chalmers Card */ = {
+		801B1594CE844A27C95541E2D9455D81 /* UIColor-Hex-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED2EE1235801257C9D246586537A3394 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */;
+			buildConfigurationList = 61F7A69A3BCD1291AF6A0806B6E4BE91 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */;
 			buildPhases = (
-				47723171BEFEBB73EFD1E2D39749E9CC /* Sources */,
-				4B976A2FE9DB92A83C9E58A14C326D7D /* Frameworks */,
-				F62B9BF65FFD121A767293A5D7E74779 /* Headers */,
+				8EBE3AB1E6DF296CC881EF96B306D315 /* Sources */,
+				CDD2B884DABA00A4B1CC60E9FCB2E96D /* Frameworks */,
+				4FAD57C708A6E6A874333A47A616A64D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DD015CF4E615338AE41849D3DCAEF9F3 /* PBXTargetDependency */,
-				6E2ADBBAA329611BA97B6E0819A74C11 /* PBXTargetDependency */,
-				90D6AD9B842831A23205D9F62B258FB1 /* PBXTargetDependency */,
-				28318200F576A30AB0C7FD2B0751032F /* PBXTargetDependency */,
 			);
-			name = "Pods-Chalmers Card";
-			productName = "Pods-Chalmers Card";
-			productReference = F34BA8EADCC5809D24A9978F2AFCC0F5 /* Pods_Chalmers_Card.framework */;
+			name = "UIColor-Hex-Swift";
+			productName = "UIColor-Hex-Swift";
+			productReference = BC9D70AFD8D3C5E3293EB3D0B998C62D /* UIColor_Hex_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -483,18 +733,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = AE5BE4E6D7B4488264E4E7D851E43897 /* Products */;
+			productRefGroup = 5F14B435CE620A1AA8E4F16AAD8547C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				233B529E4F6EE6E3DF4E23BAFD26903D /* CWStatusBarNotification */,
-				FCFCC9B0C7BE07B9A4AAD2BB6F72D8DE /* Pods-Chalmers Card */,
-				2AFE16F370CF20630DC4B45848A031C4 /* UIColor-Hex-Swift */,
-				8E1840634D4F9002E65840E3A413C1FE /* UICountingLabel */,
-				A31527DA468C2AA7D29460A0B4D8963B /* UINavigationBar+Addition */,
+				4332352E97A37C729DC7D9B3B8A4BB15 /* Eureka */,
+				4549DA6B71257495152B59022460736D /* Pods-Chalmers Card */,
+				801B1594CE844A27C95541E2D9455D81 /* UIColor-Hex-Swift */,
+				47E400FDEC4A47204F07FFF236D03E5A /* UICountingLabel */,
+				4E0E63B71F37BB0315D38113B8C6FB7D /* UINavigationBar+Addition */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83BA61C6C975205F257CFAC4425941B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D8B33F5C3E48D535F8189C52650B20F /* Eureka.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3CAEC8FE85121863DFFAE1F1B602E47A /* Sources */ = {
@@ -506,74 +768,141 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		442CACF1760177E877ED2045441981E0 /* Sources */ = {
+		448682E2E00F4998F9B26C6328F39518 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2D5C76B0C5F7E6FCE0B51EF8F7D578 /* UINavigationBar+Addition-dummy.m in Sources */,
-				D502805048F0B003E6115EACCECB9130 /* UINavigationBar+Addition.m in Sources */,
+				6177A846D6D08D8E45B59714B4DEAF01 /* UINavigationBar+Addition-dummy.m in Sources */,
+				A66727DA126D27E2F197D8B7C32A064C /* UINavigationBar+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47723171BEFEBB73EFD1E2D39749E9CC /* Sources */ = {
+		49B967B1EF406E09839E72CC98FDC51A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42ABFB7FF6C08FD1114451621D0C2F1F /* Pods-Chalmers Card-dummy.m in Sources */,
+				0B0BBCCBA3CA4D96E1761DA74ADEBD44 /* UICountingLabel-dummy.m in Sources */,
+				DED42A76FB271D13E8EC142A48859B3D /* UICountingLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CEBCF33D91E4DA45E7FA4E547B0F901 /* Sources */ = {
+		84E728DEF46BC832ABB4D4F094ACAA49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				376455F79556565FD7F5D9E90D084F25 /* UIColor-Hex-Swift-dummy.m in Sources */,
-				590599309CDEFA3E66F1191DA26996A4 /* UIColor_Hex.swift in Sources */,
+				D56BF6220AF97240B6D148B8E5C5AA9D /* Pods-Chalmers Card-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77C2526A4A294BCAD1AA4566B8299F18 /* Sources */ = {
+		8DBCEEFE2C0CBEDE4175E4E52D3B92D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE133CC368A8DDD0662FA5BAED51CAA6 /* UICountingLabel-dummy.m in Sources */,
-				964FBB0DB0A202A09139727266F3616D /* UICountingLabel.m in Sources */,
+				804B6D74785196303EB645CCD1C79EE5 /* ActionSheetRow.swift in Sources */,
+				9530B28AFF019AC003E5A01ADAA19A7D /* AlertRow.swift in Sources */,
+				3695144974EC7EB912EF8583DD8E2CDB /* BaseRow.swift in Sources */,
+				86B4E86B605F0A0A5C689E8E5F6294E5 /* ButtonRow.swift in Sources */,
+				21F799472851BCE6A130A97729507B4C /* ButtonRowWithPresent.swift in Sources */,
+				5A74A0CAB51128C71D0519EA90F6DD0F /* Cell.swift in Sources */,
+				0AA48424DE5670B8C032BA88393BA9FA /* CellType.swift in Sources */,
+				7D91ACD6586867700438C1CC2557BEF7 /* CheckRow.swift in Sources */,
+				1D8A48631192F6D377B97D5EF0AFE16C /* Core.swift in Sources */,
+				CC70C7CF7A63CD3F4256B64D58C551B4 /* DateFieldRow.swift in Sources */,
+				D9C4B34950478B1AD2F3ED1E39086298 /* DateInlineFieldRow.swift in Sources */,
+				D2EC301A80E6CFB2F650FF088412F8A7 /* DateInlineRow.swift in Sources */,
+				0E4FBDBCB07782C2AE7B6D7AF92F51D8 /* DatePickerRow.swift in Sources */,
+				E35126F5E99598B42315A9C9F5C41DEA /* DateRow.swift in Sources */,
+				1662FE9A42490639B7E2A1F401D5D4DD /* DecimalFormatter.swift in Sources */,
+				660E29286B4C961F1181530F3E7A046E /* Eureka-dummy.m in Sources */,
+				DCAEB773C1E1C0CF94EE92A9AA99C329 /* FieldRow.swift in Sources */,
+				1FE5D469BDAAFF0030F0AE5780975A4A /* FieldsRow.swift in Sources */,
+				600D6836E73F7FBCAA1F493AFDFC4EBA /* Form.swift in Sources */,
+				E7744BDE6B307E60F1840FB7DF8416B1 /* GenericMultipleSelectorRow.swift in Sources */,
+				6152633CCB6B0254E42C00D98BC28A13 /* HeaderFooterView.swift in Sources */,
+				6775B0346C810AB8CF4380B44BEE1750 /* Helpers.swift in Sources */,
+				34D053EE46DEC5C7CA0F7F5EDBAE1F93 /* ImagePickerController.swift in Sources */,
+				E774FD99645675D8738D90037FD68F28 /* ImageRow.swift in Sources */,
+				72F0F49C15C14D0EB94206F776713672 /* InlineRowType.swift in Sources */,
+				0A50C03F56AD58898CA2A7C6113C4EF4 /* LabelRow.swift in Sources */,
+				A31A287529CB6FB1E3AD604BA7808EE2 /* ListCheckRow.swift in Sources */,
+				A31A3E644C08304B82EA33D5CC49F642 /* MultipleSelectorRow.swift in Sources */,
+				A6792D1386AD67459293295DD80323B3 /* MultipleSelectorViewController.swift in Sources */,
+				2956D2538D326F528DF52EF888FFDBE9 /* NavigationAccessoryView.swift in Sources */,
+				3256698B182CE03454CDC45A2771B89A /* Operators.swift in Sources */,
+				4E34E7BB952EDEEF27B5727A49B09974 /* OptionsRow.swift in Sources */,
+				58E2E4E04C8A365ABB02A4E62D566772 /* PickerInlineRow.swift in Sources */,
+				3607E6F07FF8C4B04B6507C7077F637C /* PickerRow.swift in Sources */,
+				13CB51A5F85CF122676966CB347260BC /* PopoverSelectorRow.swift in Sources */,
+				C3D9FD39975FFCE3B1EA1968F6453426 /* PostalAddressRow.swift in Sources */,
+				F6489B5AA612A6B9DDA466AED1657023 /* PresenterRowType.swift in Sources */,
+				A139110B451BC866C4D19E805577391D /* Protocols.swift in Sources */,
+				A6F16B6CC1ED4C25031775A12FD730BB /* PushRow.swift in Sources */,
+				E994C7B3AD81F25A03886A4E6AA327C0 /* Row.swift in Sources */,
+				3E656AE0B15BCA426C714CC40539F60C /* RowControllerType.swift in Sources */,
+				22D80D75A3155009821CBE44E7A29298 /* RowProtocols.swift in Sources */,
+				2B7186AE8B80A62112C769454EDF350F /* RowType.swift in Sources */,
+				DBC4386DDD9D7096D8ABBB355B5E4DD0 /* Section.swift in Sources */,
+				DE644832B971D2031EF0246712692779 /* SegmentedRow.swift in Sources */,
+				969E0DB9B80ADF2681C84C68C174BB38 /* SelectableRowType.swift in Sources */,
+				0B54D47F4061120A46717916BCAD2393 /* SelectableSection.swift in Sources */,
+				D511F885870A7B7E7CB3199D645EB0E9 /* SelectorAlertController.swift in Sources */,
+				942583935EB712BC81E5F01919E1EFD7 /* SelectorRow.swift in Sources */,
+				94216BFB2AF1B7F1CD43B0401A623F70 /* SelectorViewController.swift in Sources */,
+				93748EA49FCD9EF155AFCFFD9CEA8136 /* SliderRow.swift in Sources */,
+				B01D4D0408E01DE7CC0EC5402D8D9F00 /* StepperRow.swift in Sources */,
+				B7DB4B868834CC37618900C0FEDF3F1C /* SwitchRow.swift in Sources */,
+				61FF740A2A37371EFA9F3C8ABEEDAFF3 /* TextAreaRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EBE3AB1E6DF296CC881EF96B306D315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD99F59EB2B8E28053902E3F09AAA844 /* UIColor-Hex-Swift-dummy.m in Sources */,
+				56C2F2048BEF8C95E42F9594EE246448 /* UIColor_Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		28318200F576A30AB0C7FD2B0751032F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UINavigationBar+Addition";
-			target = A31527DA468C2AA7D29460A0B4D8963B /* UINavigationBar+Addition */;
-			targetProxy = 9F92B727DD668F5C6A1F01C88B22E5D8 /* PBXContainerItemProxy */;
-		};
-		6E2ADBBAA329611BA97B6E0819A74C11 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIColor-Hex-Swift";
-			target = 2AFE16F370CF20630DC4B45848A031C4 /* UIColor-Hex-Swift */;
-			targetProxy = 9DE6A261B15680E1B1874905F8D255F8 /* PBXContainerItemProxy */;
-		};
-		90D6AD9B842831A23205D9F62B258FB1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UICountingLabel;
-			target = 8E1840634D4F9002E65840E3A413C1FE /* UICountingLabel */;
-			targetProxy = 92E7A0E6CD880100CE62310AF745C699 /* PBXContainerItemProxy */;
-		};
-		DD015CF4E615338AE41849D3DCAEF9F3 /* PBXTargetDependency */ = {
+		3D3557F3AC3414C685F848C7D84F467E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CWStatusBarNotification;
 			target = 233B529E4F6EE6E3DF4E23BAFD26903D /* CWStatusBarNotification */;
-			targetProxy = BDA740B47912FCF464187DDE9E3CCB73 /* PBXContainerItemProxy */;
+			targetProxy = B64A1CDE08091FF22F63573610B17E77 /* PBXContainerItemProxy */;
+		};
+		5BE487FC3C5DC798DA6D91CE1419CDDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UINavigationBar+Addition";
+			target = 4E0E63B71F37BB0315D38113B8C6FB7D /* UINavigationBar+Addition */;
+			targetProxy = 6CEAD52B5E0FABDA459CF1A603CF17DF /* PBXContainerItemProxy */;
+		};
+		5CC0E629DA8E98B5E8918B3B09F854F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICountingLabel;
+			target = 47E400FDEC4A47204F07FFF236D03E5A /* UICountingLabel */;
+			targetProxy = CEA2F289AC1B37A5020159E8B8A0899A /* PBXContainerItemProxy */;
+		};
+		6A76E0D7A862EB31632EB78DA64DEF2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor-Hex-Swift";
+			target = 801B1594CE844A27C95541E2D9455D81 /* UIColor-Hex-Swift */;
+			targetProxy = B5A2355BFA76694F85543AD1235B8A36 /* PBXContainerItemProxy */;
+		};
+		81C7BABBDBB2CF460FD5E2D8597A97EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Eureka;
+			target = 4332352E97A37C729DC7D9B3B8A4BB15 /* Eureka */;
+			targetProxy = B6167F9A53438F82DD43257686C754DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		01ABCA8756554B2CE69BA5535F545F3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0CB83995AFBD2B0A74741D2AF10D4BE /* CWStatusBarNotification.xcconfig */;
+			baseConfigurationReference = E21B864D2DBA45EA963A2FE9F6FB8130 /* CWStatusBarNotification.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -642,9 +971,39 @@
 			};
 			name = Debug;
 		};
-		295FE317B7CCC101211AFF8FD9CB1079 /* Release */ = {
+		4529484FA1B92801495B66F3169A276F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23420E96EFFA3FE145D9D0A158994EE2 /* UINavigationBar+Addition.xcconfig */;
+			baseConfigurationReference = 2C4BDD2C5B1A83DE9ED45006242D8FEF /* UIColor-Hex-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73F40B56C72E68BD33DD79545C05EE73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E08A9FD901BD0E2C783EDCBE9EF9EC99 /* UICountingLabel.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -655,14 +1014,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UINavigationBar+Addition/UINavigationBar+Addition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UINavigationBar+Addition/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UINavigationBar+Addition/UINavigationBar+Addition.modulemap";
+				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UINavigationBar_Addition;
+				PRODUCT_NAME = UICountingLabel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -671,7 +1030,157 @@
 			};
 			name = Release;
 		};
-		354EC8A773F7510FCD3CA74D0F5BC8CE /* Debug */ = {
+		7A8F59B7E6EF38040EB398476461B468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21B864D2DBA45EA963A2FE9F6FB8130 /* CWStatusBarNotification.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CWStatusBarNotification/CWStatusBarNotification-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CWStatusBarNotification/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CWStatusBarNotification/CWStatusBarNotification.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CWStatusBarNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DC995999B356B9F8B3CFD5F8DC1DDD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCAAF69BDF5E7391D45E4369A452DA57 /* Eureka.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Eureka/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Eureka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8EC7AFE75594C5C80DB82508272567BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4BDD2C5B1A83DE9ED45006242D8FEF /* UIColor-Hex-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9836156CE1F6D99D5B9031DFB8A198A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Chalmers Card/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Chalmers_Card;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A69B33FF607F1FC2FC39B163DD648947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E08A9FD901BD0E2C783EDCBE9EF9EC99 /* UICountingLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UICountingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7B87B128E4CA71E186CEF6B8C8EC857 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D03E355071995EA9738F5B721CBFE16F /* Pods-Chalmers Card.debug.xcconfig */;
 			buildSettings = {
@@ -705,125 +1214,9 @@
 			};
 			name = Debug;
 		};
-		39C00859E2E15D569033B91394D0F60E /* Debug */ = {
+		C1B1B3ECB0331E3E4AD674938DFEA70D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A52C922A8391B7FA9067A6640FEAF731 /* UICountingLabel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UICountingLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3ABFE9A5DD0C5A844C66E680592FEA56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C89AF858E7F9211E9EC21B5F3962E767 /* UIColor-Hex-Swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIColor_Hex_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7A8F59B7E6EF38040EB398476461B468 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0CB83995AFBD2B0A74741D2AF10D4BE /* CWStatusBarNotification.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CWStatusBarNotification/CWStatusBarNotification-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CWStatusBarNotification/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CWStatusBarNotification/CWStatusBarNotification.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CWStatusBarNotification;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9610756BE4A1049EEFE180341C28E259 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A52C922A8391B7FA9067A6640FEAF731 /* UICountingLabel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UICountingLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B24C0A438F455D02A1157CE9EB7E6AEA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23420E96EFFA3FE145D9D0A158994EE2 /* UINavigationBar+Addition.xcconfig */;
+			baseConfigurationReference = 3359F37AD568D229A3E1D32CAA1235B1 /* UINavigationBar+Addition.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -888,9 +1281,9 @@
 			};
 			name = Release;
 		};
-		D7E08FB904B67A2C12555B6AE053F847 /* Release */ = {
+		E150C9FA047CEA3FFA74C6AFF26BCB1A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */;
+			baseConfigurationReference = 3359F37AD568D229A3E1D32CAA1235B1 /* UINavigationBar+Addition.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -901,18 +1294,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Chalmers Card/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UINavigationBar+Addition/UINavigationBar+Addition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UINavigationBar+Addition/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.modulemap";
+				MODULEMAP_FILE = "Target Support Files/UINavigationBar+Addition/UINavigationBar+Addition.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Chalmers_Card;
+				PRODUCT_NAME = UINavigationBar_Addition;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -921,39 +1310,56 @@
 			};
 			name = Release;
 		};
-		F440A7A02EC753EF5D61CE2835AE5610 /* Debug */ = {
+		EF275FF6FCD1D504CDDE09462E7C4B79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C89AF858E7F9211E9EC21B5F3962E767 /* UIColor-Hex-Swift.xcconfig */;
+			baseConfigurationReference = FCAAF69BDF5E7391D45E4369A452DA57 /* Eureka.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Eureka/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UIColor_Hex_Swift;
+				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Eureka;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		06CAE4617A9C4BF458755F5C4A516944 /* Build configuration list for PBXNativeTarget "Eureka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC995999B356B9F8B3CFD5F8DC1DDD2 /* Debug */,
+				EF275FF6FCD1D504CDDE09462E7C4B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A6B0C8BE0D9E2A8C88C45CD8A35246E /* Build configuration list for PBXNativeTarget "UINavigationBar+Addition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B1B3ECB0331E3E4AD674938DFEA70D /* Debug */,
+				E150C9FA047CEA3FFA74C6AFF26BCB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -963,29 +1369,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		529442D285A219A1D35F0E2FA04EB4C3 /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
+		61F7A69A3BCD1291AF6A0806B6E4BE91 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39C00859E2E15D569033B91394D0F60E /* Debug */,
-				9610756BE4A1049EEFE180341C28E259 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9265A1C28BFE8A8D34EDA10C4DE51307 /* Build configuration list for PBXNativeTarget "UINavigationBar+Addition" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B24C0A438F455D02A1157CE9EB7E6AEA /* Debug */,
-				295FE317B7CCC101211AFF8FD9CB1079 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC73433CB364D113CABB4F0CD401F741 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F440A7A02EC753EF5D61CE2835AE5610 /* Debug */,
-				3ABFE9A5DD0C5A844C66E680592FEA56 /* Release */,
+				4529484FA1B92801495B66F3169A276F /* Debug */,
+				8EC7AFE75594C5C80DB82508272567BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -999,11 +1387,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED2EE1235801257C9D246586537A3394 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */ = {
+		E992B74BF60F580C16051A5AEAB1E75C /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				354EC8A773F7510FCD3CA74D0F5BC8CE /* Debug */,
-				D7E08FB904B67A2C12555B6AE053F847 /* Release */,
+				A69B33FF607F1FC2FC39B163DD648947 /* Debug */,
+				73F40B56C72E68BD33DD79545C05EE73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56766DA89B8B74161B94A57F332A407 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B87B128E4CA71E186CEF6B8C8EC857 /* Debug */,
+				9836156CE1F6D99D5B9031DFB8A198A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

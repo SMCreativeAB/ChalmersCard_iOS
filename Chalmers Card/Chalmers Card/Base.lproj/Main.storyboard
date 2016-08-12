@@ -173,7 +173,7 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="166"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.5450980392" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="top" secondItem="2U5-9r-rG0" secondAttribute="top" constant="20" symbolic="YES" id="eZo-Pg-xdh"/>
                                     <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="leading" secondItem="2U5-9r-rG0" secondAttribute="leading" id="gSc-IR-wbo"/>
@@ -213,6 +213,7 @@
                             <constraint firstItem="goI-4x-k8V" firstAttribute="top" secondItem="xLm-bV-SXt" secondAttribute="bottom" id="teK-Yl-19f"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Om appen" id="RFK-hI-17C"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -313,10 +314,10 @@
             </objects>
             <point key="canvasLocation" x="940.5" y="698.5"/>
         </scene>
-        <!--Settings Controller-->
+        <!--Chalmers Kårkort-->
         <scene sceneID="Hvo-qh-VR7">
             <objects>
-                <viewController id="W6o-fY-YG9" customClass="SettingsController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Chalmers Kårkort" id="W6o-fY-YG9" customClass="SettingsController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w0f-el-AT0"/>
                         <viewControllerLayoutGuide type="bottom" id="0fR-u7-5LH"/>
@@ -324,14 +325,91 @@
                     <view key="view" contentMode="scaleToFill" id="C8F-Nk-vTX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2s-ed-J4B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CreditCardIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-7n-Guc">
+                                        <rect key="frame" x="123" y="83" width="128" height="94"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="A0P-nt-Ahp"/>
+                                            <constraint firstAttribute="height" constant="47" id="Qdd-Ba-wRk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lägg till kårkort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfi-Bu-Nov">
+                                        <rect key="frame" x="0.0" y="192" width="375" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="guU-qF-4Mi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.54509803921568623" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dfi-Bu-Nov" firstAttribute="centerX" secondItem="g2s-ed-J4B" secondAttribute="centerX" id="G7D-kb-dYH"/>
+                                    <constraint firstItem="Dfi-Bu-Nov" firstAttribute="top" secondItem="hLN-7n-Guc" secondAttribute="bottom" constant="15" id="LSc-gi-cuV"/>
+                                    <constraint firstItem="hLN-7n-Guc" firstAttribute="centerX" secondItem="g2s-ed-J4B" secondAttribute="centerX" id="Rfr-Iw-8ZD"/>
+                                    <constraint firstItem="hLN-7n-Guc" firstAttribute="centerY" secondItem="g2s-ed-J4B" secondAttribute="centerY" id="ZDU-1t-JKw"/>
+                                    <constraint firstAttribute="height" constant="260" id="hgz-fo-FEG">
+                                        <variation key="heightClass=compact" constant="60"/>
+                                    </constraint>
+                                    <constraint firstItem="Dfi-Bu-Nov" firstAttribute="width" secondItem="g2s-ed-J4B" secondAttribute="width" id="z1y-ri-tjw"/>
+                                </constraints>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <exclude reference="hLN-7n-Guc"/>
+                                        <exclude reference="Dfi-Bu-Nov"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LQ-BB-6eD">
+                                <rect key="frame" x="0.0" y="260" width="375" height="407"/>
+                                <connections>
+                                    <segue destination="EEG-Pb-zl5" kind="embed" id="69w-TE-OoE"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3LQ-BB-6eD" secondAttribute="trailing" id="1DI-bo-8Jf"/>
+                            <constraint firstItem="3LQ-BB-6eD" firstAttribute="top" secondItem="g2s-ed-J4B" secondAttribute="bottom" id="B85-aC-VX1"/>
+                            <constraint firstItem="3LQ-BB-6eD" firstAttribute="leading" secondItem="C8F-Nk-vTX" secondAttribute="leading" id="G1R-2Y-O0c"/>
+                            <constraint firstItem="g2s-ed-J4B" firstAttribute="top" secondItem="w0f-el-AT0" secondAttribute="bottom" constant="-64" id="VoB-ey-lN2"/>
+                            <constraint firstItem="0fR-u7-5LH" firstAttribute="top" secondItem="3LQ-BB-6eD" secondAttribute="bottom" id="WB9-ii-51w"/>
+                            <constraint firstItem="g2s-ed-J4B" firstAttribute="leading" secondItem="C8F-Nk-vTX" secondAttribute="leading" id="YSC-KE-umB"/>
+                            <constraint firstAttribute="trailing" secondItem="g2s-ed-J4B" secondAttribute="trailing" id="Yzf-CV-uXy"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Chalmers Kårkort" id="BIS-hX-NTb">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="zYd-hn-RzL"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLW-cn-zhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1432.5" y="1106.5"/>
+        </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="1vV-On-bZm">
+            <objects>
+                <viewController id="EEG-Pb-zl5" customClass="SettingsTableViewController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kuo-Ky-Uha"/>
+                        <viewControllerLayoutGuide type="bottom" id="blD-2P-Bnh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pha-Ml-C5A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySj-eo-I5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870.5" y="1106.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d1v-pb-QTJ">
@@ -353,6 +431,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CreditCardIcon" width="128" height="94"/>
         <image name="HelpIcon" width="32" height="32"/>
         <image name="SettingsIcon" width="32" height="32"/>
         <image name="SharpmindLogo" width="1399" height="900"/>

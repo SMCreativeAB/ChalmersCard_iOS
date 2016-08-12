@@ -34,4 +34,8 @@ class RefillController : SFSafariViewController {
         super.viewWillDisappear(animated)
         isVisible = false
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .Default
+    }
 }
