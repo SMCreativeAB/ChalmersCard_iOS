@@ -6,4 +6,5 @@ target 'Chalmers Card' do
   pod 'UIColor-Hex-Swift'
   pod 'UICountingLabel'
   pod 'CWStatusBarNotification', '~> 2.3.4'
+  pod "UINavigationBar+Addition"
 end

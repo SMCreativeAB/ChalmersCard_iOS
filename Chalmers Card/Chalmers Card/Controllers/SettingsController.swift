@@ -9,6 +9,8 @@ class SettingsController : UIViewController {
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         self.navigationController?.navigationBar.barStyle = .Black
+        self.navigationController?.navigationBar.tintColor = Config.tintColor
+        self.navigationController?.navigationBar.makeDefault()
     }
 
     override func didReceiveMemoryWarning() {

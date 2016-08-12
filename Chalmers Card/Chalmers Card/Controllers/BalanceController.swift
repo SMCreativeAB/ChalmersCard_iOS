@@ -28,10 +28,6 @@ class BalanceController : UIViewController {
         balanceLabel.countFromCurrentValueTo(500)
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
-    }
-    
     @IBAction func onRefillCardButtonTap(sender: AnyObject) {
         let safari = RefillController(URL: Config.chargeCardUrl!)
         self.presentViewController(safari, animated: true, completion: nil)
@@ -47,6 +43,10 @@ class BalanceController : UIViewController {
         } else {
             setTargetColor()
         }
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
 }
 

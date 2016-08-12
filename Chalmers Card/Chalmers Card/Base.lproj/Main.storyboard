@@ -6,10 +6,69 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--About Controller-->
+        <!--About Table View Controller-->
+        <scene sceneID="qkD-oF-95t">
+            <objects>
+                <tableViewController id="K7e-5X-QkW" customClass="AboutTableViewController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="BBB-Wd-yee">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Utvecklare" footerTitle="Jesper Lindström, IT15" id="0PB-Se-t4P">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="NAX-03-lAl" style="IBUITableViewCellStyleDefault" id="PPW-nt-k40">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PPW-nt-k40" id="Lz3-LU-KaB">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="SHARPMIND Digitalbyrå" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAX-03-lAl">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="mEi-WD-ILo" style="IBUITableViewCellStyleDefault" id="Njk-AI-jXS">
+                                        <rect key="frame" x="0.0" y="94" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Njk-AI-jXS" id="gYa-5g-lcv">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="jesper@sharpmind.se" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mEi-WD-ILo">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="K7e-5X-QkW" id="UYJ-ar-Jxb"/>
+                            <outlet property="delegate" destination="K7e-5X-QkW" id="w2M-m8-pR7"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sd-sm-rKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878.5" y="333.5"/>
+        </scene>
+        <!--Om appen-->
         <scene sceneID="nOd-ET-U8q">
             <objects>
-                <viewController id="pqf-2x-mcY" customClass="AboutController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Om appen" id="pqf-2x-mcY" customClass="AboutController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BS7-r4-fOC"/>
                         <viewControllerLayoutGuide type="bottom" id="goI-4x-k8V"/>
@@ -17,10 +76,69 @@
                     <view key="view" contentMode="scaleToFill" id="8nE-HI-R3A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2U5-9r-rG0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SharpmindLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JLZ-Lg-Fq3">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="166"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="top" secondItem="2U5-9r-rG0" secondAttribute="top" constant="20" symbolic="YES" id="eZo-Pg-xdh"/>
+                                    <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="leading" secondItem="2U5-9r-rG0" secondAttribute="leading" id="gSc-IR-wbo"/>
+                                    <constraint firstAttribute="height" constant="260" id="oki-0g-Jqx"/>
+                                    <constraint firstAttribute="trailing" secondItem="JLZ-Lg-Fq3" secondAttribute="trailing" id="zfp-9Q-Gi5"/>
+                                    <constraint firstAttribute="bottom" secondItem="JLZ-Lg-Fq3" secondAttribute="bottom" constant="30" id="zix-DX-pdo"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eZo-Pg-xdh"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLm-bV-SXt">
+                                <rect key="frame" x="0.0" y="260" width="375" height="407"/>
+                                <connections>
+                                    <segue destination="K7e-5X-QkW" kind="embed" id="SiI-jv-paS"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2U5-9r-rG0" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" constant="-64" id="6z6-oU-xXM"/>
+                            <constraint firstItem="xLm-bV-SXt" firstAttribute="top" secondItem="2U5-9r-rG0" secondAttribute="bottom" id="8LL-eL-JKU"/>
+                            <constraint firstItem="2U5-9r-rG0" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" id="HSU-1p-SRL"/>
+                            <constraint firstItem="xLm-bV-SXt" firstAttribute="leading" secondItem="8nE-HI-R3A" secondAttribute="leading" id="JHy-Sc-wQj"/>
+                            <constraint firstItem="2U5-9r-rG0" firstAttribute="leading" secondItem="8nE-HI-R3A" secondAttribute="leading" id="JZT-td-8j6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2U5-9r-rG0" secondAttribute="trailing" id="KhI-2E-up5"/>
+                            <constraint firstAttribute="trailing" secondItem="2U5-9r-rG0" secondAttribute="trailing" id="Q1S-iZ-tds"/>
+                            <constraint firstItem="2U5-9r-rG0" firstAttribute="leading" secondItem="8nE-HI-R3A" secondAttribute="leadingMargin" id="bZr-dR-rY6"/>
+                            <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" id="fJ1-45-CLz"/>
+                            <constraint firstAttribute="trailing" secondItem="xLm-bV-SXt" secondAttribute="trailing" id="qkB-tK-pxz"/>
+                            <constraint firstItem="goI-4x-k8V" firstAttribute="top" secondItem="2U5-9r-rG0" secondAttribute="bottom" constant="407" id="t7A-cq-AF0"/>
+                            <constraint firstItem="2U5-9r-rG0" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" id="t7Q-9s-Faj"/>
+                            <constraint firstItem="goI-4x-k8V" firstAttribute="top" secondItem="xLm-bV-SXt" secondAttribute="bottom" id="teK-Yl-19f"/>
+                            <constraint firstItem="2U5-9r-rG0" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" id="wmN-LK-9zf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HSU-1p-SRL"/>
+                                <exclude reference="KhI-2E-up5"/>
+                                <exclude reference="bZr-dR-rY6"/>
+                                <exclude reference="t7Q-9s-Faj"/>
+                                <exclude reference="wmN-LK-9zf"/>
+                                <exclude reference="t7A-cq-AF0"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="headerBackground" destination="2U5-9r-rG0" id="tWg-0l-eiC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gt5-FM-n6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,5 +273,6 @@
     <resources>
         <image name="HelpIcon" width="32" height="32"/>
         <image name="SettingsIcon" width="32" height="32"/>
+        <image name="SharpmindLogo" width="1399" height="900"/>
     </resources>
 </document>

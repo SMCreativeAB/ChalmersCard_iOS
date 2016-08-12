@@ -7,92 +7,121 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04D4953434E3BA5AAE7383B4DEA51CF2 /* CWStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6EB617543C86CC03BABAEE466B58BD /* CWStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C90C33B81B4FF8D0BBF0679C6B10A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		1FD393C5C1475E2ABC60FFE8FBBD2FD5 /* Pods-Chalmers Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2183B66B210C5F089536ECF6E1333FA7 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1FEE05B83BD079E3B5646E4A08220B /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30C8DB9711B335C9E7AB9895862A1E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		3E61FA4ACD14B641334BDD90CB5974A6 /* UICountingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC75FFE85DFBD31E9EAE724BC577C3EB /* UICountingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EA5553EE01756ABA238D619A743A544 /* CWStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF1029FCBD43EEF4D64DC05A98145C1 /* CWStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04D4953434E3BA5AAE7383B4DEA51CF2 /* CWStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F6E6D311F2979E8C799BB66968D0F2 /* CWStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16252E59E2CA14668BE2D4B16F7029F1 /* Pods-Chalmers Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B9460F1DC66E5A639007FA0CA4B15CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		2377BF61F1230221038971D5109B6CBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		2D2D5C76B0C5F7E6FCE0B51EF8F7D578 /* UINavigationBar+Addition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A28327FD722BF0A435E57C6789E5232C /* UINavigationBar+Addition-dummy.m */; };
+		31ED1388F2770E259F8EE27722007BE6 /* UIColor-Hex-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E538971745E700B023E9A1CADDA55643 /* UIColor-Hex-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		376455F79556565FD7F5D9E90D084F25 /* UIColor-Hex-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA66AA5364A79593BCB41676E19D64B /* UIColor-Hex-Swift-dummy.m */; };
+		3EA5553EE01756ABA238D619A743A544 /* CWStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D0FD2B800492C42DE6FB744695DEBC /* CWStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42ABFB7FF6C08FD1114451621D0C2F1F /* Pods-Chalmers Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */; };
+		4545F0B940F2421EABF60B48DF3CB4D4 /* UINavigationBar+Addition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B54372B068314AFF2A10886301B26421 /* UINavigationBar+Addition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590599309CDEFA3E66F1191DA26996A4 /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A9E604290E961EE097E845C65976 /* UIColor_Hex.swift */; };
 		5933149F5255C95634CCE2652E045927 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		6E961CAA1DDD2D88F614F7551946166F /* UIColor-Hex-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C72301DBC552D45A92D261B1C57CA1 /* UIColor-Hex-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72985CE160CDB53D8EC400C45E206DAC /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C6D3E50BC6F23273F9FECD9415800 /* CWStatusBarNotification.m */; };
-		8B41C0A66F478354BCD2C75100041F62 /* CWStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EC2299A7EC97E7BEC93D9F89330237 /* CWStatusBarNotification-dummy.m */; };
-		BF53D6609A8DDAFC93340DE8086537FD /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A254A6279FD71AE9A19D42A850DEF1B /* UICountingLabel-dummy.m */; };
-		BFA3C19A01606A3F1F26002A09823DAA /* UIColor-Hex-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECDAD43583350277D6455C145AF93F /* UIColor-Hex-Swift-dummy.m */; };
-		D29BF88FA57D4976D92BC0D1820EFD6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		D4CB3DAB2BA873738A27DFB95D147079 /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851AEE9D41748FFF8AF22AE0E141FF09 /* UIColor_Hex.swift */; };
-		D67F2638A0A431BCAB38B6C2E006C2DA /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F1B328B2E633AD6AF316631D869D1 /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DA70E6F7BA53FFC7886985D058A3330E /* Pods-Chalmers Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */; };
+		72985CE160CDB53D8EC400C45E206DAC /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C7FBCDAAAA2B49A14B46F496A1339 /* CWStatusBarNotification.m */; };
+		8B41C0A66F478354BCD2C75100041F62 /* CWStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5404351157F89FFC4EA33C2D661EB3F5 /* CWStatusBarNotification-dummy.m */; };
+		964FBB0DB0A202A09139727266F3616D /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D164BEBABFAD004556A03A26CB46ACD /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9CAD3D76E779A96E4B5C67364A7EB075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BC0A91524376DB474753F12B8FDF505E /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4390D279A59A599816A92D2BB0186500 /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C504C6D80430BD90AECFC4839B47B0A1 /* UINavigationBar+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 56025BA9D743A91748D163870184980C /* UINavigationBar+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC14A8B99908B9DB0BB7FE99F7DE3D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D502805048F0B003E6115EACCECB9130 /* UINavigationBar+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2904530DAC0D95294ED1A60227E8AA /* UINavigationBar+Addition.m */; };
+		EE133CC368A8DDD0662FA5BAED51CAA6 /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 407B2F9D85355510193040C4EEC5D759 /* UICountingLabel-dummy.m */; };
+		FE177F87BA42B8F2E155770C36E6744B /* UICountingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D328CEEDB37D76D1B7F0B00DAD63AE4A /* UICountingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		91806BA39676DBAB1D1A215A52D1D1C3 /* PBXContainerItemProxy */ = {
+		92E7A0E6CD880100CE62310AF745C699 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 56AAE785EDF7CC97FE8A147A57DA5035;
+			remoteGlobalIDString = 8E1840634D4F9002E65840E3A413C1FE;
 			remoteInfo = UICountingLabel;
 		};
-		D8258C4A02D7F089B943CA3BE7529C9C /* PBXContainerItemProxy */ = {
+		9DE6A261B15680E1B1874905F8D255F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AFE16F370CF20630DC4B45848A031C4;
+			remoteInfo = "UIColor-Hex-Swift";
+		};
+		9F92B727DD668F5C6A1F01C88B22E5D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A31527DA468C2AA7D29460A0B4D8963B;
+			remoteInfo = "UINavigationBar+Addition";
+		};
+		BDA740B47912FCF464187DDE9E3CCB73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 233B529E4F6EE6E3DF4E23BAFD26903D;
 			remoteInfo = CWStatusBarNotification;
 		};
-		E88852E41E7FE781C888A3BA5292FE7D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF66A57FDBD04CAB6FD879F53314A639;
-			remoteInfo = "UIColor-Hex-Swift";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0449FC829613CF15D4F927C748FEDC38 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0560B4E52B3E89DA34BB478A532F7FF1 /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F6EB617543C86CC03BABAEE466B58BD /* CWStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CWStatusBarNotification.h; path = CWStatusBarNotification/CWStatusBarNotification.h; sourceTree = "<group>"; };
+		01F6E6D311F2979E8C799BB66968D0F2 /* CWStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CWStatusBarNotification.h; path = CWStatusBarNotification/CWStatusBarNotification.h; sourceTree = "<group>"; };
+		0DA5A9E604290E961EE097E845C65976 /* UIColor_Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor_Hex.swift; path = Pod/Classes/UIColor_Hex.swift; sourceTree = "<group>"; };
+		14B3D061AB3458E50E47B3A6EF10F7C1 /* UINavigationBar+Addition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Addition-prefix.pch"; sourceTree = "<group>"; };
+		19F7ADC7B93CA5125FB2BF31998C8FE6 /* UIColor-Hex-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor-Hex-Swift.modulemap"; sourceTree = "<group>"; };
 		223A990D458FF1DAF85B29A22753522D /* Pods-Chalmers Card-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chalmers Card-frameworks.sh"; sourceTree = "<group>"; };
-		22F4DD61C8A0F9B5340A3D714614827A /* UIColor-Hex-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex-Swift.xcconfig"; sourceTree = "<group>"; };
-		239A64CD4097173268F06FD0FCCD2E86 /* UICountingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UICountingLabel.modulemap; sourceTree = "<group>"; };
-		30EC2299A7EC97E7BEC93D9F89330237 /* CWStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CWStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
+		23420E96EFFA3FE145D9D0A158994EE2 /* UINavigationBar+Addition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UINavigationBar+Addition.xcconfig"; sourceTree = "<group>"; };
+		3798B29A19C15A0D8C63BE93A97A1B56 /* CWStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
 		39ED9A190C4F260063A5B160FE5BC51B /* Pods-Chalmers Card-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chalmers Card-acknowledgements.plist"; sourceTree = "<group>"; };
-		3A254A6279FD71AE9A19D42A850DEF1B /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
 		3F7AC4E218E4D7EAEDDFA59DA2A196F0 /* Pods-Chalmers Card-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chalmers Card-resources.sh"; sourceTree = "<group>"; };
-		47AEEA21F3D4358CDA3E137ADF834CC3 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C1FEE05B83BD079E3B5646E4A08220B /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		407B2F9D85355510193040C4EEC5D759 /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
+		4390D279A59A599816A92D2BB0186500 /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		4BDC8A1001C0562728B0534A3EF5BEEC /* UIColor-Hex-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-prefix.pch"; sourceTree = "<group>"; };
 		4E2952626BCE572502D4F28B3D89E4A5 /* Pods-Chalmers Card-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chalmers Card-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4FB3662EBB68B83CDC18E511C0FDBF46 /* Pods-Chalmers Card-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chalmers Card-dummy.m"; sourceTree = "<group>"; };
-		58C54FEC148AA12B2317C87C04E00DCD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A2172BCC15239A5DA40679D167CFA7D /* CWStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
+		5404351157F89FFC4EA33C2D661EB3F5 /* CWStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CWStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
+		56025BA9D743A91748D163870184980C /* UINavigationBar+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Addition.h"; path = "Library/UINavigationBar+Addition.h"; sourceTree = "<group>"; };
+		575C7FBCDAAAA2B49A14B46F496A1339 /* CWStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CWStatusBarNotification.m; path = CWStatusBarNotification/CWStatusBarNotification.m; sourceTree = "<group>"; };
+		5ACC751F2D39DCD7FBC90BECEEA6F11F /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E696DAD6C3C68E84FE523BA367992FD /* UINavigationBar_Addition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UINavigationBar_Addition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6550864295BEE44C9E129FC4EF651414 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E0CAB7B20F049DC29C96FA5F031689 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chalmers Card.release.xcconfig"; sourceTree = "<group>"; };
-		69DD5C955694B41643DCC7AC3D65D0E9 /* CWStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CWStatusBarNotification.modulemap; sourceTree = "<group>"; };
+		6D164BEBABFAD004556A03A26CB46ACD /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
 		7BB78162A825B6DDCC94B84E470255E5 /* Pods-Chalmers Card-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chalmers Card-umbrella.h"; sourceTree = "<group>"; };
-		851AEE9D41748FFF8AF22AE0E141FF09 /* UIColor_Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor_Hex.swift; path = Pod/Classes/UIColor_Hex.swift; sourceTree = "<group>"; };
-		8AF1029FCBD43EEF4D64DC05A98145C1 /* CWStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
+		832F2AB89FE3FECE53B7D3F83FB587CE /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
+		84D7D6B4D3096BD0E21B90AB113412CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		880446D37C668C5084C0F5D53636DE6A /* CWStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CWStatusBarNotification.modulemap; sourceTree = "<group>"; };
+		8B2904530DAC0D95294ED1A60227E8AA /* UINavigationBar+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Addition.m"; path = "Library/UINavigationBar+Addition.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9808CB6A2F624B08636499CD8708AD00 /* UIColor-Hex-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor-Hex-Swift.modulemap"; sourceTree = "<group>"; };
-		9AB8025723F4755A01747FF80B875591 /* UIColor-Hex-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-prefix.pch"; sourceTree = "<group>"; };
-		9AECDAD43583350277D6455C145AF93F /* UIColor-Hex-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-Swift-dummy.m"; sourceTree = "<group>"; };
 		9B1F125A69C7779AF8A28F697DA6667E /* Pods-Chalmers Card.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chalmers Card.modulemap"; sourceTree = "<group>"; };
-		9C9F1B328B2E633AD6AF316631D869D1 /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
-		9DF9A38C2094D6522B0D001DED6B62B8 /* CWStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CWStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CB83995AFBD2B0A74741D2AF10D4BE /* CWStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CWStatusBarNotification.xcconfig; sourceTree = "<group>"; };
 		A250DDD611E125FFA464B6F34A1C437B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5C72301DBC552D45A92D261B1C57CA1 /* UIColor-Hex-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-umbrella.h"; sourceTree = "<group>"; };
-		B91166D96AF7C817B190D19D509C156C /* CWStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CWStatusBarNotification.xcconfig; sourceTree = "<group>"; };
-		C467F58C5D5871A05D46F1A205250CA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC75FFE85DFBD31E9EAE724BC577C3EB /* UICountingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-umbrella.h"; sourceTree = "<group>"; };
+		A28327FD722BF0A435E57C6789E5232C /* UINavigationBar+Addition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Addition-dummy.m"; sourceTree = "<group>"; };
+		A38CE63EE73B8649A589C2794502CE8E /* UICountingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UICountingLabel.modulemap; sourceTree = "<group>"; };
+		A46A5F0E739AB2A00C603795BF1AF228 /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52C922A8391B7FA9067A6640FEAF731 /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
+		B54372B068314AFF2A10886301B26421 /* UINavigationBar+Addition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Addition-umbrella.h"; sourceTree = "<group>"; };
+		C6B14027620E4252D80E204DDF2B316D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89AF858E7F9211E9EC21B5F3962E767 /* UIColor-Hex-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex-Swift.xcconfig"; sourceTree = "<group>"; };
+		C8D0FD2B800492C42DE6FB744695DEBC /* CWStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CWStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
+		CEA8184F298C1171DDDA4ED78BF6AD83 /* CWStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CWStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D03E355071995EA9738F5B721CBFE16F /* Pods-Chalmers Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chalmers Card.debug.xcconfig"; sourceTree = "<group>"; };
-		DB6C6D3E50BC6F23273F9FECD9415800 /* CWStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CWStatusBarNotification.m; path = CWStatusBarNotification/CWStatusBarNotification.m; sourceTree = "<group>"; };
-		EA2C04C5FC61F0C3F23BFC9261D0BF94 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD05FE5134B97D68FB0E7F29DD0B1D7B /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
-		FD267D1A545BB163A0BEBCA4606985BA /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
+		D328CEEDB37D76D1B7F0B00DAD63AE4A /* UICountingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-umbrella.h"; sourceTree = "<group>"; };
+		E538971745E700B023E9A1CADDA55643 /* UIColor-Hex-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-umbrella.h"; sourceTree = "<group>"; };
+		EC9594E8D4F022DAB0032BCAC61F1F0C /* UINavigationBar+Addition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UINavigationBar+Addition.modulemap"; sourceTree = "<group>"; };
+		ECA66AA5364A79593BCB41676E19D64B /* UIColor-Hex-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-Swift-dummy.m"; sourceTree = "<group>"; };
+		F34BA8EADCC5809D24A9978F2AFCC0F5 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2A64B6E68A2608CB6C1866DC9C85D083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CAD3D76E779A96E4B5C67364A7EB075 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		382294F15DA112567F76E981DC7AAC0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,65 +130,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39BD85CFFF42B5C35A47CE963A7BB2AC /* Frameworks */ = {
+		4B976A2FE9DB92A83C9E58A14C326D7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D29BF88FA57D4976D92BC0D1820EFD6B /* Foundation.framework in Frameworks */,
+				CC14A8B99908B9DB0BB7FE99F7DE3D68 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		975295F37A725A257102C2F4F93834ED /* Frameworks */ = {
+		9A544297CC266BA9F99DA7977FCE1297 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C90C33B81B4FF8D0BBF0679C6B10A6F /* Foundation.framework in Frameworks */,
+				2377BF61F1230221038971D5109B6CBE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E50DAE1D524D742FC29F5D67050D540B /* Frameworks */ = {
+		FE59631C976A8CCFDD28E71795D0EC87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C8DB9711B335C9E7AB9895862A1E92 /* Foundation.framework in Frameworks */,
+				1B9460F1DC66E5A639007FA0CA4B15CB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02A2E7A44754F59DE1BDD7EAD9DE5A9D /* Pods */ = {
+		1E94B3C5ABCF7AB6841BEEFDCC5FDABB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A15BCB915FCDE3987721D980DD11B68 /* CWStatusBarNotification */,
-				DF9541A41EE4992F106DFC29521A7340 /* UIColor-Hex-Swift */,
-				17F87FFDEAF9C09564A9ED6D0C04F59A /* UICountingLabel */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		0D0E55EA7442BBD8CA5CE11E279B8D60 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				58C54FEC148AA12B2317C87C04E00DCD /* Info.plist */,
-				9808CB6A2F624B08636499CD8708AD00 /* UIColor-Hex-Swift.modulemap */,
-				22F4DD61C8A0F9B5340A3D714614827A /* UIColor-Hex-Swift.xcconfig */,
-				9AECDAD43583350277D6455C145AF93F /* UIColor-Hex-Swift-dummy.m */,
-				9AB8025723F4755A01747FF80B875591 /* UIColor-Hex-Swift-prefix.pch */,
-				B5C72301DBC552D45A92D261B1C57CA1 /* UIColor-Hex-Swift-umbrella.h */,
+				84D7D6B4D3096BD0E21B90AB113412CC /* Info.plist */,
+				EC9594E8D4F022DAB0032BCAC61F1F0C /* UINavigationBar+Addition.modulemap */,
+				23420E96EFFA3FE145D9D0A158994EE2 /* UINavigationBar+Addition.xcconfig */,
+				A28327FD722BF0A435E57C6789E5232C /* UINavigationBar+Addition-dummy.m */,
+				14B3D061AB3458E50E47B3A6EF10F7C1 /* UINavigationBar+Addition-prefix.pch */,
+				B54372B068314AFF2A10886301B26421 /* UINavigationBar+Addition-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/UIColor-Hex-Swift";
+			path = "../Target Support Files/UINavigationBar+Addition";
 			sourceTree = "<group>";
 		};
-		17F87FFDEAF9C09564A9ED6D0C04F59A /* UICountingLabel */ = {
+		31A1DADBA7709D169FF7C7561E9EF715 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C1FEE05B83BD079E3B5646E4A08220B /* UICountingLabel.h */,
-				9C9F1B328B2E633AD6AF316631D869D1 /* UICountingLabel.m */,
-				E9AB47C39BBB41BCA4A8B275E702336D /* Support Files */,
+				C6B14027620E4252D80E204DDF2B316D /* Info.plist */,
+				A38CE63EE73B8649A589C2794502CE8E /* UICountingLabel.modulemap */,
+				A52C922A8391B7FA9067A6640FEAF731 /* UICountingLabel.xcconfig */,
+				407B2F9D85355510193040C4EEC5D759 /* UICountingLabel-dummy.m */,
+				832F2AB89FE3FECE53B7D3F83FB587CE /* UICountingLabel-prefix.pch */,
+				D328CEEDB37D76D1B7F0B00DAD63AE4A /* UICountingLabel-umbrella.h */,
 			);
-			path = UICountingLabel;
+			name = "Support Files";
+			path = "../Target Support Files/UICountingLabel";
 			sourceTree = "<group>";
 		};
 		3420B65516728216961FFF84ADA9AD4D /* Pods-Chalmers Card */ = {
@@ -180,26 +203,23 @@
 			path = "Target Support Files/Pods-Chalmers Card";
 			sourceTree = "<group>";
 		};
-		35FB2F6E4FA7B7772ED71E642FB86CE8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				69DD5C955694B41643DCC7AC3D65D0E9 /* CWStatusBarNotification.modulemap */,
-				B91166D96AF7C817B190D19D509C156C /* CWStatusBarNotification.xcconfig */,
-				30EC2299A7EC97E7BEC93D9F89330237 /* CWStatusBarNotification-dummy.m */,
-				5A2172BCC15239A5DA40679D167CFA7D /* CWStatusBarNotification-prefix.pch */,
-				8AF1029FCBD43EEF4D64DC05A98145C1 /* CWStatusBarNotification-umbrella.h */,
-				0449FC829613CF15D4F927C748FEDC38 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CWStatusBarNotification";
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		4F2226DB24B82BF6642CB3EC032BF7CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4CC5A065B7C0F52CBF7F5C7209A9CB5 /* CWStatusBarNotification */,
+				B69756552B7D8939EC1611242E51DD02 /* UIColor-Hex-Swift */,
+				C4A306EA7B5ED988127482F6BC2090D5 /* UICountingLabel */,
+				E398B51385116CB95F4502B02B3C1463 /* UINavigationBar+Addition */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		742575E47E184BAF9E864F63E22B101D /* Targets Support Files */ = {
@@ -215,31 +235,45 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				02A2E7A44754F59DE1BDD7EAD9DE5A9D /* Pods */,
-				956F8D1C3D916D82C314EB264600EFCF /* Products */,
+				4F2226DB24B82BF6642CB3EC032BF7CB /* Pods */,
+				AE5BE4E6D7B4488264E4E7D851E43897 /* Products */,
 				742575E47E184BAF9E864F63E22B101D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		956F8D1C3D916D82C314EB264600EFCF /* Products */ = {
+		AE5BE4E6D7B4488264E4E7D851E43897 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DF9A38C2094D6522B0D001DED6B62B8 /* CWStatusBarNotification.framework */,
-				EA2C04C5FC61F0C3F23BFC9261D0BF94 /* Pods_Chalmers_Card.framework */,
-				47AEEA21F3D4358CDA3E137ADF834CC3 /* UIColor_Hex_Swift.framework */,
-				0560B4E52B3E89DA34BB478A532F7FF1 /* UICountingLabel.framework */,
+				CEA8184F298C1171DDDA4ED78BF6AD83 /* CWStatusBarNotification.framework */,
+				F34BA8EADCC5809D24A9978F2AFCC0F5 /* Pods_Chalmers_Card.framework */,
+				5ACC751F2D39DCD7FBC90BECEEA6F11F /* UIColor_Hex_Swift.framework */,
+				A46A5F0E739AB2A00C603795BF1AF228 /* UICountingLabel.framework */,
+				5E696DAD6C3C68E84FE523BA367992FD /* UINavigationBar_Addition.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A15BCB915FCDE3987721D980DD11B68 /* CWStatusBarNotification */ = {
+		B69756552B7D8939EC1611242E51DD02 /* UIColor-Hex-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				0F6EB617543C86CC03BABAEE466B58BD /* CWStatusBarNotification.h */,
-				DB6C6D3E50BC6F23273F9FECD9415800 /* CWStatusBarNotification.m */,
-				35FB2F6E4FA7B7772ED71E642FB86CE8 /* Support Files */,
+				0DA5A9E604290E961EE097E845C65976 /* UIColor_Hex.swift */,
+				B881FC681DC12F7C75C607C6D5C8C066 /* Support Files */,
 			);
-			path = CWStatusBarNotification;
+			path = "UIColor-Hex-Swift";
+			sourceTree = "<group>";
+		};
+		B881FC681DC12F7C75C607C6D5C8C066 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66E0CAB7B20F049DC29C96FA5F031689 /* Info.plist */,
+				19F7ADC7B93CA5125FB2BF31998C8FE6 /* UIColor-Hex-Swift.modulemap */,
+				C89AF858E7F9211E9EC21B5F3962E767 /* UIColor-Hex-Swift.xcconfig */,
+				ECA66AA5364A79593BCB41676E19D64B /* UIColor-Hex-Swift-dummy.m */,
+				4BDC8A1001C0562728B0534A3EF5BEEC /* UIColor-Hex-Swift-prefix.pch */,
+				E538971745E700B023E9A1CADDA55643 /* UIColor-Hex-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor-Hex-Swift";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -250,49 +284,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF9541A41EE4992F106DFC29521A7340 /* UIColor-Hex-Swift */ = {
+		C4A306EA7B5ED988127482F6BC2090D5 /* UICountingLabel */ = {
 			isa = PBXGroup;
 			children = (
-				851AEE9D41748FFF8AF22AE0E141FF09 /* UIColor_Hex.swift */,
-				0D0E55EA7442BBD8CA5CE11E279B8D60 /* Support Files */,
+				4390D279A59A599816A92D2BB0186500 /* UICountingLabel.h */,
+				6D164BEBABFAD004556A03A26CB46ACD /* UICountingLabel.m */,
+				31A1DADBA7709D169FF7C7561E9EF715 /* Support Files */,
 			);
-			path = "UIColor-Hex-Swift";
+			path = UICountingLabel;
 			sourceTree = "<group>";
 		};
-		E9AB47C39BBB41BCA4A8B275E702336D /* Support Files */ = {
+		E398B51385116CB95F4502B02B3C1463 /* UINavigationBar+Addition */ = {
 			isa = PBXGroup;
 			children = (
-				C467F58C5D5871A05D46F1A205250CA3 /* Info.plist */,
-				239A64CD4097173268F06FD0FCCD2E86 /* UICountingLabel.modulemap */,
-				FD267D1A545BB163A0BEBCA4606985BA /* UICountingLabel.xcconfig */,
-				3A254A6279FD71AE9A19D42A850DEF1B /* UICountingLabel-dummy.m */,
-				FD05FE5134B97D68FB0E7F29DD0B1D7B /* UICountingLabel-prefix.pch */,
-				CC75FFE85DFBD31E9EAE724BC577C3EB /* UICountingLabel-umbrella.h */,
+				56025BA9D743A91748D163870184980C /* UINavigationBar+Addition.h */,
+				8B2904530DAC0D95294ED1A60227E8AA /* UINavigationBar+Addition.m */,
+				1E94B3C5ABCF7AB6841BEEFDCC5FDABB /* Support Files */,
+			);
+			path = "UINavigationBar+Addition";
+			sourceTree = "<group>";
+		};
+		E4CC5A065B7C0F52CBF7F5C7209A9CB5 /* CWStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				01F6E6D311F2979E8C799BB66968D0F2 /* CWStatusBarNotification.h */,
+				575C7FBCDAAAA2B49A14B46F496A1339 /* CWStatusBarNotification.m */,
+				F675437214658C194A5BCAE58416A7BE /* Support Files */,
+			);
+			path = CWStatusBarNotification;
+			sourceTree = "<group>";
+		};
+		F675437214658C194A5BCAE58416A7BE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				880446D37C668C5084C0F5D53636DE6A /* CWStatusBarNotification.modulemap */,
+				A0CB83995AFBD2B0A74741D2AF10D4BE /* CWStatusBarNotification.xcconfig */,
+				5404351157F89FFC4EA33C2D661EB3F5 /* CWStatusBarNotification-dummy.m */,
+				3798B29A19C15A0D8C63BE93A97A1B56 /* CWStatusBarNotification-prefix.pch */,
+				C8D0FD2B800492C42DE6FB744695DEBC /* CWStatusBarNotification-umbrella.h */,
+				6550864295BEE44C9E129FC4EF651414 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/UICountingLabel";
+			path = "../Target Support Files/CWStatusBarNotification";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		18050C5BB4468FDD3665502837422AF2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E61FA4ACD14B641334BDD90CB5974A6 /* UICountingLabel-umbrella.h in Headers */,
-				2183B66B210C5F089536ECF6E1333FA7 /* UICountingLabel.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C570FA8FA3E7E2C116D8181D2520FA4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E961CAA1DDD2D88F614F7551946166F /* UIColor-Hex-Swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		97E221A92F248B05615308A2CBAE5574 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,11 +340,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B08CEEAB83AE1ACB28FC91151344FBD3 /* Headers */ = {
+		9DA150289DAF58D04748D4D67CCD69BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD393C5C1475E2ABC60FFE8FBBD2FD5 /* Pods-Chalmers Card-umbrella.h in Headers */,
+				31ED1388F2770E259F8EE27722007BE6 /* UIColor-Hex-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C541D36FF865C67F9433B22BF1C30AB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4545F0B940F2421EABF60B48DF3CB4D4 /* UINavigationBar+Addition-umbrella.h in Headers */,
+				C504C6D80430BD90AECFC4839B47B0A1 /* UINavigationBar+Addition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1BDA552FF1785CC2B84D12B76BC3B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE177F87BA42B8F2E155770C36E6744B /* UICountingLabel-umbrella.h in Headers */,
+				BC0A91524376DB474753F12B8FDF505E /* UICountingLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F62B9BF65FFD121A767293A5D7E74779 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16252E59E2CA14668BE2D4B16F7029F1 /* Pods-Chalmers Card-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,53 +391,16 @@
 			);
 			name = CWStatusBarNotification;
 			productName = CWStatusBarNotification;
-			productReference = 9DF9A38C2094D6522B0D001DED6B62B8 /* CWStatusBarNotification.framework */;
+			productReference = CEA8184F298C1171DDDA4ED78BF6AD83 /* CWStatusBarNotification.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		56AAE785EDF7CC97FE8A147A57DA5035 /* UICountingLabel */ = {
+		2AFE16F370CF20630DC4B45848A031C4 /* UIColor-Hex-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E00F81858BFE8DB3DA6ECC50EA4E597 /* Build configuration list for PBXNativeTarget "UICountingLabel" */;
+			buildConfigurationList = BC73433CB364D113CABB4F0CD401F741 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */;
 			buildPhases = (
-				D82A03F43EF0212D1A4E9AD5A1CDBFE8 /* Sources */,
-				E50DAE1D524D742FC29F5D67050D540B /* Frameworks */,
-				18050C5BB4468FDD3665502837422AF2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UICountingLabel;
-			productName = UICountingLabel;
-			productReference = 0560B4E52B3E89DA34BB478A532F7FF1 /* UICountingLabel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7CC07900982848BBA5A3FB80081B798D /* Pods-Chalmers Card */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BBD1C8A7A39C64DE58B88F81751CB57D /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */;
-			buildPhases = (
-				FF195791BC3DCD2997D9D89D1FA773F1 /* Sources */,
-				39BD85CFFF42B5C35A47CE963A7BB2AC /* Frameworks */,
-				B08CEEAB83AE1ACB28FC91151344FBD3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				07F6F8332FE2CDAD0F69EDB9457C9BBE /* PBXTargetDependency */,
-				B7CE5E1A7BBDEE09A536CD324CBF5C51 /* PBXTargetDependency */,
-				AE9895C98A0655B3598B5C2D68C73B2B /* PBXTargetDependency */,
-			);
-			name = "Pods-Chalmers Card";
-			productName = "Pods-Chalmers Card";
-			productReference = EA2C04C5FC61F0C3F23BFC9261D0BF94 /* Pods_Chalmers_Card.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AF66A57FDBD04CAB6FD879F53314A639 /* UIColor-Hex-Swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9826240B1D5F7109020BC6561E5A77F2 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */;
-			buildPhases = (
-				11F78743FD30CFFF91F23214B650634B /* Sources */,
-				975295F37A725A257102C2F4F93834ED /* Frameworks */,
-				3C570FA8FA3E7E2C116D8181D2520FA4 /* Headers */,
+				6CEBCF33D91E4DA45E7FA4E547B0F901 /* Sources */,
+				9A544297CC266BA9F99DA7977FCE1297 /* Frameworks */,
+				9DA150289DAF58D04748D4D67CCD69BB /* Headers */,
 			);
 			buildRules = (
 			);
@@ -381,7 +408,62 @@
 			);
 			name = "UIColor-Hex-Swift";
 			productName = "UIColor-Hex-Swift";
-			productReference = 47AEEA21F3D4358CDA3E137ADF834CC3 /* UIColor_Hex_Swift.framework */;
+			productReference = 5ACC751F2D39DCD7FBC90BECEEA6F11F /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8E1840634D4F9002E65840E3A413C1FE /* UICountingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529442D285A219A1D35F0E2FA04EB4C3 /* Build configuration list for PBXNativeTarget "UICountingLabel" */;
+			buildPhases = (
+				77C2526A4A294BCAD1AA4566B8299F18 /* Sources */,
+				FE59631C976A8CCFDD28E71795D0EC87 /* Frameworks */,
+				CA1BDA552FF1785CC2B84D12B76BC3B8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICountingLabel;
+			productName = UICountingLabel;
+			productReference = A46A5F0E739AB2A00C603795BF1AF228 /* UICountingLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A31527DA468C2AA7D29460A0B4D8963B /* UINavigationBar+Addition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9265A1C28BFE8A8D34EDA10C4DE51307 /* Build configuration list for PBXNativeTarget "UINavigationBar+Addition" */;
+			buildPhases = (
+				442CACF1760177E877ED2045441981E0 /* Sources */,
+				2A64B6E68A2608CB6C1866DC9C85D083 /* Frameworks */,
+				C541D36FF865C67F9433B22BF1C30AB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UINavigationBar+Addition";
+			productName = "UINavigationBar+Addition";
+			productReference = 5E696DAD6C3C68E84FE523BA367992FD /* UINavigationBar_Addition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FCFCC9B0C7BE07B9A4AAD2BB6F72D8DE /* Pods-Chalmers Card */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED2EE1235801257C9D246586537A3394 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */;
+			buildPhases = (
+				47723171BEFEBB73EFD1E2D39749E9CC /* Sources */,
+				4B976A2FE9DB92A83C9E58A14C326D7D /* Frameworks */,
+				F62B9BF65FFD121A767293A5D7E74779 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD015CF4E615338AE41849D3DCAEF9F3 /* PBXTargetDependency */,
+				6E2ADBBAA329611BA97B6E0819A74C11 /* PBXTargetDependency */,
+				90D6AD9B842831A23205D9F62B258FB1 /* PBXTargetDependency */,
+				28318200F576A30AB0C7FD2B0751032F /* PBXTargetDependency */,
+			);
+			name = "Pods-Chalmers Card";
+			productName = "Pods-Chalmers Card";
+			productReference = F34BA8EADCC5809D24A9978F2AFCC0F5 /* Pods_Chalmers_Card.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -401,28 +483,20 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 956F8D1C3D916D82C314EB264600EFCF /* Products */;
+			productRefGroup = AE5BE4E6D7B4488264E4E7D851E43897 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				233B529E4F6EE6E3DF4E23BAFD26903D /* CWStatusBarNotification */,
-				7CC07900982848BBA5A3FB80081B798D /* Pods-Chalmers Card */,
-				AF66A57FDBD04CAB6FD879F53314A639 /* UIColor-Hex-Swift */,
-				56AAE785EDF7CC97FE8A147A57DA5035 /* UICountingLabel */,
+				FCFCC9B0C7BE07B9A4AAD2BB6F72D8DE /* Pods-Chalmers Card */,
+				2AFE16F370CF20630DC4B45848A031C4 /* UIColor-Hex-Swift */,
+				8E1840634D4F9002E65840E3A413C1FE /* UICountingLabel */,
+				A31527DA468C2AA7D29460A0B4D8963B /* UINavigationBar+Addition */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		11F78743FD30CFFF91F23214B650634B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFA3C19A01606A3F1F26002A09823DAA /* UIColor-Hex-Swift-dummy.m in Sources */,
-				D4CB3DAB2BA873738A27DFB95D147079 /* UIColor_Hex.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3CAEC8FE85121863DFFAE1F1B602E47A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,50 +506,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D82A03F43EF0212D1A4E9AD5A1CDBFE8 /* Sources */ = {
+		442CACF1760177E877ED2045441981E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF53D6609A8DDAFC93340DE8086537FD /* UICountingLabel-dummy.m in Sources */,
-				D67F2638A0A431BCAB38B6C2E006C2DA /* UICountingLabel.m in Sources */,
+				2D2D5C76B0C5F7E6FCE0B51EF8F7D578 /* UINavigationBar+Addition-dummy.m in Sources */,
+				D502805048F0B003E6115EACCECB9130 /* UINavigationBar+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF195791BC3DCD2997D9D89D1FA773F1 /* Sources */ = {
+		47723171BEFEBB73EFD1E2D39749E9CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA70E6F7BA53FFC7886985D058A3330E /* Pods-Chalmers Card-dummy.m in Sources */,
+				42ABFB7FF6C08FD1114451621D0C2F1F /* Pods-Chalmers Card-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CEBCF33D91E4DA45E7FA4E547B0F901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376455F79556565FD7F5D9E90D084F25 /* UIColor-Hex-Swift-dummy.m in Sources */,
+				590599309CDEFA3E66F1191DA26996A4 /* UIColor_Hex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77C2526A4A294BCAD1AA4566B8299F18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE133CC368A8DDD0662FA5BAED51CAA6 /* UICountingLabel-dummy.m in Sources */,
+				964FBB0DB0A202A09139727266F3616D /* UICountingLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		07F6F8332FE2CDAD0F69EDB9457C9BBE /* PBXTargetDependency */ = {
+		28318200F576A30AB0C7FD2B0751032F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UINavigationBar+Addition";
+			target = A31527DA468C2AA7D29460A0B4D8963B /* UINavigationBar+Addition */;
+			targetProxy = 9F92B727DD668F5C6A1F01C88B22E5D8 /* PBXContainerItemProxy */;
+		};
+		6E2ADBBAA329611BA97B6E0819A74C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor-Hex-Swift";
+			target = 2AFE16F370CF20630DC4B45848A031C4 /* UIColor-Hex-Swift */;
+			targetProxy = 9DE6A261B15680E1B1874905F8D255F8 /* PBXContainerItemProxy */;
+		};
+		90D6AD9B842831A23205D9F62B258FB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICountingLabel;
+			target = 8E1840634D4F9002E65840E3A413C1FE /* UICountingLabel */;
+			targetProxy = 92E7A0E6CD880100CE62310AF745C699 /* PBXContainerItemProxy */;
+		};
+		DD015CF4E615338AE41849D3DCAEF9F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CWStatusBarNotification;
 			target = 233B529E4F6EE6E3DF4E23BAFD26903D /* CWStatusBarNotification */;
-			targetProxy = D8258C4A02D7F089B943CA3BE7529C9C /* PBXContainerItemProxy */;
-		};
-		AE9895C98A0655B3598B5C2D68C73B2B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UICountingLabel;
-			target = 56AAE785EDF7CC97FE8A147A57DA5035 /* UICountingLabel */;
-			targetProxy = 91806BA39676DBAB1D1A215A52D1D1C3 /* PBXContainerItemProxy */;
-		};
-		B7CE5E1A7BBDEE09A536CD324CBF5C51 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIColor-Hex-Swift";
-			target = AF66A57FDBD04CAB6FD879F53314A639 /* UIColor-Hex-Swift */;
-			targetProxy = E88852E41E7FE781C888A3BA5292FE7D /* PBXContainerItemProxy */;
+			targetProxy = BDA740B47912FCF464187DDE9E3CCB73 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		01ABCA8756554B2CE69BA5535F545F3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91166D96AF7C817B190D19D509C156C /* CWStatusBarNotification.xcconfig */;
+			baseConfigurationReference = A0CB83995AFBD2B0A74741D2AF10D4BE /* CWStatusBarNotification.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -544,38 +642,9 @@
 			};
 			name = Debug;
 		};
-		1DE166FCF6018CA70CC0869147C9388F /* Debug */ = {
+		295FE317B7CCC101211AFF8FD9CB1079 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD267D1A545BB163A0BEBCA4606985BA /* UICountingLabel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UICountingLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		25F75F6685D110C7E9CD812FF678623A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD267D1A545BB163A0BEBCA4606985BA /* UICountingLabel.xcconfig */;
+			baseConfigurationReference = 23420E96EFFA3FE145D9D0A158994EE2 /* UINavigationBar+Addition.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -586,14 +655,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UINavigationBar+Addition/UINavigationBar+Addition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UINavigationBar+Addition/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
+				MODULEMAP_FILE = "Target Support Files/UINavigationBar+Addition/UINavigationBar+Addition.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UICountingLabel;
+				PRODUCT_NAME = UINavigationBar_Addition;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,7 +671,7 @@
 			};
 			name = Release;
 		};
-		59E32C9041F3FA2325759D307B1E0F35 /* Debug */ = {
+		354EC8A773F7510FCD3CA74D0F5BC8CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D03E355071995EA9738F5B721CBFE16F /* Pods-Chalmers Card.debug.xcconfig */;
 			buildSettings = {
@@ -636,9 +705,67 @@
 			};
 			name = Debug;
 		};
+		39C00859E2E15D569033B91394D0F60E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52C922A8391B7FA9067A6640FEAF731 /* UICountingLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UICountingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3ABFE9A5DD0C5A844C66E680592FEA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89AF858E7F9211E9EC21B5F3962E767 /* UIColor-Hex-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7A8F59B7E6EF38040EB398476461B468 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91166D96AF7C817B190D19D509C156C /* CWStatusBarNotification.xcconfig */;
+			baseConfigurationReference = A0CB83995AFBD2B0A74741D2AF10D4BE /* CWStatusBarNotification.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -665,9 +792,9 @@
 			};
 			name = Release;
 		};
-		98FCE5ECE85CE251234494AE15742D32 /* Release */ = {
+		9610756BE4A1049EEFE180341C28E259 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22F4DD61C8A0F9B5340A3D714614827A /* UIColor-Hex-Swift.xcconfig */;
+			baseConfigurationReference = A52C922A8391B7FA9067A6640FEAF731 /* UICountingLabel.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -678,14 +805,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
+				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIColor_Hex_Swift;
+				PRODUCT_NAME = UICountingLabel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -693,6 +820,35 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		B24C0A438F455D02A1157CE9EB7E6AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23420E96EFFA3FE145D9D0A158994EE2 /* UINavigationBar+Addition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UINavigationBar+Addition/UINavigationBar+Addition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UINavigationBar+Addition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UINavigationBar+Addition/UINavigationBar+Addition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UINavigationBar_Addition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -732,37 +888,7 @@
 			};
 			name = Release;
 		};
-		DBA89FBF02A6657527BAE8CCFA8EBBE1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22F4DD61C8A0F9B5340A3D714614827A /* UIColor-Hex-Swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UIColor_Hex_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E3E5D11708DF3FF2B5DBA2CC2C32749B /* Release */ = {
+		D7E08FB904B67A2C12555B6AE053F847 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67C37DE07B56E9113829DADFAA515BB6 /* Pods-Chalmers Card.release.xcconfig */;
 			buildSettings = {
@@ -795,6 +921,36 @@
 			};
 			name = Release;
 		};
+		F440A7A02EC753EF5D61CE2835AE5610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89AF858E7F9211E9EC21B5F3962E767 /* UIColor-Hex-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex-Swift/UIColor-Hex-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -807,29 +963,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E00F81858BFE8DB3DA6ECC50EA4E597 /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
+		529442D285A219A1D35F0E2FA04EB4C3 /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DE166FCF6018CA70CC0869147C9388F /* Debug */,
-				25F75F6685D110C7E9CD812FF678623A /* Release */,
+				39C00859E2E15D569033B91394D0F60E /* Debug */,
+				9610756BE4A1049EEFE180341C28E259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9826240B1D5F7109020BC6561E5A77F2 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */ = {
+		9265A1C28BFE8A8D34EDA10C4DE51307 /* Build configuration list for PBXNativeTarget "UINavigationBar+Addition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBA89FBF02A6657527BAE8CCFA8EBBE1 /* Debug */,
-				98FCE5ECE85CE251234494AE15742D32 /* Release */,
+				B24C0A438F455D02A1157CE9EB7E6AEA /* Debug */,
+				295FE317B7CCC101211AFF8FD9CB1079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBD1C8A7A39C64DE58B88F81751CB57D /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */ = {
+		BC73433CB364D113CABB4F0CD401F741 /* Build configuration list for PBXNativeTarget "UIColor-Hex-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59E32C9041F3FA2325759D307B1E0F35 /* Debug */,
-				E3E5D11708DF3FF2B5DBA2CC2C32749B /* Release */,
+				F440A7A02EC753EF5D61CE2835AE5610 /* Debug */,
+				3ABFE9A5DD0C5A844C66E680592FEA56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -839,6 +995,15 @@
 			buildConfigurations = (
 				01ABCA8756554B2CE69BA5535F545F3D /* Debug */,
 				7A8F59B7E6EF38040EB398476461B468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED2EE1235801257C9D246586537A3394 /* Build configuration list for PBXNativeTarget "Pods-Chalmers Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354EC8A773F7510FCD3CA74D0F5BC8CE /* Debug */,
+				D7E08FB904B67A2C12555B6AE053F847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

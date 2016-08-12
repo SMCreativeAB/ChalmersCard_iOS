@@ -2,17 +2,20 @@ PODS:
   - CWStatusBarNotification (2.3.4)
   - UIColor-Hex-Swift (0.2.0)
   - UICountingLabel (1.4.0)
+  - UINavigationBar+Addition (1.3.0)
 
 DEPENDENCIES:
   - CWStatusBarNotification (~> 2.3.4)
   - UIColor-Hex-Swift
   - UICountingLabel
+  - UINavigationBar+Addition
 
 SPEC CHECKSUMS:
   CWStatusBarNotification: 3fec41edcb0ae3677d9febfcb9632d8bdf52294c
   UIColor-Hex-Swift: a35096d0d3f8630bd647e4df851e1d2a165d5117
   UICountingLabel: ed5ce5b6d5ef278ff40d99cfa49577a30ab0c87b
+  UINavigationBar+Addition: 433c16a992cfb73c3141b1f7fcaa93169c15cfa0
 
-PODFILE CHECKSUM: 294cc51cb2030686c30623de92418276b93eb125
+PODFILE CHECKSUM: 040ce0260d23ca9d13417974a75d8a8d011f4078
 
 COCOAPODS: 1.0.0

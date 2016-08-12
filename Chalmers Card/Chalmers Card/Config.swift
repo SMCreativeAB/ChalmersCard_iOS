@@ -9,4 +9,6 @@ class Config {
     
     // static let apiUrl = ""
     static let chargeCardUrl = NSURL(string: "http://kortladdning3.chalmerskonferens.se/")
+    static let authorUrl = NSURL(string: "https://sharpmind.se/")
+    static let authorEmail = NSURL(string: "mailto:jesper@sharpmind.se")
 }
