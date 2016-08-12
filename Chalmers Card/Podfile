@@ -10,4 +10,5 @@ target 'Chalmers Card' do
   pod 'Eureka', '~> 1.7'
   pod 'KeychainSwift', '~> 3.0'
   pod 'Alamofire', '~> 3.4'
+  pod 'NSDate+TimeAgo'
 end

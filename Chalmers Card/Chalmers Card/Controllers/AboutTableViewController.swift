@@ -38,6 +38,7 @@ class AboutTableViewController : UITableViewController {
         if row == 4 { return Config.eureka }
         if row == 5 { return Config.keychainSwift }
         if row == 6 { return Config.alamofire }
+        if row == 7 { return Config.nsDateTimeAgo }
         
         return nil
     }

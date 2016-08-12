@@ -1,10 +1,13 @@
 import UIKit
 import SafariServices
 import UICountingLabel
+import NSDate_TimeAgo
 
 class BalanceController : UIViewController {
     @IBOutlet weak var balanceLabel: UICountingLabel!
     @IBOutlet weak var timeSinceUpdateLabel: UILabel!
+    
+    let cardRepository = AppDelegate.getShared().cardRepository
     var shouldShowRefill = false
     
     override func viewDidLoad() {
@@ -13,20 +16,35 @@ class BalanceController : UIViewController {
         // Set label format
         balanceLabel.format = "%d kr"
         balanceLabel.method = .EaseOut
-        balanceLabel.text = "0 kr" // todo: use old value
-
-        // Set starting point
-        setBackgroundColor(Config.colorDefault, animated: false)
+        timeSinceUpdateLabel.text = "Never updated"
+        
+        if let lastStatement = cardRepository.getLastStatement() {
+            timeSinceUpdateLabel.text = lastStatement.timestamp.timeAgo()
+            balanceLabel.text = String(lastStatement.balance)
+            
+            let color = BalanceColorIndicator.getColor(lastStatement.balance)
+            setBackgroundColor(color, animated: false)
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
+    private func updateBalance() {
+        if let statement = cardRepository.getStatement() {
+            timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
+            balanceLabel.countFromCurrentValueTo(CGFloat(statement.balance))
+            
+            let color = BalanceColorIndicator.getColor(statement.balance)
+            setBackgroundColor(color, animated: true)
+        }
+    }
+    
     override func viewDidAppear(animated: Bool) {
-        // Animate to new balance
-        setBackgroundColor(Config.colorHigh, animated: true)
-        balanceLabel.countFromCurrentValueTo(500)
+        dispatch_async(dispatch_get_main_queue()) {
+            self.updateBalance()
+        }
         
         if shouldShowRefill {
             onRefillCardButtonTap(self)

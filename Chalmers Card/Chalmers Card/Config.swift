@@ -23,4 +23,5 @@ class Config {
     static let eureka = NSURL(string: "https://github.com/xmartlabs/Eureka")
     static let keychainSwift = NSURL(string: "https://github.com/marketplacer/keychain-swift")
     static let alamofire = NSURL(string: "https://github.com/Alamofire/Alamofire")
+    static let nsDateTimeAgo = NSURL(string: "https://github.com/kevinlawler/NSDate-TimeAgo")
 }

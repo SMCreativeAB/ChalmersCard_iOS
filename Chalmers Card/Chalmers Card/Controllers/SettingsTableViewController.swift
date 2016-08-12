@@ -70,4 +70,12 @@ class SettingsTableViewController : FormViewController, UITextFieldDelegate {
         
         cardTextField?.becomeFirstResponder()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let cardNumber = AppDelegate.getShared().cardRepository.getNumber() {
+            form.setValues(["CardNumber": cardNumber])
+        }
+    }
 }

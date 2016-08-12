@@ -2,32 +2,51 @@ import Foundation
 
 class CardRepository {
     static let keychainKey = "CHALMERS_CARD"
+    static let lastStatementKey = "CHALMERS_CARD_STATEMENT"
+    let defaults = NSUserDefaults.standardUserDefaults()
     let keychain = KeychainService()
     let api = APIService()
-    var card: Card?
+    var statement: CardStatement?
     
-    func get() -> Card? {
-        if let number = keychain.get(CardRepository.keychainKey) where card == nil {
-            loadCard(Int(number)!)
+    func getStatement() -> CardStatement? {
+        if let number = getNumber() where statement == nil {
+            statement = loadStatement(number)
         }
         
-        return card
+        return statement
+    }
+    
+    func getNumber() -> Int? {
+        if let str = keychain.get(CardRepository.keychainKey) {
+            return Int(str)
+        }
+        
+        return nil
+    }
+    
+    func getLastStatement() -> CardStatement? {
+        if statement == nil, let data = defaults.objectForKey(CardRepository.lastStatementKey) as? NSData {
+            statement = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? CardStatement
+        }
+        
+        return statement
     }
     
     func exists() -> Bool {
-        return keychain.get(CardRepository.keychainKey) != nil
+        return getNumber() != nil
     }
     
     func set(number: Int) {
-        card = nil
         keychain.set(CardRepository.keychainKey, value: String(number))
     }
     
-    private func loadCard(number: Int) {
-        let cardNumber = Int(number)
-        let newCard = Card(number: cardNumber)
-        newCard.balance = api.getCardAmount(cardNumber)
+    private func loadStatement(number: Int) -> CardStatement {
+        let balance = api.getCardAmount(number)
+        let cardStatement = CardStatement(balance: balance, timestamp: NSDate())
         
-        card = newCard
+        let statementData = NSKeyedArchiver.archivedDataWithRootObject(cardStatement)
+        defaults.setObject(statementData, forKey: CardRepository.lastStatementKey)
+        
+        return cardStatement
     }
 }
