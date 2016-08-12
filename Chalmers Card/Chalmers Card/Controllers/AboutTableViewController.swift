@@ -2,11 +2,13 @@ import UIKit
 
 class AboutTableViewController : UITableViewController {
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        // Hide first section, else return 25pt height
-        return section == 0 ? CGFloat.min : 25
+        // Hide first section, else return normal height
+        return section == 0 ? CGFloat.min : 36
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.cellForRowAtIndexPath(indexPath)?.setSelected(false, animated: true)
+        
         if indexPath.section == 0 {
             return onAboutSectionTap(indexPath.row)
         }
