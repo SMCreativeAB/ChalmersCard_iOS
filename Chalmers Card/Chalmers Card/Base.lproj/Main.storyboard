@@ -21,11 +21,11 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PPW-nt-k40" id="Lz3-LU-KaB">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="🖥 SHARPMIND Digitalbyrå" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAX-03-lAl">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -38,11 +38,11 @@
                                         <rect key="frame" x="0.0" y="79" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Njk-AI-jXS" id="gYa-5g-lcv">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="👱🏼 Jesper Lindström (IT15)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mEi-WD-ILo">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -152,7 +152,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1sd-sm-rKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1878.5" y="333.5"/>
+            <point key="canvasLocation" x="1870.5" y="333.5"/>
         </scene>
         <!--Om appen-->
         <scene sceneID="nOd-ET-U8q">
@@ -177,13 +177,20 @@
                                 <constraints>
                                     <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="top" secondItem="2U5-9r-rG0" secondAttribute="top" constant="20" symbolic="YES" id="eZo-Pg-xdh"/>
                                     <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="leading" secondItem="2U5-9r-rG0" secondAttribute="leading" id="gSc-IR-wbo"/>
-                                    <constraint firstAttribute="height" constant="260" id="oki-0g-Jqx"/>
+                                    <constraint firstAttribute="height" constant="260" id="oki-0g-Jqx">
+                                        <variation key="heightClass=compact" constant="64"/>
+                                    </constraint>
                                     <constraint firstAttribute="trailing" secondItem="JLZ-Lg-Fq3" secondAttribute="trailing" id="zfp-9Q-Gi5"/>
                                     <constraint firstAttribute="bottom" secondItem="JLZ-Lg-Fq3" secondAttribute="bottom" constant="30" id="zix-DX-pdo"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="eZo-Pg-xdh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <exclude reference="JLZ-Lg-Fq3"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -198,32 +205,17 @@
                         <constraints>
                             <constraint firstItem="2U5-9r-rG0" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" constant="-64" id="6z6-oU-xXM"/>
                             <constraint firstItem="xLm-bV-SXt" firstAttribute="top" secondItem="2U5-9r-rG0" secondAttribute="bottom" id="8LL-eL-JKU"/>
-                            <constraint firstItem="2U5-9r-rG0" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" id="HSU-1p-SRL"/>
                             <constraint firstItem="xLm-bV-SXt" firstAttribute="leading" secondItem="8nE-HI-R3A" secondAttribute="leading" id="JHy-Sc-wQj"/>
                             <constraint firstItem="2U5-9r-rG0" firstAttribute="leading" secondItem="8nE-HI-R3A" secondAttribute="leading" id="JZT-td-8j6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2U5-9r-rG0" secondAttribute="trailing" id="KhI-2E-up5"/>
                             <constraint firstAttribute="trailing" secondItem="2U5-9r-rG0" secondAttribute="trailing" id="Q1S-iZ-tds"/>
-                            <constraint firstItem="2U5-9r-rG0" firstAttribute="leading" secondItem="8nE-HI-R3A" secondAttribute="leadingMargin" id="bZr-dR-rY6"/>
                             <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" id="fJ1-45-CLz"/>
                             <constraint firstAttribute="trailing" secondItem="xLm-bV-SXt" secondAttribute="trailing" id="qkB-tK-pxz"/>
-                            <constraint firstItem="goI-4x-k8V" firstAttribute="top" secondItem="2U5-9r-rG0" secondAttribute="bottom" constant="407" id="t7A-cq-AF0"/>
-                            <constraint firstItem="2U5-9r-rG0" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" id="t7Q-9s-Faj"/>
                             <constraint firstItem="goI-4x-k8V" firstAttribute="top" secondItem="xLm-bV-SXt" secondAttribute="bottom" id="teK-Yl-19f"/>
-                            <constraint firstItem="2U5-9r-rG0" firstAttribute="top" secondItem="BS7-r4-fOC" secondAttribute="bottom" id="wmN-LK-9zf"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="HSU-1p-SRL"/>
-                                <exclude reference="KhI-2E-up5"/>
-                                <exclude reference="bZr-dR-rY6"/>
-                                <exclude reference="t7Q-9s-Faj"/>
-                                <exclude reference="wmN-LK-9zf"/>
-                                <exclude reference="t7A-cq-AF0"/>
-                            </mask>
-                        </variation>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="headerBackground" destination="2U5-9r-rG0" id="tWg-0l-eiC"/>
@@ -264,6 +256,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVb-jA-jul">
                                 <rect key="frame" x="327" y="35" width="32" height="32"/>
                                 <state key="normal" image="SettingsIcon"/>
+                                <state key="highlighted" image="SettingsIcon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="W6o-fY-YG9" kind="show" identifier="SettingsSegue" id="nSy-PM-Sf3"/>
                                 </connections>
@@ -271,6 +266,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh2-sf-4AS">
                                 <rect key="frame" x="16" y="35" width="32" height="32"/>
                                 <state key="normal" image="HelpIcon"/>
+                                <state key="highlighted" image="HelpIcon"/>
                                 <connections>
                                     <segue destination="pqf-2x-mcY" kind="show" id="Age-hX-6J2"/>
                                 </connections>

@@ -40,9 +40,11 @@ class AboutController : UIViewController {
         gradientLayer?.frame = headerBackground.bounds
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+        if toInterfaceOrientation == .Portrait {
+            let bounds = CGRect()
+            gradientLayer?.frame = bounds
+        }
     }
 }
 
