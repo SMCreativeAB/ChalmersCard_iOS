@@ -6,9 +6,11 @@ import NSDate_TimeAgo
 class BalanceController : UIViewController {
     @IBOutlet weak var balanceLabel: UICountingLabel!
     @IBOutlet weak var timeSinceUpdateLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     let cardRepository = AppDelegate.getShared().cardRepository
     var shouldShowRefill = false
+    let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,26 +27,52 @@ class BalanceController : UIViewController {
             let color = BalanceColorIndicator.getColor(lastStatement.balance)
             setBackgroundColor(color, animated: false)
         }
+
+        setupPullToRefresh()
+    }
+    
+    private func setupPullToRefresh() {
+        scrollView.alwaysBounceVertical = true
+        
+        refreshControl.tintColor = UIColor.whiteColor()
+        //let whiteColorAttribute = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        //refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh", attributes: whiteColorAttribute)
+        scrollView.addSubview(refreshControl)
+        
+        refreshControl.addTarget(self, action: #selector(self.updateBalance), forControlEvents: UIControlEvents.ValueChanged)
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    private func updateBalance() {
-        if let statement = cardRepository.getStatement() {
-            timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
-            balanceLabel.countFromCurrentValueTo(CGFloat(statement.balance))
+    func updateBalance() {
+        refreshControl.beginRefreshing()
+        
+        UIView.animateWithDuration(0.3) {
+            self.timeSinceUpdateLabel.alpha = 0
+            self.balanceLabel.alpha = 0
+        }
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            if let statement = self.cardRepository.getStatement() {
+                self.timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
+                self.balanceLabel.countFromCurrentValueTo(CGFloat(statement.balance))
+                let color = BalanceColorIndicator.getColor(statement.balance)
+                self.setBackgroundColor(color, animated: true)
+                
+                UIView.animateWithDuration(0.3) {
+                    self.timeSinceUpdateLabel.alpha = 1
+                    self.balanceLabel.alpha = 1
+                }
+            }
             
-            let color = BalanceColorIndicator.getColor(statement.balance)
-            setBackgroundColor(color, animated: true)
+            self.refreshControl.endRefreshing()
         }
     }
     
     override func viewDidAppear(animated: Bool) {
-        dispatch_async(dispatch_get_main_queue()) {
-            self.updateBalance()
-        }
+        self.updateBalance()
         
         if shouldShowRefill {
             onRefillCardButtonTap(self)
