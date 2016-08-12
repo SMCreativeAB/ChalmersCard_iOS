@@ -36,6 +36,8 @@ class AboutTableViewController : UITableViewController {
         if row == 2 { return Config.cwStatusBarNotification }
         if row == 3 { return Config.uiNavigationBarAddition }
         if row == 4 { return Config.eureka }
+        if row == 5 { return Config.keychainSwift }
+        if row == 6 { return Config.alamofire }
         
         return nil
     }

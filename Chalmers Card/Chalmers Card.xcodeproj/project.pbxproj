@@ -12,6 +12,10 @@
 		247398D41D5E1A5E00BD6028 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398D31D5E1A5E00BD6028 /* SettingsTableViewController.swift */; };
 		247398D81D5E40E100BD6028 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398D71D5E40E100BD6028 /* StringExtensions.swift */; };
 		247398DA1D5E583B00BD6028 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398D91D5E583B00BD6028 /* NavigationController.swift */; };
+		247398DC1D5E64B400BD6028 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398DB1D5E64B400BD6028 /* Card.swift */; };
+		247398E11D5E665700BD6028 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398E01D5E665700BD6028 /* CardRepository.swift */; };
+		247398E31D5E667300BD6028 /* CardAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398E21D5E667300BD6028 /* CardAPIService.swift */; };
+		247398E51D5E66E500BD6028 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398E41D5E66E500BD6028 /* KeychainService.swift */; };
 		24E51A7D1D5CAEC900498915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A7C1D5CAEC900498915 /* AppDelegate.swift */; };
 		24E51A821D5CAEC900498915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E51A801D5CAEC900498915 /* Main.storyboard */; };
 		24E51A841D5CAEC900498915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E51A831D5CAEC900498915 /* Assets.xcassets */; };
@@ -31,6 +35,10 @@
 		247398D31D5E1A5E00BD6028 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		247398D71D5E40E100BD6028 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		247398D91D5E583B00BD6028 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		247398DB1D5E64B400BD6028 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		247398E01D5E665700BD6028 /* CardRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
+		247398E21D5E667300BD6028 /* CardAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAPIService.swift; sourceTree = "<group>"; };
+		247398E41D5E66E500BD6028 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		24E51A791D5CAEC900498915 /* Chalmers Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chalmers Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E51A7C1D5CAEC900498915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E51A811D5CAEC900498915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +84,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		247398DF1D5E662E00BD6028 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				247398E21D5E667300BD6028 /* CardAPIService.swift */,
+				247398E41D5E66E500BD6028 /* KeychainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		24E51A701D5CAEC900498915 = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +114,9 @@
 		24E51A7B1D5CAEC900498915 /* Chalmers Card */ = {
 			isa = PBXGroup;
 			children = (
+				247398DF1D5E662E00BD6028 /* Services */,
 				247398D01D5DFE1700BD6028 /* Views */,
 				24E51AA31D5D0C4800498915 /* Helpers */,
-				24E51A911D5CAFF100498915 /* Store */,
 				24E51A8F1D5CAF5200498915 /* Models */,
 				24E51A8E1D5CAF4A00498915 /* Controllers */,
 				24E51A7C1D5CAEC900498915 /* AppDelegate.swift */,
@@ -129,15 +146,10 @@
 		24E51A8F1D5CAF5200498915 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				247398E01D5E665700BD6028 /* CardRepository.swift */,
+				247398DB1D5E64B400BD6028 /* Card.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		24E51A911D5CAFF100498915 /* Store */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Store;
 			sourceTree = "<group>";
 		};
 		24E51AA31D5D0C4800498915 /* Helpers */ = {
@@ -282,15 +294,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E51A9C1D5CB1B900498915 /* SettingsController.swift in Sources */,
+				247398E31D5E667300BD6028 /* CardAPIService.swift in Sources */,
 				247398DA1D5E583B00BD6028 /* NavigationController.swift in Sources */,
 				24E51AA21D5D047E00498915 /* RefillController.swift in Sources */,
 				24E51A7D1D5CAEC900498915 /* AppDelegate.swift in Sources */,
+				247398DC1D5E64B400BD6028 /* Card.swift in Sources */,
+				247398E11D5E665700BD6028 /* CardRepository.swift in Sources */,
 				247398CF1D5DCE7900BD6028 /* AboutTableViewController.swift in Sources */,
 				24E51A9A1D5CB1B900498915 /* AboutController.swift in Sources */,
 				24E51AA51D5D0C5F00498915 /* Delay.swift in Sources */,
 				247398D81D5E40E100BD6028 /* StringExtensions.swift in Sources */,
 				247398D41D5E1A5E00BD6028 /* SettingsTableViewController.swift in Sources */,
 				247398D21D5DFE3000BD6028 /* BrandGradientView.swift in Sources */,
+				247398E51D5E66E500BD6028 /* KeychainService.swift in Sources */,
 				24E51A9B1D5CB1B900498915 /* BalanceController.swift in Sources */,
 				24E51AA01D5CB57300498915 /* Config.swift in Sources */,
 			);
@@ -411,6 +427,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Chalmers Card/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "se.sharpmind.Chalmers-Card";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,6 +443,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Chalmers Card/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "se.sharpmind.Chalmers-Card";
 				PRODUCT_NAME = "$(TARGET_NAME)";

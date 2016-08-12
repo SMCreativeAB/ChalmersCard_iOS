@@ -13,7 +13,7 @@ import UIColor_Hex_Swift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var cardRepository = CardRepository()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window!.tintColor = Config.tintColor
@@ -22,12 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
-        if shortcutItem.type == "se.sharpmind.Chalmers-Card.refill" {
-            let hasCard = false
-            
-            if hasCard {
-                self.window?.rootViewController?.performSegueWithIdentifier("refillSegue", sender: self)
-            }
+        if shortcutItem.type == "se.sharpmind.Chalmers-Card.refill" && cardRepository.exists() {
+            self.window?.rootViewController?.performSegueWithIdentifier("refillSegue", sender: self)
         }
     }
 
@@ -53,6 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    class func getShared() -> AppDelegate {
+        return UIApplication.sharedApplication().delegate as! AppDelegate
+    }
 }
 

@@ -21,4 +21,6 @@ class Config {
     static let cwStatusBarNotification = NSURL(string: "https://github.com/cezarywojcik/CWStatusBarNotification")
     static let uiNavigationBarAddition = NSURL(string: "https://github.com/samwize/UINavigationBar-Addition")
     static let eureka = NSURL(string: "https://github.com/xmartlabs/Eureka")
+    static let keychainSwift = NSURL(string: "https://github.com/marketplacer/keychain-swift")
+    static let alamofire = NSURL(string: "https://github.com/Alamofire/Alamofire")
 }

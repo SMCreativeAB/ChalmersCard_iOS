@@ -33,7 +33,13 @@ class SettingsController : UIViewController {
     
     @IBAction func onSave(sender: AnyObject) {
         if let form = formController {
-            print(form.getCardNumber())
+            let cardNumber = form.getCardNumber()
+            
+            guard String(cardNumber).characters.count == 16 else {
+                return
+            }
+            
+            AppDelegate.getShared().cardRepository.set(cardNumber)
             
             if isCreate {
                 performSegueWithIdentifier("balanceSegue", sender: self)

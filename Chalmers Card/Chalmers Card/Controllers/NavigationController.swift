@@ -4,9 +4,7 @@ class NavigationController : UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let hasCard = false
-        
-        if !hasCard {
+        if !AppDelegate.getShared().cardRepository.exists() {
             performSegueWithIdentifier("addCardSegue", sender: self)
         }
     }

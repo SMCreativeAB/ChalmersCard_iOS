@@ -6,7 +6,7 @@ class SettingsTableViewController : FormViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        form +++ Section(footer: "Ditt kårkort sparas säkert i iCloud för smidig åtkomst från alla dina enheter.")
+        form +++ Section(footer: "Ditt kårkort sparas säkert i din enhets nyckelring.")
             
         <<< IntRow("CardNumber"){ row in
             row.title = "Kortnumer"
