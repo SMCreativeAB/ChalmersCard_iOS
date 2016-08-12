@@ -9,25 +9,33 @@ class AboutTableViewController : UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.cellForRowAtIndexPath(indexPath)?.setSelected(false, animated: true)
         
+        var url: NSURL?
+        
         if indexPath.section == 0 {
-            return onAboutSectionTap(indexPath.row)
+            url = urlForAboutSectionTap(indexPath.row)
+        } else {
+            url = urlForCreditsSectionTap(indexPath.row)
         }
         
-        if indexPath.section == 1 {
-            return onCreditsSectionTap(indexPath.row)
+        if let urlToOpen = url {
+            UIApplication.sharedApplication().openURL(urlToOpen)
         }
     }
     
-    private func onAboutSectionTap(row: Int) {
-        if row == 0 {
-            UIApplication.sharedApplication().openURL(Config.authorUrl!)
-        } else {
-            UIApplication.sharedApplication().openURL(Config.authorEmail!)
-        }
+    private func urlForAboutSectionTap(row: Int) -> NSURL? {
+        if row == 0 { return Config.authorUrl }
+        if row == 1 { return Config.authorEmail }
+        if row == 2 { return Config.gitHubUrl }
+        
+        return nil
     }
     
-    private func onCreditsSectionTap(row: Int) {
-        print("credits")
-        print(row)
+    private func urlForCreditsSectionTap(row: Int) -> NSURL? {
+        if row == 0 { return Config.uiColorHexSwift }
+        if row == 1 { return Config.uiCountingLabel }
+        if row == 2 { return Config.cwStatusBarNotification }
+        if row == 3 { return Config.uiNavigationBarAddition }
+        
+        return nil
     }
 }
