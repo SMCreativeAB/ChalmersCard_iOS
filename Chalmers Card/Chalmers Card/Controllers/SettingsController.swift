@@ -3,6 +3,7 @@ import UIKit
 class SettingsController : UIViewController {
     @IBOutlet weak var container: UIView!
     private var formController: SettingsTableViewController?
+    var isCreate = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -13,6 +14,12 @@ class SettingsController : UIViewController {
         self.navigationController?.navigationBar.barStyle = .Black
         self.navigationController?.navigationBar.tintColor = Config.tintColor
         self.navigationController?.navigationBar.makeDefault()
+        
+        print(isCreate)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        isCreate = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +34,12 @@ class SettingsController : UIViewController {
     @IBAction func onSave(sender: AnyObject) {
         if let form = formController {
             print(form.getCardNumber())
+            
+            if isCreate {
+                performSegueWithIdentifier("balanceSegue", sender: self)
+            } else {
+                navigationController?.popViewControllerAnimated(true)
+            }
         }
     }
     

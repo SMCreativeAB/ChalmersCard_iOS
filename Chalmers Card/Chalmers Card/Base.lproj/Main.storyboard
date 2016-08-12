@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="1870.5" y="333.5"/>
         </scene>
-        <!--Om appen-->
+        <!--About Controller-->
         <scene sceneID="nOd-ET-U8q">
             <objects>
-                <viewController title="Om appen" id="pqf-2x-mcY" customClass="AboutController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="About Controller" id="pqf-2x-mcY" customClass="AboutController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BS7-r4-fOC"/>
                         <viewControllerLayoutGuide type="bottom" id="goI-4x-k8V"/>
@@ -275,7 +275,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="W6o-fY-YG9" kind="show" identifier="SettingsSegue" id="nSy-PM-Sf3"/>
+                                    <segue destination="W6o-fY-YG9" kind="show" identifier="" id="nSy-PM-Sf3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh2-sf-4AS">
@@ -331,10 +331,10 @@
             </objects>
             <point key="canvasLocation" x="940.5" y="698.5"/>
         </scene>
-        <!--Chalmers Kårkort-->
+        <!--Settings Controller-->
         <scene sceneID="Hvo-qh-VR7">
             <objects>
-                <viewController title="Chalmers Kårkort" id="W6o-fY-YG9" customClass="SettingsController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings Controller" id="W6o-fY-YG9" customClass="SettingsController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w0f-el-AT0"/>
                         <viewControllerLayoutGuide type="bottom" id="0fR-u7-5LH"/>
@@ -410,11 +410,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="container" destination="3LQ-BB-6eD" id="Mua-5j-OKI"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="balanceSegue" id="raO-i3-6KX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLW-cn-zhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1432.5" y="1106.5"/>
+            <point key="canvasLocation" x="684.5" y="1546.5"/>
         </scene>
         <!--Settings Table View Controller-->
         <scene sceneID="1vV-On-bZm">
@@ -433,12 +434,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySj-eo-I5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870.5" y="1106.5"/>
+            <point key="canvasLocation" x="1148.5" y="1546.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d1v-pb-QTJ">
             <objects>
-                <navigationController id="C5c-zg-UO3" sceneMemberID="viewController">
+                <navigationController id="C5c-zg-UO3" customClass="NavigationController" customModule="Chalmers_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4a7-jh-NmU">
@@ -447,6 +448,7 @@
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z6d-UN-83h"/>
+                        <segue destination="W6o-fY-YG9" kind="show" identifier="addCardSegue" animates="NO" id="M74-2u-783"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLb-gU-i83" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -460,4 +462,8 @@
         <image name="SettingsIcon" width="32" height="32"/>
         <image name="SharpmindLogo" width="1399" height="900"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="raO-i3-6KX"/>
+        <segue reference="nSy-PM-Sf3"/>
+    </inferredMetricsTieBreakers>
 </document>
