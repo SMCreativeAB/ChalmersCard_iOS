@@ -20,4 +20,5 @@ class Config {
     static let uiCountingLabel = NSURL(string: "https://github.com/dataxpress/UICountingLabel")
     static let cwStatusBarNotification = NSURL(string: "https://github.com/cezarywojcik/CWStatusBarNotification")
     static let uiNavigationBarAddition = NSURL(string: "https://github.com/samwize/UINavigationBar-Addition")
+    static let eureka = NSURL(string: "https://github.com/xmartlabs/Eureka")
 }

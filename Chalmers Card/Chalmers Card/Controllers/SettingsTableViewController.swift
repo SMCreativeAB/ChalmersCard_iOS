@@ -1,15 +1,57 @@
 import Eureka
 
-class SettingsTableViewController : FormViewController {
+class SettingsTableViewController : FormViewController, UITextFieldDelegate {
+    private var cardTextField: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        form +++ Section()
+        form +++ Section(footer: "Ditt kårkort sparas säkert i iCloud för smidig åtkomst från alla dina enheter.")
             
         <<< IntRow("CardNumber"){ row in
             row.title = "Kortnumer"
             row.placeholder = "XXXX XXXX XXXX XXXX"
+            row.formatter = self.getCardNumberFormatter()
+            self.cardTextField = row.cell.textField
+        }.onChange() { row in
+            self.filterTextFieldInput(row.cell.textField)
         }
+    }
+    
+    private func filterTextFieldInput(textField: UITextField) {
+        if var text = textField.text {
+            if text.characters.count > 16 {
+                let start = text.startIndex.advancedBy(16)
+                text.removeRange(start ..< text.endIndex)
+                textField.text = text
+            }
+        }
+    }
+    
+    private func getCardNumberFormatter() -> NSNumberFormatter {
+        let formatter = NSNumberFormatter()
+        
+        formatter.numberStyle = .DecimalStyle
+        formatter.groupingSize = 4
+        formatter.groupingSeparator = " "
+        
+        return formatter
+    }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        if string.characters.count == 0 {
+            return true
+        }
+        
+        let currentText = textField.text ?? ""
+        let prospectiveText = (currentText as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        
+        /*if prospectiveText.containsString(" ") {
+            return true
+        }*/
+        
+        return prospectiveText.isNumeric() && prospectiveText.characters.count <= 16
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -17,11 +59,9 @@ class SettingsTableViewController : FormViewController {
         return section == 0 ? CGFloat.min : 36
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
-        let row = form.rowByTag("CardNumber") as! IntRow
-        row.cell.textField.becomeFirstResponder()
+        cardTextField?.becomeFirstResponder()
     }
-
 }

@@ -35,6 +35,7 @@ class AboutTableViewController : UITableViewController {
         if row == 1 { return Config.uiCountingLabel }
         if row == 2 { return Config.cwStatusBarNotification }
         if row == 3 { return Config.uiNavigationBarAddition }
+        if row == 4 { return Config.eureka }
         
         return nil
     }
