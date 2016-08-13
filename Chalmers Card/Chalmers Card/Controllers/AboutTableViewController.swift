@@ -39,6 +39,7 @@ class AboutTableViewController : UITableViewController {
         if row == 5 { return Config.keychainSwift }
         if row == 6 { return Config.alamofire }
         if row == 7 { return Config.nsDateTimeAgo }
+        if row == 8 { return Config.freepik }
         
         return nil
     }

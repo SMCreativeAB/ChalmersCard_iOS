@@ -33,6 +33,10 @@ class BalanceController : UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(self.updateBalance), name:
             UIApplicationWillEnterForegroundNotification, object: nil)
+        
+        // Will be animated in later
+        timeSinceUpdateLabel.alpha = 0
+        balanceLabel.alpha = 0
     }
     
     deinit {
