@@ -428,15 +428,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2s-ed-J4B">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CreditCardIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-7n-Guc">
-                                        <rect key="frame" x="155" y="107" width="64" height="47"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconGlyph" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-7n-Guc">
+                                        <rect key="frame" x="152" y="99" width="71" height="63"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="64" id="A0P-nt-Ahp"/>
-                                            <constraint firstAttribute="height" constant="47" id="Qdd-Ba-wRk"/>
+                                            <constraint firstAttribute="width" constant="71" id="A0P-nt-Ahp"/>
+                                            <constraint firstAttribute="height" constant="63" id="Qdd-Ba-wRk"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lägg till kårkort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfi-Bu-Nov">
-                                        <rect key="frame" x="0.0" y="169" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="162" width="375" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="guU-qF-4Mi"/>
                                         </constraints>
@@ -448,7 +448,7 @@
                                 <color key="backgroundColor" red="0.30588235294117649" green="0.54509803921568623" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Dfi-Bu-Nov" firstAttribute="centerX" secondItem="g2s-ed-J4B" secondAttribute="centerX" id="G7D-kb-dYH"/>
-                                    <constraint firstItem="Dfi-Bu-Nov" firstAttribute="top" secondItem="hLN-7n-Guc" secondAttribute="bottom" constant="15" id="LSc-gi-cuV"/>
+                                    <constraint firstItem="Dfi-Bu-Nov" firstAttribute="top" secondItem="hLN-7n-Guc" secondAttribute="bottom" id="LSc-gi-cuV"/>
                                     <constraint firstItem="hLN-7n-Guc" firstAttribute="centerX" secondItem="g2s-ed-J4B" secondAttribute="centerX" id="Rfr-Iw-8ZD"/>
                                     <constraint firstItem="hLN-7n-Guc" firstAttribute="centerY" secondItem="g2s-ed-J4B" secondAttribute="centerY" id="ZDU-1t-JKw"/>
                                     <constraint firstAttribute="height" constant="260" id="hgz-fo-FEG">
@@ -540,7 +540,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CreditCardIcon" width="128" height="94"/>
+        <image name="AppIconGlyph" width="142" height="126"/>
         <image name="HelpIcon" width="32" height="32"/>
         <image name="SettingsIcon" width="32" height="32"/>
         <image name="SharpmindLogo" width="1399" height="900"/>
