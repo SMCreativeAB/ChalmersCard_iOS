@@ -6,6 +6,6 @@ class APIService {
     }
     
     func getCardAmount(number: Int) -> Int {
-        return 123
+        return 500
     }
 }

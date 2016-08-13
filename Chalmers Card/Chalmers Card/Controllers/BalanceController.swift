@@ -11,6 +11,7 @@ class BalanceController : UIViewController {
     let cardRepository = AppDelegate.getShared().cardRepository
     var shouldShowRefill = false
     var shouldUpdate = true
+    var lastBalance = 0
     let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
@@ -21,26 +22,27 @@ class BalanceController : UIViewController {
         balanceLabel.method = .EaseOut
         timeSinceUpdateLabel.text = NSLocalizedString("LBo-Sq-czU.text", comment: "Never updated")
         
-        if let lastStatement = cardRepository.getLastStatement() {
-            timeSinceUpdateLabel.text = lastStatement.timestamp.timeAgo()
-            balanceLabel.text = String(lastStatement.balance)
-            
-            let color = BalanceColorIndicator.getColor(lastStatement.balance)
-            setBackgroundColor(color, animated: false)
-        }
-
         setupPullToRefresh()
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(self.updateBalance), name:
-            UIApplicationWillEnterForegroundNotification, object: nil)
         
         // Will be animated in later
         timeSinceUpdateLabel.alpha = 0
         balanceLabel.alpha = 0
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(self.showLastStatement), name: UIApplicationWillEnterForegroundNotification, object: nil)
     }
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func showLastStatement() {
+        if let lastStatement = cardRepository.getLastStatement() {
+            timeSinceUpdateLabel.text = lastStatement.timestamp.timeAgo()
+            lastBalance = lastStatement.balance
+            
+            let color = BalanceColorIndicator.getColor(lastStatement.balance)
+            setBackgroundColor(color, animated: false)
+        }
     }
     
     private func setupPullToRefresh() {
@@ -60,6 +62,7 @@ class BalanceController : UIViewController {
     }
     
     func updateBalance() {
+        scrollView.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.size.height), animated: true)
         refreshControl.beginRefreshing()
         
         UIView.animateWithDuration(0.3) {
@@ -73,12 +76,13 @@ class BalanceController : UIViewController {
                     print(statement)
                 
                     self.timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
-                    self.balanceLabel.countFromCurrentValueTo(CGFloat(statement.balance))
+                    self.balanceLabel.countFrom(CGFloat(self.lastBalance), to: CGFloat(statement.balance))
                     let color = BalanceColorIndicator.getColor(statement.balance)
                     self.setBackgroundColor(color, animated: true)
                 }
                 
                 self.refreshControl.endRefreshing()
+                self.scrollView.setContentOffset(CGPoint.zero, animated: true)
                 
                 UIView.animateWithDuration(0.3) {
                     self.timeSinceUpdateLabel.alpha = 1
@@ -89,10 +93,12 @@ class BalanceController : UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        showLastStatement()
+        
         // If the app has been inactive, we should update
-        if AppDelegate.getShared().didEnterBackground {
+        if AppDelegate.getShared().shouldUpdate {
             shouldUpdate = true
-            AppDelegate.getShared().didEnterBackground = false
+            AppDelegate.getShared().shouldUpdate = false
         }
         
         if shouldUpdate {

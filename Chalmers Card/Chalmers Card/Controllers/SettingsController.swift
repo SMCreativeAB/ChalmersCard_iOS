@@ -42,7 +42,7 @@ class SettingsController : UIViewController {
             AppDelegate.getShared().cardRepository.set(cardNumber)
             
             // Tell balance controller to update
-            AppDelegate.getShared().didEnterBackground = true
+            AppDelegate.getShared().shouldUpdate = true
             
             if isCreate {
                 performSegueWithIdentifier("balanceSegue", sender: self)

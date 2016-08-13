@@ -10,23 +10,17 @@ class CardStatement : NSObject, NSCoding {
     }
     
     required convenience init? (coder decoder: NSCoder) {
-        print("balance")
-        print(decoder.decodeObjectForKey("balance") as? Int)
-        print("timestamp")
-        print(decoder.decodeObjectForKey("timestamp") as? NSDate)
-        guard let balance = decoder.decodeObjectForKey("balance") as? Int,
-            let timestamp = decoder.decodeObjectForKey("timestamp") as? NSDate else {
-                print("return nil")
-                return nil
-        }
+        let balance = decoder.decodeIntegerForKey("balance")
         
-        print("decoding")
+        guard let timestamp = decoder.decodeObjectForKey("timestamp") as? NSDate else {
+            return nil
+        }
         
         self.init(balance: balance, timestamp: timestamp)
     }
     
     func encodeWithCoder(coder: NSCoder) {
-        coder.encodeInt(Int32(balance), forKey: "balance")
+        coder.encodeInteger(balance, forKey: "balance")
         coder.encodeObject(timestamp, forKey: "timestamp")
     }
 }

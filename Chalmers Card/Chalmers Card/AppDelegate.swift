@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var cardRepository = CardRepository()
-    var didEnterBackground = false
+    var shouldUpdate = false
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window!.tintColor = Config.tintColor
@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
-        didEnterBackground = true
+        shouldUpdate = true
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
