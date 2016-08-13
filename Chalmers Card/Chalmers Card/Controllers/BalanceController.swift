@@ -19,7 +19,7 @@ class BalanceController : UIViewController {
         // Set label format
         balanceLabel.format = "%d kr"
         balanceLabel.method = .EaseOut
-        timeSinceUpdateLabel.text = "Never updated"
+        timeSinceUpdateLabel.text = NSLocalizedString("LBo-Sq-czU.text", comment: "Never updated")
         
         if let lastStatement = cardRepository.getLastStatement() {
             timeSinceUpdateLabel.text = lastStatement.timestamp.timeAgo()
@@ -47,8 +47,9 @@ class BalanceController : UIViewController {
         scrollView.alwaysBounceVertical = true
         
         refreshControl.tintColor = UIColor.whiteColor()
-        //let whiteColorAttribute = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        //refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh", attributes: whiteColorAttribute)
+        let whiteColorAttribute = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        let pullToRefresh = NSLocalizedString("pullToRefresh", comment: "")
+        refreshControl.attributedTitle = NSAttributedString(string: pullToRefresh, attributes: whiteColorAttribute)
         scrollView.addSubview(refreshControl)
         
         refreshControl.addTarget(self, action: #selector(self.updateBalance), forControlEvents: UIControlEvents.ValueChanged)

@@ -1,0 +1,5 @@
+"appName" = "Chalmers Kårkort";
+"cardSafelyStoredNotice" = "Ditt kårkort sparas säkert i din enhets nyckelring.";
+"cardNumber" = "Kortnummer";
+"cardCopied" = "Ditt kortnummer har kopierats och kan klistras in nedan";
+"pullToRefresh" = "Dra för att uppdatera";

@@ -25,7 +25,7 @@ class RefillController : SFSafariViewController {
         
         delay(0.7) {
             if self.isVisible {
-                self.notification.displayNotificationWithMessage("Ditt kortnummer har kopierats och kan klistras in nedan", forDuration: 1.5)
+                self.notification.displayNotificationWithMessage(NSLocalizedString("cardCopied", comment: ""), forDuration: 1.5)
             }
         }
     }

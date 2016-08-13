@@ -17,6 +17,8 @@
 		247398E31D5E667300BD6028 /* CardAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398E21D5E667300BD6028 /* CardAPIService.swift */; };
 		247398E51D5E66E500BD6028 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398E41D5E66E500BD6028 /* KeychainService.swift */; };
 		247398E71D5E7AC500BD6028 /* BalanceColorIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398E61D5E7AC500BD6028 /* BalanceColorIndicator.swift */; };
+		24D1383A1D5FDD8A0026C35C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D1383C1D5FDD8A0026C35C /* Localizable.strings */; };
+		24D138401D5FDF270026C35C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D138421D5FDF270026C35C /* InfoPlist.strings */; };
 		24E51A7D1D5CAEC900498915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A7C1D5CAEC900498915 /* AppDelegate.swift */; };
 		24E51A821D5CAEC900498915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E51A801D5CAEC900498915 /* Main.storyboard */; };
 		24E51A841D5CAEC900498915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E51A831D5CAEC900498915 /* Assets.xcassets */; };
@@ -41,6 +43,11 @@
 		247398E21D5E667300BD6028 /* CardAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAPIService.swift; sourceTree = "<group>"; };
 		247398E41D5E66E500BD6028 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		247398E61D5E7AC500BD6028 /* BalanceColorIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceColorIndicator.swift; sourceTree = "<group>"; };
+		24D138321D5FDBDB0026C35C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Main.strings; sourceTree = "<group>"; };
+		24D1383D1D5FDD910026C35C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		24D138431D5FDF2A0026C35C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24D138441D5FDF310026C35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		24D138451D5FDF3B0026C35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24E51A791D5CAEC900498915 /* Chalmers Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chalmers Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E51A7C1D5CAEC900498915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E51A811D5CAEC900498915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +102,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		24D138271D5FDB090026C35C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24D1383C1D5FDD8A0026C35C /* Localizable.strings */,
+				24D138421D5FDF270026C35C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		24E51A701D5CAEC900498915 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +132,7 @@
 		24E51A7B1D5CAEC900498915 /* Chalmers Card */ = {
 			isa = PBXGroup;
 			children = (
+				24D138271D5FDB090026C35C /* Supporting Files */,
 				247398DF1D5E662E00BD6028 /* Services */,
 				247398D01D5DFE1700BD6028 /* Views */,
 				24E51AA31D5D0C4800498915 /* Helpers */,
@@ -219,6 +236,7 @@
 			knownRegions = (
 				en,
 				Base,
+				sv,
 			);
 			mainGroup = 24E51A701D5CAEC900498915;
 			productRefGroup = 24E51A7A1D5CAEC900498915 /* Products */;
@@ -236,8 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E51A871D5CAEC900498915 /* LaunchScreen.storyboard in Resources */,
+				24D1383A1D5FDD8A0026C35C /* Localizable.strings in Resources */,
 				24E51A841D5CAEC900498915 /* Assets.xcassets in Resources */,
 				24E51A821D5CAEC900498915 /* Main.storyboard in Resources */,
+				24D138401D5FDF270026C35C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,10 +339,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		24D1383C1D5FDD8A0026C35C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D1383D1D5FDD910026C35C /* sv */,
+				24D138441D5FDF310026C35C /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		24D138421D5FDF270026C35C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D138431D5FDF2A0026C35C /* sv */,
+				24D138451D5FDF3B0026C35C /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		24E51A801D5CAEC900498915 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				24E51A811D5CAEC900498915 /* Base */,
+				24D138321D5FDBDB0026C35C /* sv */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -375,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -415,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

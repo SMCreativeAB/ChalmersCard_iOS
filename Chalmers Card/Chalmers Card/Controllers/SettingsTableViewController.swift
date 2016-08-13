@@ -6,10 +6,10 @@ class SettingsTableViewController : FormViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        form +++ Section(footer: "Ditt kårkort sparas säkert i din enhets nyckelring.")
+        form +++ Section(footer: NSLocalizedString("cardSafelyStoredNotice", comment: ""))
             
         <<< IntRow("CardNumber"){ row in
-            row.title = "Kortnumer"
+            row.title = NSLocalizedString("cardNumber", comment: "")
             row.placeholder = "XXXX XXXX XXXX XXXX"
             row.formatter = self.getCardNumberFormatter()
             self.cardTextField = row.cell.textField

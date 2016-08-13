@@ -1,0 +1,5 @@
+"appName" = "Chalmers Card";
+"cardSafelyStoredNotice" = "Your union card is safely stored in your device's keychain.";
+"cardNumber" = "Card number";
+"cardCopied" = "Your card number has been copied and can be pasted beneath";
+"pullToRefresh" = "Pull to refresh";

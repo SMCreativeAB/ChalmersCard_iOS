@@ -1,0 +1,63 @@
+
+/* Class = "UITableViewSection"; headerTitle = "WE ♥️ OPEN SOURCE"; ObjectID = "4nV-Tl-caV"; */
+"4nV-Tl-caV.headerTitle" = "WE ♥️ OPEN SOURCE";
+
+/* Class = "UILabel"; text = "⚙ Eureka"; ObjectID = "6a6-yb-M8o"; */
+"6a6-yb-M8o.text" = "⚙ Eureka";
+
+/* Class = "UILabel"; text = "⚙ CWStatusBarNotification"; ObjectID = "7vW-uy-rCb"; */
+"7vW-uy-rCb.text" = "⚙ CWStatusBarNotification";
+
+/* Class = "UINavigationItem"; title = "Chalmers Card"; ObjectID = "BIS-hX-NTb"; */
+"BIS-hX-NTb.title" = "Chalmers Card";
+
+/* Class = "UILabel"; text = "Add union card"; ObjectID = "Dfi-Bu-Nov"; */
+"Dfi-Bu-Nov.text" = "Add union card";
+
+/* Class = "UILabel"; text = "⚙ UINavigationBar+Addition"; ObjectID = "E4D-8J-q6L"; */
+"E4D-8J-q6L.text" = "⚙ UINavigationBar+Addition";
+
+/* Class = "UILabel"; text = "⚙ KeychainSwift"; ObjectID = "FNT-aq-fnk"; */
+"FNT-aq-fnk.text" = "⚙ KeychainSwift";
+
+/* Class = "UILabel"; text = "🛠 App source code (GitHub)"; ObjectID = "JVY-L3-7YY"; */
+"JVY-L3-7YY.text" = "🛠 App source code (GitHub)";
+
+/* Class = "UILabel"; text = "Never updated"; ObjectID = "LBo-Sq-czU"; */
+"LBo-Sq-czU.text" = "Never updated";
+
+/* Class = "UILabel"; text = "0 kr"; ObjectID = "Mb7-Zl-h24"; */
+"Mb7-Zl-h24.text" = "0 kr";
+
+/* Class = "UILabel"; text = "🖥 SHARPMIND Digital Agency"; ObjectID = "NAX-03-lAl"; */
+"NAX-03-lAl.text" = "🖥 SHARPMIND Digital Agency";
+
+/* Class = "UILabel"; text = "⚙ UICountingLabel"; ObjectID = "Qqx-Y7-All"; */
+"Qqx-Y7-All.text" = "⚙ UICountingLabel";
+
+/* Class = "UINavigationItem"; title = "About the app"; ObjectID = "RFK-hI-17C"; */
+"RFK-hI-17C.title" = "About the app";
+
+/* Class = "UIButton"; normalTitle = "Refill card balance"; ObjectID = "RfV-hL-Auo"; */
+"RfV-hL-Auo.normalTitle" = "Refill card balance";
+
+/* Class = "UILabel"; text = "⚙ NSDate+TimeAgo"; ObjectID = "SQy-F9-wq4"; */
+"SQy-F9-wq4.text" = "⚙ NSDate+TimeAgo";
+
+/* Class = "UILabel"; text = "🖌 Icons by Freepik (CC 3.0)"; ObjectID = "SpW-HA-6P3"; */
+"SpW-HA-6P3.text" = "🖌 Icons by Freepik (CC 3.0)";
+
+/* Class = "UIViewController"; title = "Settings Controller"; ObjectID = "W6o-fY-YG9"; */
+"W6o-fY-YG9.title" = "Settings Controller";
+
+/* Class = "UILabel"; text = "👱🏼 Jesper Lindström (IT15)"; ObjectID = "mEi-WD-ILo"; */
+"mEi-WD-ILo.text" = "👱🏼 Jesper Lindström (IT15)";
+
+/* Class = "UILabel"; text = "⚙ Alamofire"; ObjectID = "mHk-rs-svB"; */
+"mHk-rs-svB.text" = "⚙ Alamofire";
+
+/* Class = "UIViewController"; title = "About Controller"; ObjectID = "pqf-2x-mcY"; */
+"pqf-2x-mcY.title" = "About Controller";
+
+/* Class = "UILabel"; text = "⚙ UIColor-Hex-Swift"; ObjectID = "xIL-6l-hTX"; */
+"xIL-6l-hTX.text" = "⚙ UIColor-Hex-Swift";

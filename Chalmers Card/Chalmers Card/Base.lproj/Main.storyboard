@@ -23,7 +23,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="🖥 SHARPMIND Digitalbyrå" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAX-03-lAl">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="🖥 SHARPMIND Digital Agency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAX-03-lAl">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -57,7 +57,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="🛠 Appens källkod (GitHub)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JVY-L3-7YY">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="🛠 App source code (GitHub)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JVY-L3-7YY">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -297,7 +297,7 @@
                             <constraint firstItem="goI-4x-k8V" firstAttribute="top" secondItem="xLm-bV-SXt" secondAttribute="bottom" id="teK-Yl-19f"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Om appen" id="RFK-hI-17C"/>
+                    <navigationItem key="navigationItem" title="About the app" id="RFK-hI-17C"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -334,7 +334,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 minuter sedan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBo-Sq-czU">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never updated" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBo-Sq-czU">
                                                 <rect key="frame" x="0.0" y="347" width="374" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="WTc-q2-6Wb"/>
@@ -373,7 +373,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfV-hL-Auo">
                                 <rect key="frame" x="-4" y="586" width="383" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Ladda kårkort">
+                                <state key="normal" title="Refill card balance">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -452,7 +452,7 @@
                                             <constraint firstAttribute="height" constant="63" id="Qdd-Ba-wRk"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lägg till kårkort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfi-Bu-Nov">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add union card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfi-Bu-Nov">
                                         <rect key="frame" x="0.0" y="162" width="375" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="guU-qF-4Mi"/>
@@ -498,7 +498,7 @@
                             <constraint firstAttribute="trailing" secondItem="g2s-ed-J4B" secondAttribute="trailing" id="Yzf-CV-uXy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chalmers Kårkort" id="BIS-hX-NTb">
+                    <navigationItem key="navigationItem" title="Chalmers Card" id="BIS-hX-NTb">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="zYd-hn-RzL">
                             <connections>
                                 <action selector="onSave:" destination="W6o-fY-YG9" id="4KR-RN-8B0"/>
