@@ -12,6 +12,7 @@ class BalanceController : UIViewController {
     var shouldShowRefill = false
     var shouldUpdate = true
     var lastBalance = 0
+    var lastUpdate: NSDate?
     let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
@@ -28,17 +29,27 @@ class BalanceController : UIViewController {
         timeSinceUpdateLabel.alpha = 0
         balanceLabel.alpha = 0
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(self.showLastStatement), name: UIApplicationWillEnterForegroundNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(self.didBecomeActiveAgain), name: UIApplicationWillEnterForegroundNotification, object: nil)
+    }
+    
+    func didBecomeActiveAgain() {
+        showLastStatement()
+        
+        // If more than 5min ago, update
+        if lastUpdate?.timeIntervalSinceDate(NSDate()) < -300 {
+            self.updateBalance()
+        }
     }
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
-    func showLastStatement() {
+    private func showLastStatement() {
         if let lastStatement = cardRepository.getLastStatement() {
             timeSinceUpdateLabel.text = lastStatement.timestamp.timeAgo()
             lastBalance = lastStatement.balance
+            lastUpdate = lastStatement.timestamp
             
             let color = BalanceColorIndicator.getColor(lastStatement.balance)
             setBackgroundColor(color, animated: false)
