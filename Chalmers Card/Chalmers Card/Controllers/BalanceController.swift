@@ -10,6 +10,7 @@ class BalanceController : UIViewController {
     
     let cardRepository = AppDelegate.getShared().cardRepository
     var shouldShowRefill = false
+    var shouldUpdate = true
     let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
@@ -72,15 +73,21 @@ class BalanceController : UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.updateBalance()
+        // If the app has been inactive, we should update
+        if AppDelegate.getShared().didEnterBackground {
+            shouldUpdate = true
+            AppDelegate.getShared().didEnterBackground = false
+        }
+        
+        if shouldUpdate {
+            self.updateBalance()
+            shouldUpdate = false
+        }
         
         if shouldShowRefill {
             onRefillCardButtonTap(self)
+            shouldShowRefill = false
         }
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        shouldShowRefill = false
     }
     
     @IBAction func onRefillCardButtonTap(sender: AnyObject) {
