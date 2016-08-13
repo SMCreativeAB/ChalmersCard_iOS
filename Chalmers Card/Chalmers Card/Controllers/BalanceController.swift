@@ -30,6 +30,13 @@ class BalanceController : UIViewController {
         }
 
         setupPullToRefresh()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(self.updateBalance), name:
+            UIApplicationWillEnterForegroundNotification, object: nil)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     private func setupPullToRefresh() {
@@ -56,19 +63,23 @@ class BalanceController : UIViewController {
         }
         
         dispatch_async(dispatch_get_main_queue()) {
-            if let statement = self.cardRepository.getStatement() {
-                self.timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
-                self.balanceLabel.countFromCurrentValueTo(CGFloat(statement.balance))
-                let color = BalanceColorIndicator.getColor(statement.balance)
-                self.setBackgroundColor(color, animated: true)
+            self.cardRepository.getStatement() { result in
+                if let statement = result {
+                    print(statement)
+                
+                    self.timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
+                    self.balanceLabel.countFromCurrentValueTo(CGFloat(statement.balance))
+                    let color = BalanceColorIndicator.getColor(statement.balance)
+                    self.setBackgroundColor(color, animated: true)
+                }
+                
+                self.refreshControl.endRefreshing()
                 
                 UIView.animateWithDuration(0.3) {
                     self.timeSinceUpdateLabel.alpha = 1
                     self.balanceLabel.alpha = 1
                 }
             }
-            
-            self.refreshControl.endRefreshing()
         }
     }
     

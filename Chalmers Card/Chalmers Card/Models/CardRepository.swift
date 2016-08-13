@@ -6,14 +6,21 @@ class CardRepository {
     let defaults = NSUserDefaults.standardUserDefaults()
     let keychain = KeychainService()
     let api = APIService()
-    var statement: CardStatement?
     
-    func getStatement() -> CardStatement? {
-        if let number = getNumber() where statement == nil {
-            statement = loadStatement(number)
+    func getStatement(callback: CardStatement? -> Void) {
+        var cardStatement: CardStatement?
+        
+        if let number = getNumber() {
+            let balance = api.getCardAmount(number)
+            cardStatement = CardStatement(balance: balance, timestamp: NSDate())
+            
+            let statementData = NSKeyedArchiver.archivedDataWithRootObject(cardStatement!)
+            defaults.setObject(statementData, forKey: CardRepository.lastStatementKey)
         }
         
-        return statement
+        delay(1) {
+            callback(cardStatement)
+        }
     }
     
     func getNumber() -> Int? {
@@ -25,11 +32,11 @@ class CardRepository {
     }
     
     func getLastStatement() -> CardStatement? {
-        if statement == nil, let data = defaults.objectForKey(CardRepository.lastStatementKey) as? NSData {
-            statement = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? CardStatement
+        if let data = defaults.objectForKey(CardRepository.lastStatementKey) as? NSData {
+            return NSKeyedUnarchiver.unarchiveObjectWithData(data) as? CardStatement
         }
         
-        return statement
+        return nil
     }
     
     func exists() -> Bool {
@@ -38,15 +45,5 @@ class CardRepository {
     
     func set(number: Int) {
         keychain.set(CardRepository.keychainKey, value: String(number))
-    }
-    
-    private func loadStatement(number: Int) -> CardStatement {
-        let balance = api.getCardAmount(number)
-        let cardStatement = CardStatement(balance: balance, timestamp: NSDate())
-        
-        let statementData = NSKeyedArchiver.archivedDataWithRootObject(cardStatement)
-        defaults.setObject(statementData, forKey: CardRepository.lastStatementKey)
-        
-        return cardStatement
     }
 }
