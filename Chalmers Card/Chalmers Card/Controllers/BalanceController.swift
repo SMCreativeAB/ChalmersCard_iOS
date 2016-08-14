@@ -22,7 +22,7 @@ class BalanceController : UIViewController {
         // Set label format
         balanceLabel.format = "%d kr"
         balanceLabel.method = .EaseOut
-        timeSinceUpdateLabel.text = NSLocalizedString("LBo-Sq-czU.text", comment: "Never updated")
+        timeSinceUpdateLabel.text = NSLocalizedString("neverUpdated", comment: "")
         
         setupPullToRefresh()
         
