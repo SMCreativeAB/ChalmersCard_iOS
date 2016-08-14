@@ -3,3 +3,4 @@
 "cardNumber" = "Card number";
 "cardCopied" = "Your card number has been copied and can be pasted beneath";
 "pullToRefresh" = "Pull to refresh";
+"errorNotice" = "Something went wrong. Please check that your card number is correct";

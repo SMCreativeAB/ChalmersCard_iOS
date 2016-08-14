@@ -1,12 +1,20 @@
 import UIKit
+import CWStatusBarNotification
 
 class SettingsController : UIViewController {
     @IBOutlet weak var container: UIView!
     private var formController: SettingsTableViewController?
     var isCreate = false
+    var shouldHandleError = false
+    private let notification = CWStatusBarNotification()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        notification.notificationStyle = .NavigationBarNotification
+        notification.notificationAnimationOutStyle = .Top
+        notification.notificationAnimationInStyle = .Top
+        notification.notificationLabelBackgroundColor = Config.colorLow
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -14,14 +22,15 @@ class SettingsController : UIViewController {
         self.navigationController?.navigationBar.barStyle = .Black
         self.navigationController?.navigationBar.tintColor = Config.tintColor
         self.navigationController?.navigationBar.makeDefault()
-        
-        print(isCreate)
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        isCreate = false
+    override func viewDidAppear(animated: Bool) {
+        if shouldHandleError {
+            shouldHandleError = false
+            notification.displayNotificationWithMessage(NSLocalizedString("errorNotice", comment: ""), forDuration: 1.5)
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,6 +55,7 @@ class SettingsController : UIViewController {
             
             if isCreate {
                 performSegueWithIdentifier("balanceSegue", sender: self)
+                isCreate = false
             } else {
                 navigationController?.popViewControllerAnimated(true)
             }

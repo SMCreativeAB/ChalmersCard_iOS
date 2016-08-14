@@ -8,18 +8,23 @@ class CardRepository {
     let api = APIService()
     
     func getStatement(callback: CardStatement? -> Void) {
-        var cardStatement: CardStatement?
-        
         if let number = getNumber() {
-            let balance = api.getCardAmount(number)
-            cardStatement = CardStatement(balance: balance, timestamp: NSDate())
-            
-            let statementData = NSKeyedArchiver.archivedDataWithRootObject(cardStatement!)
-            defaults.setObject(statementData, forKey: CardRepository.lastStatementKey)
+            api.getCardAmount(number) { amount in
+                self.onCardAmount(amount, callback: callback)
+            }
+        } else {
+            callback(nil)
         }
-        
-        delay(1) {
+    }
+    
+    private func onCardAmount(amount: Int?, callback: CardStatement? -> Void) {
+        if let amountValue = amount {
+            let cardStatement = CardStatement(balance: amountValue, timestamp: NSDate())
+            let statementData = NSKeyedArchiver.archivedDataWithRootObject(cardStatement)
+            self.defaults.setObject(statementData, forKey: CardRepository.lastStatementKey)
             callback(cardStatement)
+        } else {
+            callback(nil)
         }
     }
     

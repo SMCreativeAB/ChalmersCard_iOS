@@ -3,3 +3,4 @@
 "cardNumber" = "Kortnummer";
 "cardCopied" = "Ditt kortnummer har kopierats och kan klistras in nedan";
 "pullToRefresh" = "Dra för att uppdatera";
+"errorNotice" = "Något gick fel. Kontrollera att ditt kortnummer är korrekt";

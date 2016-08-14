@@ -25,7 +25,7 @@ class AboutTableViewController : UITableViewController {
     private func urlForAboutSectionTap(row: Int) -> NSURL? {
         if row == 0 { return Config.authorUrl }
         if row == 1 { return Config.authorEmail }
-        if row == 2 { return Config.gitHubUrl }
+        //if row == 2 { return Config.gitHubUrl }
         
         return nil
     }

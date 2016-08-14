@@ -11,6 +11,7 @@ class BalanceController : UIViewController {
     let cardRepository = AppDelegate.getShared().cardRepository
     var shouldShowRefill = false
     var shouldUpdate = true
+    var shouldHandleError = false
     var lastBalance = 0
     var lastUpdate: NSDate?
     let refreshControl = UIRefreshControl()
@@ -63,6 +64,7 @@ class BalanceController : UIViewController {
         let whiteColorAttribute = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         let pullToRefresh = NSLocalizedString("pullToRefresh", comment: "")
         refreshControl.attributedTitle = NSAttributedString(string: pullToRefresh, attributes: whiteColorAttribute)
+        
         scrollView.addSubview(refreshControl)
         
         refreshControl.addTarget(self, action: #selector(self.updateBalance), forControlEvents: UIControlEvents.ValueChanged)
@@ -84,12 +86,14 @@ class BalanceController : UIViewController {
         dispatch_async(dispatch_get_main_queue()) {
             self.cardRepository.getStatement() { result in
                 if let statement = result {
-                    print(statement)
-                
                     self.timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
                     self.balanceLabel.countFrom(CGFloat(self.lastBalance), to: CGFloat(statement.balance))
                     let color = BalanceColorIndicator.getColor(statement.balance)
                     self.setBackgroundColor(color, animated: true)
+                } else {
+                    // Something went wrong
+                    self.shouldHandleError = true
+                    self.performSegueWithIdentifier("settingsSegue", sender: self)
                 }
                 
                 self.refreshControl.endRefreshing()
@@ -142,6 +146,14 @@ class BalanceController : UIViewController {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "settingsSegue" && shouldHandleError {
+            let destination = segue.destinationViewController as! SettingsController
+            destination.shouldHandleError = true
+            shouldHandleError = false
+        }
     }
 }
 
