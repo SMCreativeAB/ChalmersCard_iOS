@@ -382,6 +382,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVb-jA-jul">
                                 <rect key="frame" x="327" y="35" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Settings"/>
                                 <state key="normal" image="SettingsIcon"/>
                                 <state key="highlighted" image="SettingsIcon">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -392,6 +393,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh2-sf-4AS">
                                 <rect key="frame" x="16" y="35" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="About"/>
                                 <state key="normal" image="HelpIcon"/>
                                 <state key="highlighted" image="HelpIcon"/>
                                 <connections>
@@ -470,6 +472,7 @@
                                     <constraint firstItem="hLN-7n-Guc" firstAttribute="centerY" secondItem="g2s-ed-J4B" secondAttribute="centerY" id="ZDU-1t-JKw"/>
                                     <constraint firstAttribute="height" constant="260" id="hgz-fo-FEG">
                                         <variation key="heightClass=compact" constant="60"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="220"/>
                                     </constraint>
                                     <constraint firstItem="Dfi-Bu-Nov" firstAttribute="width" secondItem="g2s-ed-J4B" secondAttribute="width" id="z1y-ri-tjw"/>
                                 </constraints>
@@ -498,7 +501,7 @@
                             <constraint firstAttribute="trailing" secondItem="g2s-ed-J4B" secondAttribute="trailing" id="Yzf-CV-uXy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chalmers Card" id="BIS-hX-NTb">
+                    <navigationItem key="navigationItem" title="Chalmers Card" id="BIS-hX-NTb" userLabel="Chalmers Card">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="zYd-hn-RzL">
                             <connections>
                                 <action selector="onSave:" destination="W6o-fY-YG9" id="4KR-RN-8B0"/>
@@ -564,6 +567,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="raO-i3-6KX"/>
-        <segue reference="nSy-PM-Sf3"/>
+        <segue reference="M74-2u-783"/>
     </inferredMetricsTieBreakers>
 </document>

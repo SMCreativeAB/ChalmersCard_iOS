@@ -26,10 +26,12 @@ class BalanceController : UIViewController {
         
         setupPullToRefresh()
         
-        // Will be animated in later
-        timeSinceUpdateLabel.alpha = 0
-        balanceLabel.alpha = 0
-        
+        if (!NSProcessInfo.processInfo().arguments.contains("USE_FAKE_DATA")) {
+            // Will be animated in later
+            self.timeSinceUpdateLabel.alpha = 0
+            self.balanceLabel.alpha = 0
+        }
+    
         NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(self.didBecomeActiveAgain), name: UIApplicationWillEnterForegroundNotification, object: nil)
     }
     
@@ -47,10 +49,10 @@ class BalanceController : UIViewController {
     }
     
     private func showLastStatement() {
-        if let lastStatement = cardRepository.getLastStatement() {
-            timeSinceUpdateLabel.text = lastStatement.timestamp.timeAgo()
-            lastBalance = lastStatement.balance
-            lastUpdate = lastStatement.timestamp
+        if let lastStatement = cardRepository!.getLastStatement() {
+            self.timeSinceUpdateLabel.text = lastStatement.timestamp.timeAgo()
+            self.lastBalance = lastStatement.balance
+            self.lastUpdate = lastStatement.timestamp
             
             let color = BalanceColorIndicator.getColor(lastStatement.balance)
             setBackgroundColor(color, animated: false)
@@ -75,6 +77,21 @@ class BalanceController : UIViewController {
     }
     
     func updateBalance() {
+        if NSProcessInfo.processInfo().arguments.contains("USE_FAKE_DATA") {
+            self.cardRepository!.getStatement() { result in
+                if let statement = result {
+                    self.timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
+                    self.balanceLabel.text = String(statement.balance) + " kr"
+                    let color = BalanceColorIndicator.getColor(statement.balance)
+                    self.setBackgroundColor(color, animated: false)
+                    self.timeSinceUpdateLabel.alpha = 1
+                    self.balanceLabel.alpha = 1
+                }
+            }
+            
+            return
+        }
+        
         scrollView.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.size.height), animated: true)
         refreshControl.beginRefreshing()
         
@@ -84,7 +101,7 @@ class BalanceController : UIViewController {
         }
         
         dispatch_async(dispatch_get_main_queue()) {
-            self.cardRepository.getStatement() { result in
+            self.cardRepository!.getStatement() { result in
                 if let statement = result {
                     self.timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
                     self.balanceLabel.countFrom(CGFloat(self.lastBalance), to: CGFloat(statement.balance))

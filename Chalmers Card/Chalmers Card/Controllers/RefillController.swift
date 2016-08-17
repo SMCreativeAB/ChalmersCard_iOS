@@ -19,7 +19,7 @@ class RefillController : SFSafariViewController {
         
         let pasteboard = UIPasteboard.generalPasteboard()
         pasteboard.persistent = true
-        pasteboard.string = String(AppDelegate.getShared().cardRepository.getNumber()!)
+        pasteboard.string = String(AppDelegate.getShared().cardRepository!.getNumber()!)
         
         isVisible = true
         

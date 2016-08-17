@@ -13,8 +13,25 @@ import UIColor_Hex_Swift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var cardRepository = CardRepository()
+    var cardRepository: CardRepository?
     var shouldUpdate = false
+    
+    override init() {
+        super.init()
+        
+        let api: CardDataProtocol
+        let storage: StorageProtocol
+        
+        if NSProcessInfo.processInfo().arguments.contains("USE_FAKE_DATA") {
+            api = MockCardDataService()
+            storage = MockStorageService()
+        } else {
+            api = CardAPIService()
+            storage = KeychainService()
+        }
+        
+        cardRepository = CardRepository(keychain: storage, api: api)
+    }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window!.tintColor = Config.tintColor
@@ -23,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
-        if shortcutItem.type == "se.sharpmind.Chalmers-Card.refill" && cardRepository.exists() {
+        if shortcutItem.type == "se.sharpmind.Chalmers-Card.refill" && cardRepository!.exists() {
             self.window?.rootViewController?.performSegueWithIdentifier("refillSegue", sender: self)
         }
     }

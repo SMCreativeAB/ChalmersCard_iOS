@@ -44,11 +44,13 @@ class SettingsController : UIViewController {
         if let form = formController {
             let cardNumber = form.getCardNumber()
             
-            guard String(cardNumber).characters.count == 16 else {
-                return
+            if !NSProcessInfo.processInfo().arguments.contains("USE_FAKE_DATA") {
+                guard String(cardNumber).characters.count == 16 else {
+                    return
+                }
             }
             
-            AppDelegate.getShared().cardRepository.set(cardNumber)
+            AppDelegate.getShared().cardRepository!.set(cardNumber)
             
             // Tell balance controller to update
             AppDelegate.getShared().shouldUpdate = true

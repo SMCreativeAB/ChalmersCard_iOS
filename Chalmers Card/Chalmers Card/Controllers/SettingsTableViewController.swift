@@ -8,24 +8,24 @@ class SettingsTableViewController : FormViewController, UITextFieldDelegate {
         
         form +++ Section(footer: NSLocalizedString("cardSafelyStoredNotice", comment: ""))
             
-        <<< IntRow("CardNumber"){ row in
+        <<< CardNumberRow("CardNumber"){ row in
             row.title = NSLocalizedString("cardNumber", comment: "")
-            row.placeholder = "XXXX XXXX XXXX XXXX"
-            row.formatter = self.getCardNumberFormatter()
+            row.placeholder = "XXXXXXXXXXXXXXXX"
+            //row.formatter = self.getCardNumberFormatter()
             self.cardTextField = row.cell.textField
         }.onChange() { row in
             self.filterTextFieldInput(row.cell.textField)
         }
     }
     
-    func getCardNumber() -> Int {
+    func getCardNumber() -> String {
         let text = cardTextField?.text?.stringByReplacingOccurrencesOfString(" ", withString: "")
         
-        if let num = Int(text!) {
+        if let num = text {
             return num
         }
         
-        return 0
+        return "0"
     }
     
     private func filterTextFieldInput(textField: UITextField) {
@@ -74,7 +74,7 @@ class SettingsTableViewController : FormViewController, UITextFieldDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let cardNumber = AppDelegate.getShared().cardRepository.getNumber() {
+        if let cardNumber = AppDelegate.getShared().cardRepository!.getNumber() {
             form.setValues(["CardNumber": cardNumber])
         }
     }

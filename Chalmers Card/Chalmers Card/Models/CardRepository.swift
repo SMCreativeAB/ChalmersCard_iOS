@@ -4,8 +4,13 @@ class CardRepository {
     static let keychainKey = "CHALMERS_CARD"
     static let lastStatementKey = "CHALMERS_CARD_STATEMENT"
     let defaults = NSUserDefaults.standardUserDefaults()
-    let keychain = KeychainService()
-    let api = APIService()
+    var keychain: StorageProtocol
+    let api: CardDataProtocol
+    
+    init(keychain: StorageProtocol, api: CardDataProtocol) {
+        self.keychain = keychain
+        self.api = api
+    }
     
     func getStatement(callback: CardStatement? -> Void) {
         if let number = getNumber() {
@@ -28,15 +33,11 @@ class CardRepository {
         }
     }
     
-    func getNumber() -> Int? {
-        if let str = keychain.get(CardRepository.keychainKey) {
-            return Int(str)
-        }
-        
-        return nil
+    func getNumber() -> String? {
+        return keychain.get(CardRepository.keychainKey)
     }
     
-    func getLastStatement() -> CardStatement? {
+    func getLastStatement() -> CardStatement? {        
         if let data = defaults.objectForKey(CardRepository.lastStatementKey) as? NSData {
             return NSKeyedUnarchiver.unarchiveObjectWithData(data) as? CardStatement
         }
@@ -48,7 +49,7 @@ class CardRepository {
         return getNumber() != nil
     }
     
-    func set(number: Int) {
-        keychain.set(CardRepository.keychainKey, value: String(number))
+    func set(number: String) {
+        keychain.set(CardRepository.keychainKey, value: number)
     }
 }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243DD8BF1D64E2F600A72B9B /* ChalmersCard_Screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DD8BE1D64E2F600A72B9B /* ChalmersCard_Screenshots.swift */; };
+		243DD8C71D64E30D00A72B9B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DD8C61D64E30D00A72B9B /* SnapshotHelper.swift */; };
+		243DD8C91D64E49C00A72B9B /* ClearAndEnterText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DD8C81D64E49C00A72B9B /* ClearAndEnterText.swift */; };
+		243DD8CB1D64F53A00A72B9B /* CardDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DD8CA1D64F53A00A72B9B /* CardDataProtocol.swift */; };
+		243DD8CD1D64F5CC00A72B9B /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DD8CC1D64F5CC00A72B9B /* StorageProtocol.swift */; };
+		243DD8CF1D64F6FD00A72B9B /* MockStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DD8CE1D64F6FD00A72B9B /* MockStorageService.swift */; };
+		243DD8D11D64F70700A72B9B /* MockCardDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DD8D01D64F70700A72B9B /* MockCardDataService.swift */; };
 		247398CF1D5DCE7900BD6028 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398CE1D5DCE7900BD6028 /* AboutTableViewController.swift */; };
 		247398D21D5DFE3000BD6028 /* BrandGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398D11D5DFE3000BD6028 /* BrandGradientView.swift */; };
 		247398D41D5E1A5E00BD6028 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398D31D5E1A5E00BD6028 /* SettingsTableViewController.swift */; };
@@ -19,6 +26,7 @@
 		247398E71D5E7AC500BD6028 /* BalanceColorIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398E61D5E7AC500BD6028 /* BalanceColorIndicator.swift */; };
 		24D1383A1D5FDD8A0026C35C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D1383C1D5FDD8A0026C35C /* Localizable.strings */; };
 		24D138401D5FDF270026C35C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D138421D5FDF270026C35C /* InfoPlist.strings */; };
+		24DB6FEA1D650D8300640306 /* CardNumberRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB6FE91D650D8300640306 /* CardNumberRow.swift */; };
 		24E51A7D1D5CAEC900498915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E51A7C1D5CAEC900498915 /* AppDelegate.swift */; };
 		24E51A821D5CAEC900498915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E51A801D5CAEC900498915 /* Main.storyboard */; };
 		24E51A841D5CAEC900498915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E51A831D5CAEC900498915 /* Assets.xcassets */; };
@@ -32,14 +40,33 @@
 		730BBE3F0DA87D76084111B3 /* Pods_Chalmers_Card.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		243DD8C11D64E2F600A72B9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E51A711D5CAEC900498915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24E51A781D5CAEC900498915;
+			remoteInfo = "Chalmers Card";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		243DD8BC1D64E2F600A72B9B /* ChalmersCard Screenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChalmersCard Screenshots.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		243DD8BE1D64E2F600A72B9B /* ChalmersCard_Screenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChalmersCard_Screenshots.swift; sourceTree = "<group>"; };
+		243DD8C01D64E2F600A72B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243DD8C61D64E30D00A72B9B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		243DD8C81D64E49C00A72B9B /* ClearAndEnterText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearAndEnterText.swift; sourceTree = "<group>"; };
+		243DD8CA1D64F53A00A72B9B /* CardDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDataProtocol.swift; sourceTree = "<group>"; };
+		243DD8CC1D64F5CC00A72B9B /* StorageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
+		243DD8CE1D64F6FD00A72B9B /* MockStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockStorageService.swift; sourceTree = "<group>"; };
+		243DD8D01D64F70700A72B9B /* MockCardDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCardDataService.swift; sourceTree = "<group>"; };
 		247398CE1D5DCE7900BD6028 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		247398D11D5DFE3000BD6028 /* BrandGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandGradientView.swift; sourceTree = "<group>"; };
 		247398D31D5E1A5E00BD6028 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		247398D71D5E40E100BD6028 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		247398D91D5E583B00BD6028 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		247398DB1D5E64B400BD6028 /* CardStatement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStatement.swift; sourceTree = "<group>"; };
-		247398E01D5E665700BD6028 /* CardRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
+		247398E01D5E665700BD6028 /* CardRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; usesTabs = 1; };
 		247398E21D5E667300BD6028 /* CardAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAPIService.swift; sourceTree = "<group>"; };
 		247398E41D5E66E500BD6028 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		247398E61D5E7AC500BD6028 /* BalanceColorIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceColorIndicator.swift; sourceTree = "<group>"; };
@@ -48,6 +75,7 @@
 		24D138431D5FDF2A0026C35C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24D138441D5FDF310026C35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		24D138451D5FDF3B0026C35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24DB6FE91D650D8300640306 /* CardNumberRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNumberRow.swift; sourceTree = "<group>"; };
 		24E51A791D5CAEC900498915 /* Chalmers Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chalmers Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E51A7C1D5CAEC900498915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E51A811D5CAEC900498915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +94,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		243DD8B91D64E2F600A72B9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24E51A761D5CAEC900498915 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,10 +120,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		243DD8BD1D64E2F600A72B9B /* ChalmersCard Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				243DD8C61D64E30D00A72B9B /* SnapshotHelper.swift */,
+				243DD8BE1D64E2F600A72B9B /* ChalmersCard_Screenshots.swift */,
+				243DD8C01D64E2F600A72B9B /* Info.plist */,
+				243DD8C81D64E49C00A72B9B /* ClearAndEnterText.swift */,
+			);
+			path = "ChalmersCard Screenshots";
+			sourceTree = "<group>";
+		};
 		247398D01D5DFE1700BD6028 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				247398D11D5DFE3000BD6028 /* BrandGradientView.swift */,
+				24DB6FE91D650D8300640306 /* CardNumberRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +145,10 @@
 			children = (
 				247398E21D5E667300BD6028 /* CardAPIService.swift */,
 				247398E41D5E66E500BD6028 /* KeychainService.swift */,
+				243DD8CA1D64F53A00A72B9B /* CardDataProtocol.swift */,
+				243DD8CC1D64F5CC00A72B9B /* StorageProtocol.swift */,
+				243DD8CE1D64F6FD00A72B9B /* MockStorageService.swift */,
+				243DD8D01D64F70700A72B9B /* MockCardDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -115,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				24E51A7B1D5CAEC900498915 /* Chalmers Card */,
+				243DD8BD1D64E2F600A72B9B /* ChalmersCard Screenshots */,
 				24E51A7A1D5CAEC900498915 /* Products */,
 				307DEBB136ABCDA431EC3B6E /* Pods */,
 				037446DA3C468E8979C9FDA3 /* Frameworks */,
@@ -125,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				24E51A791D5CAEC900498915 /* Chalmers Card.app */,
+				243DD8BC1D64E2F600A72B9B /* ChalmersCard Screenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +246,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		243DD8BB1D64E2F600A72B9B /* ChalmersCard Screenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243DD8C31D64E2F600A72B9B /* Build configuration list for PBXNativeTarget "ChalmersCard Screenshots" */;
+			buildPhases = (
+				243DD8B81D64E2F600A72B9B /* Sources */,
+				243DD8B91D64E2F600A72B9B /* Frameworks */,
+				243DD8BA1D64E2F600A72B9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				243DD8C21D64E2F600A72B9B /* PBXTargetDependency */,
+			);
+			name = "ChalmersCard Screenshots";
+			productName = "ChalmersCard Screenshots";
+			productReference = 243DD8BC1D64E2F600A72B9B /* ChalmersCard Screenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		24E51A781D5CAEC900498915 /* Chalmers Card */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24E51A8B1D5CAEC900498915 /* Build configuration list for PBXNativeTarget "Chalmers Card" */;
@@ -223,9 +294,13 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = SHARPMIND;
 				TargetAttributes = {
+					243DD8BB1D64E2F600A72B9B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 24E51A781D5CAEC900498915;
+					};
 					24E51A781D5CAEC900498915 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = WF2QRDBF6Q;
+						DevelopmentTeam = VKJB45QBU6;
 					};
 				};
 			};
@@ -244,11 +319,19 @@
 			projectRoot = "";
 			targets = (
 				24E51A781D5CAEC900498915 /* Chalmers Card */,
+				243DD8BB1D64E2F600A72B9B /* ChalmersCard Screenshots */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		243DD8BA1D64E2F600A72B9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24E51A771D5CAEC900498915 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,12 +395,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		243DD8B81D64E2F600A72B9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243DD8BF1D64E2F600A72B9B /* ChalmersCard_Screenshots.swift in Sources */,
+				243DD8C71D64E30D00A72B9B /* SnapshotHelper.swift in Sources */,
+				243DD8C91D64E49C00A72B9B /* ClearAndEnterText.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24E51A751D5CAEC900498915 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				24E51A9C1D5CB1B900498915 /* SettingsController.swift in Sources */,
 				247398E31D5E667300BD6028 /* CardAPIService.swift in Sources */,
+				243DD8CB1D64F53A00A72B9B /* CardDataProtocol.swift in Sources */,
 				247398DA1D5E583B00BD6028 /* NavigationController.swift in Sources */,
 				24E51AA21D5D047E00498915 /* RefillController.swift in Sources */,
 				24E51A7D1D5CAEC900498915 /* AppDelegate.swift in Sources */,
@@ -326,17 +420,29 @@
 				247398E71D5E7AC500BD6028 /* BalanceColorIndicator.swift in Sources */,
 				247398CF1D5DCE7900BD6028 /* AboutTableViewController.swift in Sources */,
 				24E51A9A1D5CB1B900498915 /* AboutController.swift in Sources */,
+				243DD8D11D64F70700A72B9B /* MockCardDataService.swift in Sources */,
 				24E51AA51D5D0C5F00498915 /* Delay.swift in Sources */,
+				243DD8CD1D64F5CC00A72B9B /* StorageProtocol.swift in Sources */,
 				247398D81D5E40E100BD6028 /* StringExtensions.swift in Sources */,
 				247398D41D5E1A5E00BD6028 /* SettingsTableViewController.swift in Sources */,
 				247398D21D5DFE3000BD6028 /* BrandGradientView.swift in Sources */,
+				24DB6FEA1D650D8300640306 /* CardNumberRow.swift in Sources */,
 				247398E51D5E66E500BD6028 /* KeychainService.swift in Sources */,
 				24E51A9B1D5CB1B900498915 /* BalanceController.swift in Sources */,
 				24E51AA01D5CB57300498915 /* Config.swift in Sources */,
+				243DD8CF1D64F6FD00A72B9B /* MockStorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		243DD8C21D64E2F600A72B9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24E51A781D5CAEC900498915 /* Chalmers Card */;
+			targetProxy = 243DD8C11D64E2F600A72B9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		24D1383C1D5FDD8A0026C35C /* Localizable.strings */ = {
@@ -377,6 +483,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		243DD8C41D64E2F600A72B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ChalmersCard Screenshots/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.sharpmind.ChalmersCard-Screenshots";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Chalmers Card";
+			};
+			name = Debug;
+		};
+		243DD8C51D64E2F600A72B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ChalmersCard Screenshots/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.sharpmind.ChalmersCard-Screenshots";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Chalmers Card";
+			};
+			name = Release;
+		};
 		24E51A891D5CAEC900498915 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -472,7 +602,7 @@
 				INFOPLIST_FILE = "Chalmers Card/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.sharpmind.Chalmers-Card";
+				PRODUCT_BUNDLE_IDENTIFIER = se.sharpmind.chalmerscard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -488,7 +618,7 @@
 				INFOPLIST_FILE = "Chalmers Card/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.sharpmind.Chalmers-Card";
+				PRODUCT_BUNDLE_IDENTIFIER = se.sharpmind.chalmerscard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -497,6 +627,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		243DD8C31D64E2F600A72B9B /* Build configuration list for PBXNativeTarget "ChalmersCard Screenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243DD8C41D64E2F600A72B9B /* Debug */,
+				243DD8C51D64E2F600A72B9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		24E51A741D5CAEC900498915 /* Build configuration list for PBXProject "Chalmers Card" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

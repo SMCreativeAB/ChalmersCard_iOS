@@ -1,7 +1,7 @@
 import Foundation
 import KeychainSwift
 
-class KeychainService {
+class KeychainService : StorageProtocol {
     let keychain = KeychainSwift()
     
     init() {
