@@ -3,6 +3,9 @@ import CWStatusBarNotification
 
 class SettingsController : UIViewController {
     @IBOutlet weak var container: UIView!
+    @IBOutlet weak var header: UIView!
+    @IBOutlet weak var headerHeight: NSLayoutConstraint!
+    
     private var formController: SettingsTableViewController?
     var isCreate = false
     var shouldHandleError = false
@@ -15,6 +18,17 @@ class SettingsController : UIViewController {
         notification.notificationAnimationOutStyle = .Top
         notification.notificationAnimationInStyle = .Top
         notification.notificationLabelBackgroundColor = Config.colorLow
+    }
+    
+    override func viewDidLayoutSubviews() {
+        let size = UIScreen.mainScreen().bounds.size
+        
+        if (size.height < 667 && size.width < 375) {
+            headerHeight.constant = 63
+            header.updateConstraintsIfNeeded()
+            view.layoutIfNeeded()
+            header.layoutIfNeeded()
+        }
     }
     
     override func viewWillAppear(animated: Bool) {

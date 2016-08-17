@@ -262,7 +262,7 @@
                                     <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="top" secondItem="2U5-9r-rG0" secondAttribute="top" constant="20" symbolic="YES" id="eZo-Pg-xdh"/>
                                     <constraint firstItem="JLZ-Lg-Fq3" firstAttribute="leading" secondItem="2U5-9r-rG0" secondAttribute="leading" id="gSc-IR-wbo"/>
                                     <constraint firstAttribute="height" constant="260" id="oki-0g-Jqx">
-                                        <variation key="heightClass=compact" constant="64"/>
+                                        <variation key="heightClass=compact" constant="63"/>
                                     </constraint>
                                     <constraint firstAttribute="trailing" secondItem="JLZ-Lg-Fq3" secondAttribute="trailing" id="zfp-9Q-Gi5"/>
                                     <constraint firstAttribute="bottom" secondItem="JLZ-Lg-Fq3" secondAttribute="bottom" constant="30" id="zix-DX-pdo"/>
@@ -471,8 +471,7 @@
                                     <constraint firstItem="hLN-7n-Guc" firstAttribute="centerX" secondItem="g2s-ed-J4B" secondAttribute="centerX" id="Rfr-Iw-8ZD"/>
                                     <constraint firstItem="hLN-7n-Guc" firstAttribute="centerY" secondItem="g2s-ed-J4B" secondAttribute="centerY" id="ZDU-1t-JKw"/>
                                     <constraint firstAttribute="height" constant="260" id="hgz-fo-FEG">
-                                        <variation key="heightClass=compact" constant="60"/>
-                                        <variation key="heightClass=regular-widthClass=compact" constant="220"/>
+                                        <variation key="heightClass=compact" constant="63"/>
                                     </constraint>
                                     <constraint firstItem="Dfi-Bu-Nov" firstAttribute="width" secondItem="g2s-ed-J4B" secondAttribute="width" id="z1y-ri-tjw"/>
                                 </constraints>
@@ -511,7 +510,9 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="container" destination="3LQ-BB-6eD" id="Mua-5j-OKI"/>
+                        <outlet property="container" destination="3LQ-BB-6eD" id="sqv-E1-8Kt"/>
+                        <outlet property="header" destination="g2s-ed-J4B" id="wzz-Z9-PWs"/>
+                        <outlet property="headerHeight" destination="hgz-fo-FEG" id="c5G-1D-mek"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="balanceSegue" id="raO-i3-6KX"/>
                     </connections>
                 </viewController>
