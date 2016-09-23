@@ -1,18 +1,18 @@
 import Foundation
 
-class CardRepository {
+public class CardRepository {
     static let keychainKey = "CHALMERS_CARD"
     static let lastStatementKey = "CHALMERS_CARD_STATEMENT"
-    let defaults = UserDefaults.standard
+    let defaults = UserDefaults.init(suiteName: "group.chalmersCard")
     var keychain: StorageProtocol
     let api: CardDataProtocol
     
-    init(keychain: StorageProtocol, api: CardDataProtocol) {
+    public init(keychain: StorageProtocol, api: CardDataProtocol) {
         self.keychain = keychain
         self.api = api
     }
     
-    func getStatement(_ callback: @escaping (CardStatement?) -> Void) {
+    public func getStatement(_ callback: @escaping (CardStatement?) -> Void) {
         if let number = getNumber() {
             api.getCardAmount(number) { amount in
                 self.onCardAmount(amount, callback: callback)
@@ -26,30 +26,30 @@ class CardRepository {
         if let amountValue = amount {
             let cardStatement = CardStatement(balance: amountValue, timestamp: Date())
             let statementData = NSKeyedArchiver.archivedData(withRootObject: cardStatement)
-            self.defaults.set(statementData, forKey: CardRepository.lastStatementKey)
+            self.defaults!.set(statementData, forKey: CardRepository.lastStatementKey)
             callback(cardStatement)
         } else {
             callback(nil)
         }
     }
     
-    func getNumber() -> String? {
+    public func getNumber() -> String? {
         return keychain.get(CardRepository.keychainKey)
     }
     
-    func getLastStatement() -> CardStatement? {        
-        if let data = defaults.object(forKey: CardRepository.lastStatementKey) as? Data {
+    public func getLastStatement() -> CardStatement? {
+        if let data = defaults!.object(forKey: CardRepository.lastStatementKey) as? Data {
             return NSKeyedUnarchiver.unarchiveObject(with: data) as? CardStatement
         }
         
         return nil
     }
     
-    func exists() -> Bool {
+	public func exists() -> Bool {
         return getNumber() != nil
     }
     
-    func set(_ number: String) {
+    public func set(_ number: String) {
         keychain.set(CardRepository.keychainKey, value: number)
     }
 }

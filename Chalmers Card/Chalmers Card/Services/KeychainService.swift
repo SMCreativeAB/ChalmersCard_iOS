@@ -1,18 +1,18 @@
 import Foundation
 import KeychainSwift
 
-class KeychainService : StorageProtocol {
+public class KeychainService : StorageProtocol {
     let keychain = KeychainSwift()
     
-    init() {
+    public init() {
         keychain.synchronizable = true
     }
     
-    func get(_ key: String) -> String? {
+    public func get(_ key: String) -> String? {
         return keychain.get(key)
     }
     
-    func set(_ key: String, value: String) {
+    public func set(_ key: String, value: String) {
         keychain.set(value, forKey: key)
     }
 }

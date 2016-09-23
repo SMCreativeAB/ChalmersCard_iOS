@@ -1,15 +1,15 @@
 import Foundation
 
-class CardStatement : NSObject, NSCoding {
-    var balance: Int
-    var timestamp: Date
+public class CardStatement : NSObject, NSCoding {
+    public var balance: Int
+    public  var timestamp: Date
     
-    init (balance: Int, timestamp: Date) {
+    public init (balance: Int, timestamp: Date) {
         self.balance = balance
         self.timestamp = timestamp
     }
     
-    required convenience init? (coder decoder: NSCoder) {
+    required convenience public init? (coder decoder: NSCoder) {
         let balance = decoder.decodeInteger(forKey: "balance")
         
         guard let timestamp = decoder.decodeObject(forKey: "timestamp") as? Date else {
@@ -19,7 +19,7 @@ class CardStatement : NSObject, NSCoding {
         self.init(balance: balance, timestamp: timestamp)
     }
     
-    func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(balance, forKey: "balance")
         coder.encode(timestamp, forKey: "timestamp")
     }

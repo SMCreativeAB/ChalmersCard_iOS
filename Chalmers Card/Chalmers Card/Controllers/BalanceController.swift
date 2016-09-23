@@ -2,6 +2,8 @@ import UIKit
 import SafariServices
 import UICountingLabel
 import NSDate_TimeAgo
+import CardData
+
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
   switch (lhs, rhs) {
   case let (l?, r?):
@@ -59,18 +61,22 @@ class BalanceController : UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
-    fileprivate func showLastStatement() {
+    func showLastStatement() {
         if let lastStatement = cardRepository!.getLastStatement() {
-            self.timeSinceUpdateLabel.text = (lastStatement.timestamp as NSDate).timeAgo()
-            self.lastBalance = lastStatement.balance
-            self.lastUpdate = lastStatement.timestamp as Date
-            
-            let color = BalanceColorIndicator.getColor(lastStatement.balance)
-            setBackgroundColor(color, animated: false)
+            self.onLastStatement(lastStatement)
         }
     }
     
-    fileprivate func setupPullToRefresh() {
+    public func onLastStatement(_ lastStatement: CardStatement) {
+        self.timeSinceUpdateLabel.text = (lastStatement.timestamp as NSDate).timeAgo()
+        self.lastBalance = lastStatement.balance
+        self.lastUpdate = lastStatement.timestamp as Date
+    
+        let color = BalanceColorIndicator.getColor(lastStatement.balance)
+        setBackgroundColor(color, animated: false)
+    }
+    
+    func setupPullToRefresh() {
         scrollView.alwaysBounceVertical = true
         
         refreshControl.tintColor = UIColor.white
@@ -160,7 +166,7 @@ class BalanceController : UIViewController {
         self.present(safari, animated: true, completion: nil)
     }
     
-    fileprivate func setBackgroundColor(_ color: UIColor, animated: Bool) {
+    func setBackgroundColor(_ color: UIColor, animated: Bool) {
         let setTargetColor = {
             self.view.backgroundColor = color
         }

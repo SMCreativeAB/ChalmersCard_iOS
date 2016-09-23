@@ -9,7 +9,6 @@ class Config {
     static let tintColor = colorHigh
     
     // Various URLs
-    static let apiUrl = "https://chalmers.sharpmind.se/api/"
     static let chargeCardUrl = URL(string: "https://chalmers.sharpmind.se/")
     static let authorUrl = URL(string: "https://sharpmind.se/")
     static let authorEmail = URL(string: "mailto:jesper@sharpmind.se")

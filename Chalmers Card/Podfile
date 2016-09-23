@@ -2,13 +2,26 @@ platform :ios, '9.0'
 
 target 'Chalmers Card' do
   use_frameworks!
-
+  
   pod 'UIColor-Hex-Swift'
   pod 'UICountingLabel'
   pod 'CWStatusBarNotification', '~> 2.3.4'
   pod 'UINavigationBar+Addition'
   pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'Swift3'
+  pod 'NSDate+TimeAgo'
   pod 'KeychainSwift', '~> 6.0'
   pod 'Alamofire', '~> 4.0'
-  pod 'NSDate+TimeAgo'
+end
+
+target 'CardData' do
+    use_frameworks!
+
+    pod 'UIColor-Hex-Swift'
+    pod 'UICountingLabel'
+    pod 'CWStatusBarNotification', '~> 2.3.4'
+    pod 'UINavigationBar+Addition'
+    pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'Swift3'
+    pod 'NSDate+TimeAgo'
+    pod 'KeychainSwift', '~> 6.0'
+    pod 'Alamofire', '~> 4.0'
 end

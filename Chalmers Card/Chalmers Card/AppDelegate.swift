@@ -1,13 +1,6 @@
-//
-//  AppDelegate.swift
-//  Chalmers Card
-//
-//  Created by Jesper Lindström on 2016-08-11.
-//  Copyright © 2016 SHARPMIND. All rights reserved.
-//
-
 import UIKit
 import UIColor_Hex_Swift
+import CardData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

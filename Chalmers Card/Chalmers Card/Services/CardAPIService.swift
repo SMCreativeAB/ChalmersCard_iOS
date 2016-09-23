@@ -1,9 +1,12 @@
 import Foundation
 import Alamofire
 
-class CardAPIService : CardDataProtocol {
-    func getCardAmount(_ number: String, callback: @escaping (Int?) -> Void) {
-        print(Config.apiUrl + number)
+public class CardAPIService : CardDataProtocol {
+    public init() {
+        
+    }
+    
+    public func getCardAmount(_ number: String, callback: @escaping (Int?) -> Void) {
         let url = Config.apiUrl + String(number)
         Alamofire.request(url).responseJSON { response in
             debugPrint(response)
