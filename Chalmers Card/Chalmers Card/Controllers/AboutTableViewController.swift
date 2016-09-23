@@ -1,28 +1,28 @@
 import UIKit
 
 class AboutTableViewController : UITableViewController {
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         // Hide first section, else return normal height
-        return section == 0 ? CGFloat.min : 36
+        return section == 0 ? CGFloat.leastNormalMagnitude : 36
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.cellForRowAtIndexPath(indexPath)?.setSelected(false, animated: true)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.setSelected(false, animated: true)
         
-        var url: NSURL?
+        var url: URL?
         
-        if indexPath.section == 0 {
-            url = urlForAboutSectionTap(indexPath.row)
+        if (indexPath as NSIndexPath).section == 0 {
+            url = urlForAboutSectionTap((indexPath as NSIndexPath).row)
         } else {
-            url = urlForCreditsSectionTap(indexPath.row)
+            url = urlForCreditsSectionTap((indexPath as NSIndexPath).row)
         }
         
         if let urlToOpen = url {
-            UIApplication.sharedApplication().openURL(urlToOpen)
+            UIApplication.shared.openURL(urlToOpen)
         }
     }
     
-    private func urlForAboutSectionTap(row: Int) -> NSURL? {
+    fileprivate func urlForAboutSectionTap(_ row: Int) -> URL? {
         if row == 0 { return Config.authorUrl }
         if row == 1 { return Config.authorEmail }
         if row == 2 { return Config.gitHubUrl }
@@ -30,7 +30,7 @@ class AboutTableViewController : UITableViewController {
         return nil
     }
     
-    private func urlForCreditsSectionTap(row: Int) -> NSURL? {
+    fileprivate func urlForCreditsSectionTap(_ row: Int) -> URL? {
         if row == 0 { return Config.uiColorHexSwift }
         if row == 1 { return Config.uiCountingLabel }
         if row == 2 { return Config.cwStatusBarNotification }

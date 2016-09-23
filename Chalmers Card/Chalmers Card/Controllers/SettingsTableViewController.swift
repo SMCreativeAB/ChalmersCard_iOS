@@ -1,7 +1,7 @@
 import Eureka
 
 class SettingsTableViewController : FormViewController, UITextFieldDelegate {
-    private var cardTextField: UITextField?
+    fileprivate var cardTextField: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class SettingsTableViewController : FormViewController, UITextFieldDelegate {
     }
     
     func getCardNumber() -> String {
-        let text = cardTextField?.text?.stringByReplacingOccurrencesOfString(" ", withString: "")
+        let text = cardTextField?.text?.replacingOccurrences(of: " ", with: "")
         
         if let num = text {
             return num
@@ -28,50 +28,50 @@ class SettingsTableViewController : FormViewController, UITextFieldDelegate {
         return "0"
     }
     
-    private func filterTextFieldInput(textField: UITextField) {
+    fileprivate func filterTextFieldInput(_ textField: UITextField) {
         if var text = textField.text {
             if text.characters.count > 16 {
-                let start = text.startIndex.advancedBy(16)
-                text.removeRange(start ..< text.endIndex)
+                let start = text.characters.index(text.startIndex, offsetBy: 16)
+                text.removeSubrange(start ..< text.endIndex)
                 textField.text = text
             }
         }
     }
     
-    private func getCardNumberFormatter() -> NSNumberFormatter {
-        let formatter = NSNumberFormatter()
+    fileprivate func getCardNumberFormatter() -> NumberFormatter {
+        let formatter = NumberFormatter()
         
-        formatter.numberStyle = .DecimalStyle
+        formatter.numberStyle = .decimal
         formatter.groupingSize = 4
         formatter.groupingSeparator = " "
         
         return formatter
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if string.characters.count == 0 {
             return true
         }
         
         let currentText = textField.text ?? ""
-        let prospectiveText = (currentText as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        let prospectiveText = (currentText as NSString).replacingCharacters(in: range, with: string)
         
         return prospectiveText.isNumeric() && prospectiveText.characters.count <= 16
     }
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         // Hide first section, else return normal height
-        return section == 0 ? CGFloat.min : 36
+        return section == 0 ? CGFloat.leastNormalMagnitude : 36
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         cardTextField?.becomeFirstResponder()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         if let cardNumber = AppDelegate.getShared().cardRepository!.getNumber() {

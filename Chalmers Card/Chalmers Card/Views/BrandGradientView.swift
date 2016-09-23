@@ -7,12 +7,12 @@ class BrandGradientView : UIView {
         setupView()
     }
     
-    override class func layerClass() -> AnyClass {
+    override class var layerClass : AnyClass {
         return CAGradientLayer.self
     }
     
-    private func setupView() {
-        autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+    fileprivate func setupView() {
+        autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         guard let gradient = self.layer as? CAGradientLayer else {
             return;
@@ -20,13 +20,13 @@ class BrandGradientView : UIView {
         
         // Set color stops
         gradient.colors = [
-            UIColor.colorWithHex(0x57E2CB).CGColor,
-            UIColor.colorWithHex(0x4492C6).CGColor
+            UIColor.colorWithHex(0x57E2CB).cgColor,
+            UIColor.colorWithHex(0x4492C6).cgColor
         ]
         
         // Diagonal direction
-        gradient.startPoint = CGPointMake(0, 1)
-        gradient.endPoint = CGPointMake(1, 0)
+        gradient.startPoint = CGPoint(x: 0, y: 1)
+        gradient.endPoint = CGPoint(x: 1, y: 0)
         
         gradient.frame = bounds
     }

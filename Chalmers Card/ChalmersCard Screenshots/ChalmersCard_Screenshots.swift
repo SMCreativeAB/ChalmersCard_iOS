@@ -26,11 +26,11 @@ class ChalmersCard_Screenshots: XCTestCase {
         app.buttons["Settings"].tap()
         snapshot("3Edit")
         
-        app.navigationBars.elementBoundByIndex(0).buttons.elementBoundByIndex(2).tap()
+        app.navigationBars.element(boundBy: 0).buttons.element(boundBy: 2).tap()
         snapshot("1BalanceMedium")
         
         app.buttons["Settings"].tap()
-        app.navigationBars.elementBoundByIndex(0).buttons.elementBoundByIndex(2).tap()
+        app.navigationBars.element(boundBy: 0).buttons.element(boundBy: 2).tap()
         snapshot("1BalanceLow")
     }
     

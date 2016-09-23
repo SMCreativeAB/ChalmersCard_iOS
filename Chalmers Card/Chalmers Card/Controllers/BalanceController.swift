@@ -2,6 +2,17 @@ import UIKit
 import SafariServices
 import UICountingLabel
 import NSDate_TimeAgo
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
 
 class BalanceController : UIViewController {
     @IBOutlet weak var balanceLabel: UICountingLabel!
@@ -13,7 +24,7 @@ class BalanceController : UIViewController {
     var shouldUpdate = true
     var shouldHandleError = false
     var lastBalance = 0
-    var lastUpdate: NSDate?
+    var lastUpdate: Date?
     let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
@@ -21,66 +32,66 @@ class BalanceController : UIViewController {
         
         // Set label format
         balanceLabel.format = "%d kr"
-        balanceLabel.method = .EaseOut
+        balanceLabel.method = .easeOut
         timeSinceUpdateLabel.text = NSLocalizedString("neverUpdated", comment: "")
         
         setupPullToRefresh()
         
-        if (!NSProcessInfo.processInfo().arguments.contains("USE_FAKE_DATA")) {
+        if (!ProcessInfo.processInfo.arguments.contains("USE_FAKE_DATA")) {
             // Will be animated in later
             self.timeSinceUpdateLabel.alpha = 0
             self.balanceLabel.alpha = 0
         }
     
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(self.didBecomeActiveAgain), name: UIApplicationWillEnterForegroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(self.didBecomeActiveAgain), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
     }
     
     func didBecomeActiveAgain() {
         showLastStatement()
         
         // If more than 5min ago, update
-        if lastUpdate?.timeIntervalSinceDate(NSDate()) < -300 {
+        if lastUpdate?.timeIntervalSince(Date()) < -300 {
             self.updateBalance()
         }
     }
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
     
-    private func showLastStatement() {
+    fileprivate func showLastStatement() {
         if let lastStatement = cardRepository!.getLastStatement() {
-            self.timeSinceUpdateLabel.text = lastStatement.timestamp.timeAgo()
+            self.timeSinceUpdateLabel.text = (lastStatement.timestamp as NSDate).timeAgo()
             self.lastBalance = lastStatement.balance
-            self.lastUpdate = lastStatement.timestamp
+            self.lastUpdate = lastStatement.timestamp as Date
             
             let color = BalanceColorIndicator.getColor(lastStatement.balance)
             setBackgroundColor(color, animated: false)
         }
     }
     
-    private func setupPullToRefresh() {
+    fileprivate func setupPullToRefresh() {
         scrollView.alwaysBounceVertical = true
         
-        refreshControl.tintColor = UIColor.whiteColor()
-        let whiteColorAttribute = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        refreshControl.tintColor = UIColor.white
+        let whiteColorAttribute = [NSForegroundColorAttributeName: UIColor.white]
         let pullToRefresh = NSLocalizedString("pullToRefresh", comment: "")
         refreshControl.attributedTitle = NSAttributedString(string: pullToRefresh, attributes: whiteColorAttribute)
         
         scrollView.addSubview(refreshControl)
         
-        refreshControl.addTarget(self, action: #selector(self.updateBalance), forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.addTarget(self, action: #selector(self.updateBalance), for: UIControlEvents.valueChanged)
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     func updateBalance() {
-        if NSProcessInfo.processInfo().arguments.contains("USE_FAKE_DATA") {
+        if ProcessInfo.processInfo.arguments.contains("USE_FAKE_DATA") {
             self.cardRepository!.getStatement() { result in
                 if let statement = result {
-                    self.timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
+                    self.timeSinceUpdateLabel.text = (statement.timestamp as NSDate).timeAgo()
                     self.balanceLabel.text = String(statement.balance) + " kr"
                     let color = BalanceColorIndicator.getColor(statement.balance)
                     self.setBackgroundColor(color, animated: false)
@@ -95,36 +106,36 @@ class BalanceController : UIViewController {
         scrollView.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.size.height), animated: true)
         refreshControl.beginRefreshing()
         
-        UIView.animateWithDuration(0.3) {
+        UIView.animate(withDuration: 0.3, animations: {
             self.timeSinceUpdateLabel.alpha = 0
             self.balanceLabel.alpha = 0
-        }
+        }) 
         
-        dispatch_async(dispatch_get_main_queue()) {
+        DispatchQueue.main.async {
             self.cardRepository!.getStatement() { result in
                 if let statement = result {
-                    self.timeSinceUpdateLabel.text = statement.timestamp.timeAgo()
-                    self.balanceLabel.countFrom(CGFloat(self.lastBalance), to: CGFloat(statement.balance))
+                    self.timeSinceUpdateLabel.text = (statement.timestamp as NSDate).timeAgo()
+                    self.balanceLabel.count(from: CGFloat(self.lastBalance), to: CGFloat(statement.balance))
                     let color = BalanceColorIndicator.getColor(statement.balance)
                     self.setBackgroundColor(color, animated: true)
                 } else {
                     // Something went wrong
                     self.shouldHandleError = true
-                    self.performSegueWithIdentifier("settingsSegue", sender: self)
+                    self.performSegue(withIdentifier: "settingsSegue", sender: self)
                 }
                 
                 self.refreshControl.endRefreshing()
                 self.scrollView.setContentOffset(CGPoint.zero, animated: true)
                 
-                UIView.animateWithDuration(0.3) {
+                UIView.animate(withDuration: 0.3, animations: {
                     self.timeSinceUpdateLabel.alpha = 1
                     self.balanceLabel.alpha = 1
-                }
+                }) 
             }
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         showLastStatement()
         
         // If the app has been inactive, we should update
@@ -144,30 +155,30 @@ class BalanceController : UIViewController {
         }
     }
     
-    @IBAction func onRefillCardButtonTap(sender: AnyObject) {
-        let safari = RefillController(URL: Config.chargeCardUrl!)
-        self.presentViewController(safari, animated: true, completion: nil)
+    @IBAction func onRefillCardButtonTap(_ sender: AnyObject) {
+        let safari = RefillController(url: Config.chargeCardUrl!)
+        self.present(safari, animated: true, completion: nil)
     }
     
-    private func setBackgroundColor(color: UIColor, animated: Bool) {
+    fileprivate func setBackgroundColor(_ color: UIColor, animated: Bool) {
         let setTargetColor = {
             self.view.backgroundColor = color
         }
         
         if (animated) {
-            UIView.animateWithDuration(2, animations: setTargetColor)
+            UIView.animate(withDuration: 2, animations: setTargetColor)
         } else {
             setTargetColor()
         }
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "settingsSegue" && shouldHandleError {
-            let destination = segue.destinationViewController as! SettingsController
+            let destination = segue.destination as! SettingsController
             destination.shouldHandleError = true
             shouldHandleError = false
         }

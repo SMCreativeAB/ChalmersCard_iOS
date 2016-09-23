@@ -1,12 +1,18 @@
 import Foundation
 import Alamofire
 
-class CardAPIService :  CardDataProtocol {
-    func getCardAmount(number: String, callback: Int? -> Void) {
+class CardAPIService : CardDataProtocol {
+    func getCardAmount(_ number: String, callback: @escaping (Int?) -> Void) {
         print(Config.apiUrl + number)
-        Alamofire.request(.GET, Config.apiUrl + String(number)).responseJSON { response in
-            if let json = response.result.value, let amount = json["amount"] as? Int {
-                return callback(amount)
+        let url = Config.apiUrl + String(number)
+        Alamofire.request(url).responseJSON { response in
+            debugPrint(response)
+            if let json = response.result.value as? [String: Int] {
+                if let amount = json["amount"] {
+                    return callback(amount)
+                } else {
+                    callback(nil)
+                }
             }
             
             callback(nil)

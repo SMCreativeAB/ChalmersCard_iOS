@@ -8,11 +8,11 @@ class KeychainService : StorageProtocol {
         keychain.synchronizable = true
     }
     
-    func get(key: String) -> String? {
+    func get(_ key: String) -> String? {
         return keychain.get(key)
     }
     
-    func set(key: String, value: String) {
+    func set(_ key: String, value: String) {
         keychain.set(value, forKey: key)
     }
 }

@@ -7,8 +7,8 @@ target 'Chalmers Card' do
   pod 'UICountingLabel'
   pod 'CWStatusBarNotification', '~> 2.3.4'
   pod 'UINavigationBar+Addition'
-  pod 'Eureka', '~> 1.7'
-  pod 'KeychainSwift', '~> 3.0'
-  pod 'Alamofire', '~> 3.4'
+  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'Swift3'
+  pod 'KeychainSwift', '~> 6.0'
+  pod 'Alamofire', '~> 4.0'
   pod 'NSDate+TimeAgo'
 end

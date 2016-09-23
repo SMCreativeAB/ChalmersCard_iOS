@@ -6,22 +6,22 @@ class SettingsController : UIViewController {
     @IBOutlet weak var header: UIView!
     @IBOutlet weak var headerHeight: NSLayoutConstraint!
     
-    private var formController: SettingsTableViewController?
+    fileprivate var formController: SettingsTableViewController?
     var isCreate = false
     var shouldHandleError = false
-    private let notification = CWStatusBarNotification()
+    fileprivate let notification = CWStatusBarNotification()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        notification.notificationStyle = .NavigationBarNotification
-        notification.notificationAnimationOutStyle = .Top
-        notification.notificationAnimationInStyle = .Top
+        notification.notificationStyle = .navigationBarNotification
+        notification.notificationAnimationOutStyle = .top
+        notification.notificationAnimationInStyle = .top
         notification.notificationLabelBackgroundColor = Config.colorLow
     }
     
     override func viewDidLayoutSubviews() {
-        let size = UIScreen.mainScreen().bounds.size
+        let size = UIScreen.main.bounds.size
         
         if (size.height < 667 && size.width < 375) {
             headerHeight.constant = 63
@@ -31,17 +31,17 @@ class SettingsController : UIViewController {
         }
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
-        self.navigationController?.navigationBar.barStyle = .Black
+        self.navigationController?.navigationBar.barStyle = .black
         self.navigationController?.navigationBar.tintColor = Config.tintColor
         self.navigationController?.navigationBar.makeDefault()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         if shouldHandleError {
             shouldHandleError = false
-            notification.displayNotificationWithMessage(NSLocalizedString("errorNotice", comment: ""), forDuration: 1.5)
+            notification.display(withMessage: NSLocalizedString("errorNotice", comment: ""), forDuration: 1.5)
         }
     }
     
@@ -50,15 +50,15 @@ class SettingsController : UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
     
-    @IBAction func onSave(sender: AnyObject) {
+    @IBAction func onSave(_ sender: AnyObject) {
         if let form = formController {
             let cardNumber = form.getCardNumber()
             
-            if !NSProcessInfo.processInfo().arguments.contains("USE_FAKE_DATA") {
+            if !ProcessInfo.processInfo.arguments.contains("USE_FAKE_DATA") {
                 guard String(cardNumber).characters.count == 16 else {
                     return
                 }
@@ -70,17 +70,17 @@ class SettingsController : UIViewController {
             AppDelegate.getShared().shouldUpdate = true
             
             if isCreate {
-                performSegueWithIdentifier("balanceSegue", sender: self)
+                performSegue(withIdentifier: "balanceSegue", sender: self)
                 isCreate = false
             } else {
-                navigationController?.popViewControllerAnimated(true)
+                navigationController?.popViewController(animated: true)
             }
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         if (segue.identifier == "embedForm") {
-            self.formController = segue.destinationViewController as? SettingsTableViewController
+            self.formController = segue.destination as? SettingsTableViewController
         }
     }
 }

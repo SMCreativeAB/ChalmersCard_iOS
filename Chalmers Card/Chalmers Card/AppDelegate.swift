@@ -22,51 +22,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let api: CardDataProtocol
         let storage: StorageProtocol
         
-        if NSProcessInfo.processInfo().arguments.contains("USE_FAKE_DATA") {
+        if ProcessInfo.processInfo.arguments.contains("USE_FAKE_DATA") {
             api = MockCardDataService()
             storage = MockStorageService()
+            print("Fake data")
         } else {
             api = CardAPIService()
             storage = KeychainService()
+            print("Real data")
         }
         
         cardRepository = CardRepository(keychain: storage, api: api)
     }
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window!.tintColor = Config.tintColor
         
         return true
     }
     
-    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         if shortcutItem.type == "se.sharpmind.Chalmers-Card.refill" && cardRepository!.exists() {
-            self.window?.rootViewController?.performSegueWithIdentifier("refillSegue", sender: self)
+            self.window?.rootViewController?.performSegue(withIdentifier: "refillSegue", sender: self)
         }
     }
 
-    func applicationWillResignActive(application: UIApplication) {
+    func applicationWillResignActive(_ application: UIApplication) {
         
     }
 
-    func applicationDidEnterBackground(application: UIApplication) {
+    func applicationDidEnterBackground(_ application: UIApplication) {
         shouldUpdate = true
     }
 
-    func applicationWillEnterForeground(application: UIApplication) {
+    func applicationWillEnterForeground(_ application: UIApplication) {
         
     }
 
-    func applicationDidBecomeActive(application: UIApplication) {
+    func applicationDidBecomeActive(_ application: UIApplication) {
         
     }
 
-    func applicationWillTerminate(application: UIApplication) {
+    func applicationWillTerminate(_ application: UIApplication) {
         
     }
 
     class func getShared() -> AppDelegate {
-        return UIApplication.sharedApplication().delegate as! AppDelegate
+        return UIApplication.shared.delegate as! AppDelegate
     }
 }
 

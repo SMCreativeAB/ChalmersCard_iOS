@@ -1,7 +1,7 @@
 import UIKit
 
 class BalanceColorIndicator {
-    static func getColor(balance: Int) -> UIColor {
+    static func getColor(_ balance: Int) -> UIColor {
         switch (balance) {
         case 0..<100:
             return Config.colorLow

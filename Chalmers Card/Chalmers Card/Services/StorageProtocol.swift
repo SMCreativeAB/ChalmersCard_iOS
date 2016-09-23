@@ -1,4 +1,4 @@
 protocol StorageProtocol {
-    func get(key: String) -> String?
-    func set(key: String, value: String)
+    func get(_ key: String) -> String?
+    func set(_ key: String, value: String)
 }

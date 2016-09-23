@@ -1,3 +1,3 @@
 protocol CardDataProtocol {
-    func getCardAmount(number: String, callback: Int? -> Void)
+    func getCardAmount(_ number: String, callback: @escaping (Int?) -> Void)
 }

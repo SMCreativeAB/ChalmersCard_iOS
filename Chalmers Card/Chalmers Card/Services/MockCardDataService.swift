@@ -1,7 +1,7 @@
 class MockCardDataService : CardDataProtocol {
     var calls = 0
     
-    func getCardAmount(number: String, callback: Int? -> Void) {
+    func getCardAmount(_ number: String, callback: @escaping (Int?) -> Void) {
         if calls == 0 {
             callback(543)
         } else if calls == 1 {

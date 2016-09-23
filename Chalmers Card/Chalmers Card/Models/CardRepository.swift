@@ -3,7 +3,7 @@ import Foundation
 class CardRepository {
     static let keychainKey = "CHALMERS_CARD"
     static let lastStatementKey = "CHALMERS_CARD_STATEMENT"
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     var keychain: StorageProtocol
     let api: CardDataProtocol
     
@@ -12,7 +12,7 @@ class CardRepository {
         self.api = api
     }
     
-    func getStatement(callback: CardStatement? -> Void) {
+    func getStatement(_ callback: @escaping (CardStatement?) -> Void) {
         if let number = getNumber() {
             api.getCardAmount(number) { amount in
                 self.onCardAmount(amount, callback: callback)
@@ -22,11 +22,11 @@ class CardRepository {
         }
     }
     
-    private func onCardAmount(amount: Int?, callback: CardStatement? -> Void) {
+    fileprivate func onCardAmount(_ amount: Int?, callback: (CardStatement?) -> Void) {
         if let amountValue = amount {
-            let cardStatement = CardStatement(balance: amountValue, timestamp: NSDate())
-            let statementData = NSKeyedArchiver.archivedDataWithRootObject(cardStatement)
-            self.defaults.setObject(statementData, forKey: CardRepository.lastStatementKey)
+            let cardStatement = CardStatement(balance: amountValue, timestamp: Date())
+            let statementData = NSKeyedArchiver.archivedData(withRootObject: cardStatement)
+            self.defaults.set(statementData, forKey: CardRepository.lastStatementKey)
             callback(cardStatement)
         } else {
             callback(nil)
@@ -38,8 +38,8 @@ class CardRepository {
     }
     
     func getLastStatement() -> CardStatement? {        
-        if let data = defaults.objectForKey(CardRepository.lastStatementKey) as? NSData {
-            return NSKeyedUnarchiver.unarchiveObjectWithData(data) as? CardStatement
+        if let data = defaults.object(forKey: CardRepository.lastStatementKey) as? Data {
+            return NSKeyedUnarchiver.unarchiveObject(with: data) as? CardStatement
         }
         
         return nil
@@ -49,7 +49,7 @@ class CardRepository {
         return getNumber() != nil
     }
     
-    func set(number: String) {
+    func set(_ number: String) {
         keychain.set(CardRepository.keychainKey, value: number)
     }
 }

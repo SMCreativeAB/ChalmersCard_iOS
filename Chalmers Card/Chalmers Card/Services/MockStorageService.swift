@@ -1,9 +1,9 @@
 class MockStorageService : StorageProtocol {
-    func get(key: String) -> String? {
+    func get(_ key: String) -> String? {
         return "1234123412341234"
     }
     
-    func set(key: String, value: String) {
+    func set(_ key: String, value: String) {
         
     }
 }
