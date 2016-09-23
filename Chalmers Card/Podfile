@@ -25,3 +25,10 @@ target 'CardData' do
     pod 'KeychainSwift', '~> 6.0'
     pod 'Alamofire', '~> 4.0'
 end
+
+
+target 'BalanceWidget' do
+    use_frameworks!
+    
+    pod 'NSDate+TimeAgo'
+end

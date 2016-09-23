@@ -8,7 +8,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)se.sharpmind.chalmerscard.BalanceWidget</string>
+		<string>$(AppIdentifierPrefix)group.chalmersCard</string>
 	</array>
 </dict>
 </plist>

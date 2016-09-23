@@ -16,6 +16,8 @@
 		247398D81D5E40E100BD6028 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398D71D5E40E100BD6028 /* StringExtensions.swift */; };
 		247398DA1D5E583B00BD6028 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398D91D5E583B00BD6028 /* NavigationController.swift */; };
 		247398E71D5E7AC500BD6028 /* BalanceColorIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247398E61D5E7AC500BD6028 /* BalanceColorIndicator.swift */; };
+		249E22231D95C5480000ED61 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 249E221F1D95C50E0000ED61 /* Localizable.strings */; };
+		249E22271D95C8760000ED61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 249E22291D95C8760000ED61 /* InfoPlist.strings */; };
 		24D1383A1D5FDD8A0026C35C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D1383C1D5FDD8A0026C35C /* Localizable.strings */; };
 		24D138401D5FDF270026C35C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D138421D5FDF270026C35C /* InfoPlist.strings */; };
 		24DB6FEA1D650D8300640306 /* CardNumberRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB6FE91D650D8300640306 /* CardNumberRow.swift */; };
@@ -48,6 +50,7 @@
 		24FC65941D95AC9B00A1E463 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC65931D95AC9B00A1E463 /* Config.swift */; };
 		69E5965093211079DE529EBB /* Pods_CardData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF82C2F45BE62BDF77FEE76D /* Pods_CardData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		730BBE3F0DA87D76084111B3 /* Pods_Chalmers_Card.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */; };
+		A1B87D7E9230B8EF006B653B /* Pods_BalanceWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D7447A94B19487DE03C6C7 /* Pods_BalanceWidget.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +129,10 @@
 		247398E21D5E667300BD6028 /* CardAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAPIService.swift; sourceTree = "<group>"; };
 		247398E41D5E66E500BD6028 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		247398E61D5E7AC500BD6028 /* BalanceColorIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceColorIndicator.swift; sourceTree = "<group>"; };
+		249E221E1D95C50E0000ED61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		249E22201D95C5100000ED61 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		249E22281D95C8760000ED61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		249E222A1D95C8780000ED61 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24D138321D5FDBDB0026C35C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Main.strings; sourceTree = "<group>"; };
 		24D1383D1D5FDD910026C35C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		24D138431D5FDF2A0026C35C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -158,12 +165,15 @@
 		24FC65771D95A9B100A1E463 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Chalmers_Card.framework; path = "Pods/../build/Debug-iphoneos/Pods_Chalmers_Card.framework"; sourceTree = "<group>"; };
 		24FC65911D95AAD900A1E463 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Chalmers_Card.framework; path = "Pods/../build/Debug-iphoneos/Pods_Chalmers_Card.framework"; sourceTree = "<group>"; };
 		24FC65931D95AC9B00A1E463 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		290636F6F225BE318A33434A /* Pods-BalanceWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalanceWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-BalanceWidget/Pods-BalanceWidget.release.xcconfig"; sourceTree = "<group>"; };
 		5A44806BEA7B584607E54C71 /* Pods-CardData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardData.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardData/Pods-CardData.release.xcconfig"; sourceTree = "<group>"; };
 		78E1CCDFEFF1A6B63776B4FE /* Pods-CardData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardData/Pods-CardData.debug.xcconfig"; sourceTree = "<group>"; };
 		850A8F8E8BC67FE874408A6D /* Pods-Chalmers Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalmers Card.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.release.xcconfig"; sourceTree = "<group>"; };
 		AF82C2F45BE62BDF77FEE76D /* Pods_CardData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F6B2BF2A9AC4B68AEAD2FD /* Pods-Chalmers Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalmers Card.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalmers_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D7447A94B19487DE03C6C7 /* Pods_BalanceWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalanceWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F69F43A83975E0144F1F230B /* Pods-BalanceWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalanceWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalanceWidget/Pods-BalanceWidget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +190,7 @@
 			files = (
 				24FC65741D95A63F00A1E463 /* CardData.framework in Frameworks */,
 				24E3651F1D95A03200FEFD3D /* NotificationCenter.framework in Frameworks */,
+				A1B87D7E9230B8EF006B653B /* Pods_BalanceWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +222,7 @@
 				D6A575004B8E462B6E64E6B1 /* Pods_Chalmers_Card.framework */,
 				24E3651E1D95A03200FEFD3D /* NotificationCenter.framework */,
 				AF82C2F45BE62BDF77FEE76D /* Pods_CardData.framework */,
+				D7D7447A94B19487DE03C6C7 /* Pods_BalanceWidget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,6 +261,15 @@
 			path = "../Chalmers Card/Services";
 			sourceTree = "<group>";
 		};
+		249E22221D95C5380000ED61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				249E221F1D95C50E0000ED61 /* Localizable.strings */,
+				249E22291D95C8760000ED61 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		24D138271D5FDB090026C35C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +286,7 @@
 				24E365211D95A03200FEFD3D /* TodayViewController.swift */,
 				24E365231D95A03200FEFD3D /* MainInterface.storyboard */,
 				24E365261D95A03200FEFD3D /* Info.plist */,
+				249E22221D95C5380000ED61 /* Supporting Files */,
 			);
 			path = BalanceWidget;
 			sourceTree = "<group>";
@@ -364,6 +386,8 @@
 				850A8F8E8BC67FE874408A6D /* Pods-Chalmers Card.release.xcconfig */,
 				78E1CCDFEFF1A6B63776B4FE /* Pods-CardData.debug.xcconfig */,
 				5A44806BEA7B584607E54C71 /* Pods-CardData.release.xcconfig */,
+				F69F43A83975E0144F1F230B /* Pods-BalanceWidget.debug.xcconfig */,
+				290636F6F225BE318A33434A /* Pods-BalanceWidget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -404,9 +428,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24E3652A1D95A03200FEFD3D /* Build configuration list for PBXNativeTarget "BalanceWidget" */;
 			buildPhases = (
+				165851D1D55E02B29D8C4AB6 /* 📦 Check Pods Manifest.lock */,
 				24E365191D95A03200FEFD3D /* Sources */,
 				24E3651A1D95A03200FEFD3D /* Frameworks */,
 				24E3651B1D95A03200FEFD3D /* Resources */,
+				17766B5976648E923083A645 /* 📦 Embed Pods Frameworks */,
+				B5F63581BE5F379CCA9E41DE /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -546,6 +573,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249E22231D95C5480000ED61 /* Localizable.strings in Resources */,
+				249E22271D95C8760000ED61 /* InfoPlist.strings in Resources */,
 				24E365251D95A03200FEFD3D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +601,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		165851D1D55E02B29D8C4AB6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		17766B5976648E923083A645 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalanceWidget/Pods-BalanceWidget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1E37A2ECA546915EF6FBE09A /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +674,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chalmers Card/Pods-Chalmers Card-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5F63581BE5F379CCA9E41DE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalanceWidget/Pods-BalanceWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E10293F6CE899C12DB7019B6 /* 📦 Copy Pods Resources */ = {
@@ -731,6 +805,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		249E221F1D95C50E0000ED61 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249E221E1D95C50E0000ED61 /* Base */,
+				249E22201D95C5100000ED61 /* sv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		249E22291D95C8760000ED61 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249E22281D95C8760000ED61 /* Base */,
+				249E222A1D95C8780000ED61 /* sv */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		24D1383C1D5FDD8A0026C35C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -806,6 +898,7 @@
 		};
 		24E3652B1D95A03200FEFD3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69F43A83975E0144F1F230B /* Pods-BalanceWidget.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -831,6 +924,7 @@
 		};
 		24E3652C1D95A03200FEFD3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 290636F6F225BE318A33434A /* Pods-BalanceWidget.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;

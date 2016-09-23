@@ -63,17 +63,14 @@ class BalanceController : UIViewController {
     
     func showLastStatement() {
         if let lastStatement = cardRepository!.getLastStatement() {
-            self.onLastStatement(lastStatement)
+            self.timeSinceUpdateLabel.text = (lastStatement.timestamp as NSDate).timeAgo()
+            self.lastBalance = lastStatement.balance
+            self.lastUpdate = lastStatement.timestamp as Date
+            
+            let color = BalanceColorIndicator.getColor(lastStatement.balance)
+            setBackgroundColor(color, animated: false)
+
         }
-    }
-    
-    public func onLastStatement(_ lastStatement: CardStatement) {
-        self.timeSinceUpdateLabel.text = (lastStatement.timestamp as NSDate).timeAgo()
-        self.lastBalance = lastStatement.balance
-        self.lastUpdate = lastStatement.timestamp as Date
-    
-        let color = BalanceColorIndicator.getColor(lastStatement.balance)
-        setBackgroundColor(color, animated: false)
     }
     
     func setupPullToRefresh() {

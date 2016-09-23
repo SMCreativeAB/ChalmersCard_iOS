@@ -5,6 +5,7 @@ public class KeychainService : StorageProtocol {
     let keychain = KeychainSwift()
     
     public init() {
+        keychain.accessGroup = "group.chalmersCard"
         keychain.synchronizable = true
     }
     

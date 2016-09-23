@@ -1,6 +1,7 @@
 import UIKit
 import NotificationCenter
 import CardData
+import NSDate_TimeAgo
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var amountLabel: UILabel!
@@ -16,9 +17,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         cardRepository = CardRepository(keychain: storage, api: api)
 
         // Do any additional setup after loading the view from its nib.
+        showLastStatement()
     
     }
-
+    
+    func showLastStatement() {
+        if let lastStatement = cardRepository!.getLastStatement() {
+            self.timeAgoLabel.text = (lastStatement.timestamp as NSDate).timeAgo()
+            self.amountLabel.text = String(lastStatement.balance) + " kr"
+        } else {
+            amountLabel.text = "-"
+            timeAgoLabel.text =  NSLocalizedString("noCard", comment: "")
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -27,10 +39,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     fileprivate func widgetPerformUpdate(_ completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
+        showLastStatement()
         completionHandler(NCUpdateResult.newData)
     }
     

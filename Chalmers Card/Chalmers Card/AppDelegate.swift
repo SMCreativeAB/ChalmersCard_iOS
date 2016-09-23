@@ -1,6 +1,7 @@
 import UIKit
 import UIColor_Hex_Swift
 import CardData
+import KeychainSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,14 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if ProcessInfo.processInfo.arguments.contains("USE_FAKE_DATA") {
             api = MockCardDataService()
             storage = MockStorageService()
-            print("Fake data")
         } else {
             api = CardAPIService()
             storage = KeychainService()
-            print("Real data")
+            
+            handleUpgrade(storage)
         }
         
         cardRepository = CardRepository(keychain: storage, api: api)
+    }
+    
+    private func handleUpgrade(_ newStorage: StorageProtocol) {
+        let oldKeychain = KeychainSwift()
+        
+        if let card = oldKeychain.get("CHALMERS_CARD"), newStorage.get("CHALMERS_CARD") == nil {
+            newStorage.set("CHALMERS_CARD", value: card)
+        }
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
